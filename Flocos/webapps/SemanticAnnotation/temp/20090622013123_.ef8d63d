@@ -1,0 +1,1325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="description" content="Honda Civic vs Toyota Corolla vs Mazda3 discussion in the CarSpace automotive forums by Edmunds.com" />
+<meta name="keywords" content="Honda Civic, Toyota Corolla, Mazda MAZDA3, Sedan" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var ed_req_make_raw = "Honda";
+var ed_req_model_raw = "Civic";
+var ed_req_category_raw = "";
+var ed_req_make = "honda";
+var ed_req_model = "civic";
+var ed_req_category = "";
+var ed_req_zipcode = "";
+var ed_req_category_list = []
+var ed_req_type_list = ["sedan"];
+//]]>
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Forums - Top 10 Discussions [RSS]" href="/topTenRSS" />
+<link rel="shortcut icon" href="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/carspace_favicon.ico" type="image/x-icon" />
+<link rel="search" type="application/opensearchdescription+xml" title="CarSpace Forums" href="http://www.edmunds.com/townhall/search.xml" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/carspace/styles/csGlobal.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/carspace/styles/csForum.css" />
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+
+// Change the current location to the select object url.
+function jumpToBoard(targ, selObj, restore) {
+    var url = selObj.options[selObj.selectedIndex].value;
+
+    // Skip no-ops.
+    if (url == "#") { return; }
+
+    // Load the new page.
+    eval(targ + ".location='" + url + "'");
+    if (restore) { selObj.selectedIndex=0; }
+}
+
+// Open a narrow, non-tabbar window.
+function popWindow(strFile) {
+    window.open(strFile, "pop", "height=400,width=525,scrollbars,resizable,status,menubar");}
+
+// Open a window with a full tabbar width.
+function popWinTwo(strFile) {
+    window.open(strFile, "pop", "height=400,width=800,scrollbars,resizable,status,menubar");}
+
+// Set tid value in cookie.
+function setTID(value){
+    var today = new Date();
+    var expdate = new Date(today.getTime() +  30000); //expire in 30 seconds
+    document.cookie="tid=" + escape(value) + "; expires=" + expdate.toGMTString() + "; path=/; domain=.edmunds.com";
+}
+
+function ed_genDartFile(adtype) {
+if (adtype == "spotlight" && ed_req_model) {
+return(ed_req_make + ".forums.dart");
+} else  {
+return("forums.dart");
+}
+}
+
+function ed_genDartParams(adtype) {
+var params = "";
+if (adtype == "spotlight" && ed_req_model) {
+params += "mdl=" + ed_req_model + ";";
+} else {
+if (ed_req_make) {
+params += "make=" + ed_req_make + ";";
+}
+if (ed_req_model) {
+params += "mdl=" + ed_req_model + ";";
+}
+}
+for (var i = 0; i < ed_req_category_list.length; i++) {
+params += "theme=" + ed_req_category_list[i] + ";";
+}
+for (var i = 0; i < ed_req_type_list.length; i++) {
+params += "type=" + ed_req_type_list[i] + ";";
+}
+return(params);
+}
+
+function ed_genUParams(adtype) {
+var params = "";
+if (ed_req_make) {
+params += ":make_" + ed_req_make;
+}
+if (ed_req_model) {
+params += ":mdl_" + ed_req_model;
+}
+for (var i = 0; i < ed_req_category_list.length; i++) {
+params += ":theme_" + ed_req_category_list[i];
+}
+for (var i = 0; i < ed_req_type_list.length; i++) {
+params += ":type_" + ed_req_type_list[i];
+}
+return(params);
+}
+
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+  var edwcat="Community_Forums";
+  var edwpg="community_forums_otherpage";
+  var edomniacct="edmundscommunity,edmunds";
+  var edwmk = ed_req_make;
+  var edwmdl = ed_req_model;
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript" src="http://origin-www.edmunds.com/new/dma/dmacookieproxy.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/yahooui/utilities/utilities.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/edmunds/edmunds.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/adunit/adunit.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/usertrack/usertrack.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/ad_util.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/townhall/scripts/forums-ads.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/hpscripts.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/identity/identity.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/popprofile.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/tinttext.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/smoicons.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/townhall/scripts/vehmakemodelarray.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/vehmakemodel.js"></script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var pageInit = function() {
+
+
+// Initialize popup profiles.
+YAHOO.forumsPopProfile.init();
+
+// If a search, tint keywords.
+
+// Tint incoming searches from google.
+// http://www.google.com/search?hl=en&q=future+honda+odyssey&btnG=Search
+if (document.referrer.indexOf('http://www.google.') > -1) {
+var query;
+if ((query = document.referrer.match(/q=([^& ;]+)/)) != null) {
+var kw = query[1];
+kw = kw.replace(/\+/g, "%20");
+YAHOO.forumsTintText.tint(kw);
+}
+}
+
+// Tint incoming searches from yahoo.
+// http://search.yahoo.com/search?p=diesel+vs+gasoline
+if (document.referrer.indexOf('http://www.yahoo.com') > -1) {
+var query;
+if ((query = document.referrer.match(/p=([^& ;]+)/)) != null) {
+var kw = query[1];
+kw = kw.replace(/\+/g, "%20");
+YAHOO.forumsTintText.tint(kw);
+}
+}
+
+};
+
+YAHOO.util.Event.addListener( window, "load", pageInit ); 
+
+//]]>
+</script>
+
+
+<title>Honda Civic vs Toyota Corolla vs Mazda3 - CarSpace Automotive Forums</title>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+edwpg = "community_forums_discussion";
+//]]>
+</script>
+</head>
+<body >
+
+
+
+
+
+
+<div id="regHeader">
+    <p id="hWelcome">
+    <!-- Include user info component -->
+    <script language="javascript" type="text/javascript">
+//<![CDATA[
+displayUserInfo('Welcome,', 'Guest');
+//]]>
+    </script>
+
+    
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d&amp;fromUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d" onclick="s_objectID='edmunds..forums.regheader..0..navigation_Par_2044_ImageRef_gif*'; setTID(s_objectID);"><img src="http://www.edmunds.com/etc/medialib/Images/media/navigation.Par.2044.ImageRef.gif" border="0" alt="Sign In" title="Sign In" /></a>&nbsp;<a href="https://secure.edmunds.com/era/secure/nlb/registration.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d&amp;fromUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d" onclick="s_objectID='edmunds..forums..1..navigation_Par_7699_ImageRef_gif*'; setTID(s_objectID);"><img src="http://www.edmunds.com/etc/medialib/Images/media/navigation.Par.7699.ImageRef.gif" border="0" alt="Join" title="Join" /></a>
+    </p>
+
+    <p id="hLinks">
+    <a href="http://www.edmunds.com" onclick="s_objectID='edmunds..forums.headersecondarynav..1..Edmunds_com*'; setTID(s_objectID);" target="_top">Edmunds.com</a> 
+    | <a href="http://www.edmunds.com/insideline/" onclick="s_objectID='edmunds..forums.headersecondarynav..2..InsideLine*'; setTID(s_objectID);" target="_top">Inside Line</a> 
+    | <a href="http://www.autoobserver.com" onclick="s_objectID='edmunds..forums.headersecondarynavnew..3..AutoObserver*'; setTID(s_objectID);" target="_top">Auto Observer</a>
+
+    <span id="hdLinks"><a href="https://secure.edmunds.com/era/secure/MyAccount.load.action?app=carspace.com" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..1..YourAccount*'; setTID(s_objectID); " target="_top">Your Account</a> 
+| <a href="http://www.edmunds.com/help/" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..2..Help*'; setTID(s_objectID); " title="Help" target="_top">Help</a> 
+| <a href="http://www.edmunds.com/help/about/sitedirectory.html" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..3..Directory*'; setTID(s_objectID); " title="Directory" target="_top">Directory</a></span> 
+    </p>
+</div>
+
+<div id="gutter">
+<div style="display:none;">
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/external/edwstatic.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/omniture/omniture.js"></script>
+<noscript>
+<a href="http://www.omniture.com" title="Web Analytics"><img src="http://edmunds.112.2O7.net/b/ss/edmunds/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" /></a>
+</noscript><!-- /DO NOT REMOVE/-->
+</div>
+
+
+<div id="header">
+  <p id="sitename"><a href="http://www.carspace.com/" onclick="s_objectID='edmunds..forums.headerimg..0.*'; setTID(s_objectID);"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/global_header/cs_logo.gif" alt="Carspace.com" title="Carspace.com" /></a></p>
+<div id="leaderboard">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("leader");
+var dartparams = ed_genDartParams("leader");
+var uparams = ed_genUParams("leader");
+
+var adUnitObj_leaderboard = new YAHOO.Edmunds.AdUnit('adUnitObj_leaderboard', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=1;tile=1;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_1:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 728, 90, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_leaderboard.getAdUrl()+' -->');
+adUnitObj_leaderboard.registerAd();
+adUnitObj_leaderboard.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_leaderboard" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="90" scrolling="no" width="728"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;rsu=community;ptile=1;sz=728x90;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;rsu=community;ptile=1;sz=728x90;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="728" height="90" border="0" alt="" /></a>
+</noscript>
+</div>
+    <!--START nav-->
+    <div id="nav">
+        <ul>
+<li id="nav_home"><a href="http://www.edmunds.com/" onclick="s_objectID='edmunds..forums.header..0.*'; setTID(s_objectID);" title="Home">Home</a></li>
+<li id="nav_newc"><a href="http://www.edmunds.com/new-cars/" onclick="s_objectID='edmunds..forums.header..1.*'; setTID(s_objectID);" title="New Cars">New Cars</a></li>
+<li id="nav_certified"><a href="http://www.edmunds.com/certified-cars.html" onclick="s_objectID='edmunds..forums.header..2.*'; setTID(s_objectID);" title="Certified Cars">Certified Cars</a></li>
+<li id="nav_used"><a href="http://www.edmunds.com/used-cars/" onclick="s_objectID='edmunds..forums.header..3.*'; setTID(s_objectID);" title="Used Cars">Used Cars</a></li>
+<li id="nav_reviews"><a href="http://www.edmunds.com/car-reviews.html" onclick="s_objectID='edmunds..forums.header..4.*'; setTID(s_objectID);" title="Car Reviews">Car Reviews</a></li>
+<li id="nav_advice"><a href="http://www.edmunds.com/car-advice.html" onclick="s_objectID='edmunds..forums.header..5.*'; setTID(s_objectID);" title="Tips &amp; Advice">Tips &amp; Advice</a></li>
+<li id="nav_finance"><a href="http://www.edmunds.com/car-loans/" onclick="s_objectID='edmunds..forums.header..6.*'; setTID(s_objectID);" title="Car Loans">Car Loans</a></li>
+<li id="nav_insurance"><a href="http://www.edmunds.com/auto-insurance/" onclick="s_objectID='edmunds..forums.header..7.*'; setTID(s_objectID);" title="Auto Insurance">Auto Insurance</a></li>
+<li id="nav_forums"><a href="http://www.carspace.com/csGroups" class="active" onclick="s_objectID='edmunds..forums.header..8.*'; setTID(s_objectID);" title="Forums">Forums</a></li>
+<li id="nav_localservices"><a href="http://www.edmunds.com/local.html" onclick="s_objectID='edmunds..forums.header..9.*'; setTID(s_objectID);" title="Local Services">Local Services</a></li>
+        </ul>
+    </div>
+    <!--END nav-->
+</div>
+<!--END global header-->
+
+<!--START 2nd tier -->
+<div id="navSTier">
+  <ul>
+    <li>
+<a href="http://www.carspace.com" onclick="s_objectID='edmunds..forums.2ndtier..7.*'; setTID(s_objectID);">CarSpace</a> |
+<a href="http://www.carspace.com/csGroups" onclick="s_objectID='edmunds..forums.2ndtier..0.*'; setTID(s_objectID);">Forums</a>
+| <a href="http://answers.edmunds.com" onclick="s_objectID='edmunds..forums.2ndtier..1.*'; setTID(s_objectID);">Answers</a> 
+| <a href="http://www.carspace.com/blogs" onclick="s_objectID='edmunds..forums.2ndtier..2.*'; setTID(s_objectID);">Blogs</a> 
+| <a href="http://www.carspace.com/csPhotos" onclick="s_objectID='edmunds..forums.2ndtier..3.*'; setTID(s_objectID);">Photos</a> 
+| <a href="http://www.carspace.com/videos" onclick="s_objectID='edmunds..forums.2ndtier..4.*'; setTID(s_objectID);">Videos</a> 
+| <a href="http://www.carspace.com/guides" onclick="s_objectID='edmunds..forums.2ndtier..5.*'; setTID(s_objectID);">Guides</a> 
+| <a href="http://www.carspace.com/txUserSearch" onclick="s_objectID='edmunds..forums.2ndtier..6.*'; setTID(s_objectID);">People</a>
+    </li>
+  </ul>
+</div>
+<!--END 2nd tier nav -->
+
+</div>
+<!-- END CS HEADER -->
+
+<!-- BEGIN FORUMS CONTENT -->
+<div id="discussionList" class="clearfix mainContainer">
+
+<!-- START COLUMN ONE -->
+<div id="column1" class="clearfix">
+
+<!-- Display the breadcrumb. -->
+<!-- webx.tpl backPath -->
+
+
+<p class="breadCrumb">
+<strong>You are here:</strong> 
+<img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/site.gif" alt="[F]" WIDTH=16 HEIGHT=16 />
+<a href="http://www.carspace.com/csGroups">Forums</a> 
+  <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.ee9e22f/">Sedans</a>     <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.eea7239/">Honda Civic</a>   <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> Honda Civic vs Toyota Corolla vs Mazda3</p>
+
+
+
+
+
+
+<!-- START FORUMS CONTENT -->
+
+
+
+
+
+
+<a href="http://townhall-talk.edmunds.com/direct/view/.f1d8ba8"><img 
+src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/adunit/CarSpaceChat/chat500x50green.jpg" border="0" /></a><br><br>
+<h1>Honda Civic vs Toyota Corolla vs Mazda3</h1>
+
+
+<p>
+879&nbsp;messages,&nbsp;
+
+
+
+Last post on Nov 25, 2008 at 3:57 PM</p>
+
+<p class="hostName">
+You are in the <a href="/WebX/.eea7239/">Honda Civic</a> Forum. 
+Your Hosts are <span class="profileLink"><a href="javascript:popWindow('/WebX/.ef8d63d?viewUserProfile!vuserName=pat')">pat</a></span>  &amp; <span class="profileLink"><a href="javascript:popWindow('/WebX/.ef8d63d?viewUserProfile!vuserName=karens')">karens</a></span> </p>
+
+
+
+<p class="tags">
+        <b>What is this discussion about?</b>
+        <a href='/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=Honda&amp;model=Civic'>Honda Civic</a>, <a href='/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=Toyota&amp;model=Corolla'>Toyota Corolla</a>, <a href='/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=Mazda&amp;model=MAZDA3'>Mazda MAZDA3</a>, <a href='/WebX/.ee9e22f'>Sedan</a></p>
+
+
+
+
+
+
+<!-- incontext -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+document.write(YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/WebX?14@@.ef8d63d", document.title, "discussion"));
+//]]>
+</script>
+<div class="floatRight">
+<ul class="discussMsgTools">
+<li><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/roundCornerLft.gif" alt="/" align="absmiddle" /></li>
+
+<li><a href="/WebX?230@@.ef8d63d"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/outline.gif" alt="Outline" border="0" align="absmiddle" /></a> <a href="/WebX?230@@.ef8d63d">Outline</a></li>
+<li><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/roundCornerRght.gif" alt="/" align="absmiddle" /></li>
+</ul>
+</div>
+<br clear="all" />
+
+
+<!-- First: 869 Last: 878 -->
+<!-- _First:  _Last:  -->
+<!-- location: .ef8d63d msgListPrev: .ef8d63d/868 -->
+<!-- location: .ef8d63d msgListFollow:  -->
+
+
+
+
+
+
+<!-- cur: 869 last: 878 numPerPage: 10 -->
+
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="paginationMsgSearch">
+<tr>
+
+<td>
+<dl class="pagination"><dt>Messages&nbsp;Page 88&nbsp;of&nbsp;88</dt>
+<dd><a href="/direct/view/.ef8d63d/0">1</a></dd><dd>...</dd><dd><a href="/direct/view/.ef8d63d/809">82</a></dd><dd><a href="/direct/view/.ef8d63d/819">83</a></dd><dd><a href="/direct/view/.ef8d63d/829">84</a></dd><dd><a href="/direct/view/.ef8d63d/839">85</a></dd><dd><a href="/direct/view/.ef8d63d/849">86</a></dd><dd><a href="/direct/view/.ef8d63d/859">87</a></dd><dd><strong>88</strong></dd><dd><a href="/direct/view/.ef8d63d/859">Prev</a></dd><dd>Next</dd><dd><strong>Last</strong></dd></dl>
+</td>
+
+<td><form class="floatLeft" name="jumpToMessageForm" method="post" action="/WebX?jumpToMessageNumber@@.ef8d63d" onsubmit="
+if (!this.message_number.value) { return false; } var last = 879 - 1; var num = parseInt(this.message_number.value) - 1; if (isNaN(num) || num < 0) { num = 0; } if (num > last) { num = last; } this.message_number.value = num+1; return true;
+">
+<strong>Go To Msg #</strong><br />
+<input name="message_number" type="text" size="5" value="" /><input type="submit" name="Submit" border="0" value="Go" /> 
+</form>
+<form class="floatRight" name="searchDiscussionForm" method="post" action="/WebX?127@@.ef8d63d" onsubmit="if (!this.keywords.value) { return false; }"><input type="hidden" name="search_cmd" value="intext:discussion" />
+<input type="hidden" name="discussionfid" value=".ef8d63d" />
+
+<input type="hidden" name="as_limit" value=".ef8d63d" />
+<input type="hidden" name="as_allin" value="msgtext" />
+<input type="hidden" name="count" value="20" />
+<strong>Search This Discussion</strong><br />
+<input name="keywords" type="text" size="20" value="" /><input type="submit" name="Submit" border="0" value="Search" /> </form></td>
+
+</tr>
+</table>
+<br clear="all" />
+<table width="100%" cellpadding="0" cellspacing="0" class="postsList">
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG869" href="/direct/view/.ef8d63d/869#MSG869">870</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Civic vs. Corolla vs. Mazda3 [thegraduate]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/869!vuserName=droman');">droman</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (7:43 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F869&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/866#MSG866" class="forumsreplies">thegraduate (Nov 24, 2008 9:46 pm)</a><br /></p>
+
+<span class="postText">You could be absolutely correct. I have never driven a 3, so it could be noisier than the Civic for all I know. I also agree with the post that states that the Corolla is probably the quietest. Toyotas are usually rock solid and quiet. Although this usually comes at the price of feeling "disconnected" from the driving experience. Totally off topic, but I just drove my mom's (age 67) 2001 Celica GT-S with 23000 miles on it. What a piece of crap. The engine was loud, underpowered and that thing rattled like an 84 Camaro Z28. Wasn't at all impressed with the handling either. I could not believe it was a Toyota. My Civic felt like a combination of a Porche (handling) and an Mercedes (quietness) after driving the Celica. Maybe I should drive her car more often! </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/869", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/870#MSG870" class="forumsreplies">thegraduate (Nov 25, 2008 10:13 am)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/871#MSG871" class="forumsreplies">shipo (Nov 25, 2008 11:23 am)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/872#MSG872" class="forumsreplies">thegraduate (Nov 25, 2008 11:27 am)</a> and 1 more...</ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG870" href="/direct/view/.ef8d63d/870#MSG870">871</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re:Celica GT-S, Quietness [droman]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/870!vuserName=thegraduate');">thegraduate</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (10:13 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F870&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/869#MSG869" class="forumsreplies">droman (Nov 25, 2008 7:43 am)</a><br /></p>
+
+<span class="postText"><b>...2001 Celica GT-S with 23000 miles on it. What a piece of crap. The engine was loud, underpowered...</b> <br>
+&nbsp;<br>
+I'll just assume that you didn't wind out the engine. It's only adequate at low-revs (not that different from the Civic Si), but takes off above 6,000 RPM. Of course, not many drive at that RPM often! <br>
+&nbsp;<br>
+<b>I also agree with the post that states that the Corolla is probably the quietest. Toyotas are usually rock solid and quiet. Although this usually comes at the price of feeling "disconnected" from the driving experience. </b> <br>
+&nbsp;<br>
+You're right, I believe. Toyotas tend to have good isolation relative to their competitors, which is both good and bad, depending on what you're after. <br>
+&nbsp;<br>
+I'd really suggest driving the 3, with both the 16" wheels and the 17" wheels. Personally, I think I'd have a hard time springing for brand new tires on a brand new car, just to fix a noise issue (if I had an issue with it, that is... you may not!).  <br>
+&nbsp;<br>
+The best advice I can give is to check them all out for yourself, and take our advice with a grain of salt! <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/emo_smiley.gif" align="top" border="0"> </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/870", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/871#MSG871" class="forumsreplies">shipo (Nov 25, 2008 11:23 am)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/872#MSG872" class="forumsreplies">thegraduate (Nov 25, 2008 11:27 am)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/873#MSG873" class="forumsreplies">shipo (Nov 25, 2008 11:44 am)</a></ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG871" href="/direct/view/.ef8d63d/871#MSG871">872</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re:Celica GT-S, Quietness [thegraduate]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/871!vuserName=shipo');">shipo</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (11:23 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F871&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/870#MSG870" class="forumsreplies">thegraduate (Nov 25, 2008 10:13 am)</a><br /></p>
+
+<span class="postText"><b>Personally, I think I'd have a hard time springing for brand new tires on a brand new car, just to fix a noise issue (if I had an issue with it, that is... you may not!).</b> <br>
+&nbsp;<br>
+I can honestly say that I'm not exactly thrilled with needing to buy new tires for my car, that said, few cars on the market today come stock with a tire and wheel set-up that I like, errr, at least without either ordering the car from the factory and/or paying for pricey dealer upgrades.  So with that said, $500 for a new set of skins is actually much cheaper than the wheel and tire package I would have wanted to buy with either the Rabbit or the Civic. <br>
+&nbsp;<br>
+FWIW, the fact that the Michelin Pilot Sport A/Ss are so much quieter than the Goodyear Eagle RS-As was an unintended benefit of the tire swap, the <i>real</i> <br>
+reason I bought the new tires was for better wet and snow covered road traction.  After all, we've gotten over 120" of snow in our town during three of our last six winters, and with snow forecast for this week, I felt I couldn't mess around with "All-Season" tires that receive some of the worst wet and snow reviews I've ever read. <br>
+&nbsp;<br>
+Best regards, <br>
+Shipo </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/871", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/872#MSG872" class="forumsreplies">thegraduate (Nov 25, 2008 11:27 am)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/873#MSG873" class="forumsreplies">shipo (Nov 25, 2008 11:44 am)</a></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG872" href="/direct/view/.ef8d63d/872#MSG872">873</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re:Celica GT-S, Quietness [shipo]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/872!vuserName=thegraduate');">thegraduate</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (11:27 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F872&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/871#MSG871" class="forumsreplies">shipo (Nov 25, 2008 11:23 am)</a><br /></p>
+
+<span class="postText">Thanks for the follow-up response shipo. <br>
+&nbsp;<br>
+Of late, I've become a fan of Bridgestone tires, especially considering how well they perform in wet situations (I've only driven them in one marginally wintry mix, less than an inch of snow on the ground). I have the Potenza G009 tires on my old Accord and they are wearing very well; no complaints on the wear of my Michelin tires on my 06 Accord either, although I won't replace them with the same tire most likely. I want something a little more comfortable and quiet than these hard-compoud, low-rolling resistance ones.  <br>
+&nbsp;<br>
+I've drug us off topic I'm afraid... I'm sorry! If you haven't seen photos of the 2010 Mazda 3 hatchback, they're now available. Check em out. I'm not sure since I haven't seen it in person yet, but it seems a little cartoony. The current model doesn't look dated to me, and I much prefer it based on the limited amount of photos I've seen. </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/872", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/873#MSG873" class="forumsreplies">shipo (Nov 25, 2008 11:44 am)</a></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG873" href="/direct/view/.ef8d63d/873#MSG873">874</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re:Celica GT-S, Quietness [thegraduate]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/873!vuserName=shipo');">shipo</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (11:44 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F873&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/872#MSG872" class="forumsreplies">thegraduate (Nov 25, 2008 11:27 am)</a><br /></p>
+
+<span class="postText"><b>If you haven't seen photos of the 2010 Mazda 3 hatchback, they're now available. Check em out. I'm not sure since I haven't seen it in person yet, but it seems a little cartoony. The current model doesn't look dated to me, and I much prefer it based on the limited amount of photos I've seen.</b> <br>
+&nbsp;<br>
+I have to agree, the 2010 model looks like the ugly offspring of a Mitsubishi Galant and a Cadillac CTS.  Urrg, no thanks, I much prefer the graceful lines of the current Mazda3.  <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/emo_wink.gif" align="top" border="0"> <br>
+&nbsp;<br>
+Best regards, <br>
+Shipo </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/873", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG874" href="/direct/view/.ef8d63d/874#MSG874">875</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">3 Hatchback</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/874!vuserName=thegraduate');">thegraduate</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (11:57 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F874&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+
+<span class="postText"><img src="http://image.automobilemag.com/f/news/2010-mazda3-5-door-hatchback-official-photos/11509855+w486+cr1+re0+ar1/side-view.jpg"> <br>
+&nbsp;<br>
+<img src="http://image.motortrend.com/f/contests/mazda-looks-to-facebook-users-to-help-design-2018-mazda3/7190638+w315+cr1+re0+ar1/2007-mazda3-hatchback.jpg"> <br>
+&nbsp;<br>
+Note the sculpted sides as it approaches the rear-doors, the swoopy new rear- bumper, as well as the front-fender design.  </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/874", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/875#MSG875" class="forumsreplies">aviboy97 (Nov 25, 2008 12:16 pm)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/876#MSG876" class="forumsreplies">thegraduate (Nov 25, 2008 12:42 pm)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/877#MSG877" class="forumsreplies">aviboy97 (Nov 25, 2008 1:03 pm)</a></ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG875" href="/direct/view/.ef8d63d/875#MSG875">876</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: 3 Hatchback [thegraduate]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/875!vuserName=aviboy97');">aviboy97</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (12:16 pm)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F875&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/874#MSG874" class="forumsreplies">thegraduate (Nov 25, 2008 11:57 am)</a><br /></p>
+
+<span class="postText">Does anyone see a little 1st gen  Inifini FX in the rear? I do. <br>
+&nbsp;<br>
+That color, Celestial Blue, is a little "loud".... </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/875", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/876#MSG876" class="forumsreplies">thegraduate (Nov 25, 2008 12:42 pm)</a>
+<ul><li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/877#MSG877" class="forumsreplies">aviboy97 (Nov 25, 2008 1:03 pm)</a></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG876" href="/direct/view/.ef8d63d/876#MSG876">877</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: 3 Hatchback [aviboy97]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/876!vuserName=thegraduate');">thegraduate</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (12:42 pm)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F876&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/875#MSG875" class="forumsreplies">aviboy97 (Nov 25, 2008 12:16 pm)</a><br /></p>
+
+<span class="postText"><b>Does anyone see a little 1st gen Inifini FX in the rear? </b> <br>
+&nbsp;<br>
+Yes sir I do... taillamp design combined with the bulging tailgate. </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/876", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@227.52LYaRKHmlF@.ef8d63d/877#MSG877" class="forumsreplies">aviboy97 (Nov 25, 2008 1:03 pm)</a></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG877" href="/direct/view/.ef8d63d/877#MSG877">878</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: 3 Hatchback [thegraduate]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/877!vuserName=aviboy97');">aviboy97</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (1:03 pm)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F877&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.ef8d63d/876#MSG876" class="forumsreplies">thegraduate (Nov 25, 2008 12:42 pm)</a><br /></p>
+
+<span class="postText">...and the rear window shape </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/877", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG878" href="/direct/view/.ef8d63d/878#MSG878">879</a> of 879</dt>
+<dd class="postTitle">
+<span class="forumstitle">Rattles, Road Noise, Cheap Feel</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.ef8d63d/878!vuserName=sandman46');">sandman46</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+Nov 25, 2008 (3:57 pm)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.ef8d63d%2F878&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+
+<span class="postText">This is what our '05 3s feels like now compared to my '06 Civic LX, which is a quieter car.  So everyone has a different opinion of these cars...We still like them both and I must admit the 3s is a looker with the 16" alloys.  Mechanically it's been pretty reliable with 53k on the clock and guess we'll be keeping it another couple of years at this point.  We just spent over $15k for very nice Hyundai Accent for my middle girl and will probably be getting her older sister an Elantra before the holidays if they raise the rebate.  So it looks like the wife and I will be out of the new car buying game for a couple of years...I'm all tapped out   <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/emo_surprise.gif" align="top" border="0"> . <br>
+&nbsp;<br>
+<i>The Sandman      <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/emo_smiley.gif" align="top" border="0"></i> </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.ef8d63d/878", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+</table>
+<br clear="all" />
+
+<!-- First: 869 Last: 878 -->
+<!-- _First:  _Last:  -->
+<!-- location: .ef8d63d msgListPrev: .ef8d63d/868 -->
+<!-- location: .ef8d63d msgListFollow:  -->
+
+
+
+
+
+
+<!-- cur: 869 last: 878 numPerPage: 10 -->
+
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="paginationMsgSearch">
+<tr>
+
+<td>
+<dl class="pagination"><dt>Messages&nbsp;Page 88&nbsp;of&nbsp;88</dt>
+<dd><a href="/direct/view/.ef8d63d/0">1</a></dd><dd>...</dd><dd><a href="/direct/view/.ef8d63d/809">82</a></dd><dd><a href="/direct/view/.ef8d63d/819">83</a></dd><dd><a href="/direct/view/.ef8d63d/829">84</a></dd><dd><a href="/direct/view/.ef8d63d/839">85</a></dd><dd><a href="/direct/view/.ef8d63d/849">86</a></dd><dd><a href="/direct/view/.ef8d63d/859">87</a></dd><dd><strong>88</strong></dd><dd><a href="/direct/view/.ef8d63d/859">Prev</a></dd><dd>Next</dd><dd><strong>Last</strong></dd></dl>
+</td>
+
+<td><form class="floatLeft" name="jumpToMessageForm" method="post" action="/WebX?jumpToMessageNumber@@.ef8d63d" onsubmit="
+if (!this.message_number.value) { return false; } var last = 879 - 1; var num = parseInt(this.message_number.value) - 1; if (isNaN(num) || num < 0) { num = 0; } if (num > last) { num = last; } this.message_number.value = num+1; return true;
+">
+<strong>Go To Msg #</strong><br />
+<input name="message_number" type="text" size="5" value="" /><input type="submit" name="Submit" border="0" value="Go" /> 
+</form>
+<form class="floatRight" name="searchDiscussionForm" method="post" action="/WebX?127@@.ef8d63d" onsubmit="if (!this.keywords.value) { return false; }"><input type="hidden" name="search_cmd" value="intext:discussion" />
+<input type="hidden" name="discussionfid" value=".ef8d63d" />
+
+<input type="hidden" name="as_limit" value=".ef8d63d" />
+<input type="hidden" name="as_allin" value="msgtext" />
+<input type="hidden" name="count" value="20" />
+<strong>Search This Discussion</strong><br />
+<input name="keywords" type="text" size="20" value="" /><input type="submit" name="Submit" border="0" value="Search" /> </form></td>
+
+</tr>
+</table>
+
+
+<div align="right"><font class="small"><b>To POST a message, please
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d&amp;tid=edmunds.t.townhall.messagefooter..0.*">Sign In</a>.</b></font></div>
+
+
+
+<p class="discussMsgTools" id="readNewWatchMyItems">
+</p>
+
+<!-- Display the breadcrumb. -->
+<!-- webx.tpl backPath -->
+
+
+<p class="breadCrumb">
+<strong>You are here:</strong> 
+<img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/site.gif" alt="[F]" WIDTH=16 HEIGHT=16 />
+<a href="http://www.carspace.com/csGroups">Forums</a> 
+  <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.ee9e22f/">Sedans</a>     <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.eea7239/">Honda Civic</a>   <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> Honda Civic vs Toyota Corolla vs Mazda3</p>
+
+
+
+</div>
+<!-- END COLUMN ONE -->
+
+<!-- START COLUMN TWO -->
+
+<!-- sidebar -->
+<div id="column2">
+
+<!-- START LOGIN PANE -->
+
+<!-- START DISPLAYLOGIN PANE -->
+ <p class="greetingHeader"><strong>New? <a href="https://secure.edmunds.com/era/secure/nlb/registration.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d">Join Now!</a></strong></p>
+ <div class="box clearfix" id="forumTools">
+ <p class="gradientHeader"><strong>Forum Tools</strong></p>
+ <form name="Login" method="post" action="https://secure.edmunds.com/era/j_spring_security_check">
+ <strong>Please sign in.</strong><br />
+ 
+<input type="hidden" name="app" value="carspace.com" />
+<input type="hidden" name="toUrl" value="http://townhall-talk.edmunds.com/WebX?14@@.ef8d63d" />
+<input type="hidden" name="fromUrl" value="http://townhall-talk.edmunds.com/WebX?14@@.ef8d63d" />
+
+ Email Address:<br />
+ <input type="text" name="email" tabindex="1" />
+ <input type="checkbox" name="rememberMe" value="checked" class="radioCheckButton" id="rememberme" style="float: none;" tabindex="0" /><label for="rememberme">Remember me</label><br />
+ Password:<br />
+ <input type="password" name="password" tabindex="2" />
+ <input type="submit" name="forumssignin-submit" class="button" value="Sign In" />
+ <br />
+ <a href="http://www.edmunds.com/era/nlb/forgotPassword.jsp?toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.ef8d63d">Forgot Password?</a>
+ </form>
+</div>
+
+<!-- END DISPLAYLOGIN PANE -->
+<!-- END LOGIN PANE -->
+
+<!-- search -->
+<div class="box" id="searchForums">
+<p class="gradientHeader"><strong>Search Forums</strong></p>
+<form name="thsearch" method="post" action="/WebX?searchResults@@.ef8d63d">
+Enter Keyword(s)<br />
+<input type=text name="keywords" size="15" maxlength="75" style="width:160px" />
+<input type="submit" class="button" name="submitsearch" value="Search" /><br />
+<a href="/WebX?search@@.ef8d63d">Advanced Search</a>
+</form>
+</div>
+
+<!-- make search -->
+<div class="box" id="browseByVehicle">
+<p class="gradientHeader"><strong>Browse by Vehicle</strong></p>
+<form name="msearch" method="get" action="">
+<select name="make" onchange="updateModelSelect(this.form.model, this.options[this.selectedIndex].text, '');">
+<option value="">Select Make</option>
+<option value="Acura">Acura</option>
+<option value="Alfa Romeo">Alfa Romeo</option>
+<option value="AM General">AM General</option>
+<option value="AMC">AMC</option>
+<option value="Aston Martin">Aston Martin</option>
+<option value="Audi">Audi</option>
+<option value="Bentley">Bentley</option>
+<option value="BMW">BMW</option>
+<option value="Bugatti">Bugatti</option>
+<option value="Buick">Buick</option>
+<option value="Cadillac">Cadillac</option>
+<option value="Chevrolet">Chevrolet</option>
+<option value="Chrysler">Chrysler</option>
+<option value="Daewoo">Daewoo</option>
+<option value="Daihatsu">Daihatsu</option>
+<option value="Datsun">Datsun</option>
+<option value="Dodge">Dodge</option>
+<option value="Eagle">Eagle</option>
+<option value="Ferrari">Ferrari</option>
+<option value="Fisker">Fisker</option>
+<option value="Ford">Ford</option>
+<option value="Geo">Geo</option>
+<option value="GMC">GMC</option>
+<option value="Honda">Honda</option>
+<option value="HUMMER">HUMMER</option>
+<option value="Hyundai">Hyundai</option>
+<option value="Infiniti">Infiniti</option>
+<option value="Isuzu">Isuzu</option>
+<option value="Jaguar">Jaguar</option>
+<option value="Jeep">Jeep</option>
+<option value="Kia">Kia</option>
+<option value="Lamborghini">Lamborghini</option>
+<option value="Land Rover">Land Rover</option>
+<option value="Lexus">Lexus</option>
+<option value="Lincoln">Lincoln</option>
+<option value="Lotus">Lotus</option>
+<option value="Maserati">Maserati</option>
+<option value="Maybach">Maybach</option>
+<option value="Mazda">Mazda</option>
+<option value="Mercedes-Benz">Mercedes-Benz</option>
+<option value="Mercury">Mercury</option>
+<option value="Merkur">Merkur</option>
+<option value="MG">MG</option>
+<option value="MINI">MINI</option>
+<option value="Mitsubishi">Mitsubishi</option>
+<option value="Nissan">Nissan</option>
+<option value="Oldsmobile">Oldsmobile</option>
+<option value="Panoz">Panoz</option>
+<option value="Plymouth">Plymouth</option>
+<option value="Pontiac">Pontiac</option>
+<option value="Porsche">Porsche</option>
+<option value="Renault">Renault</option>
+<option value="Rolls-Royce">Rolls-Royce</option>
+<option value="Saab">Saab</option>
+<option value="Saleen">Saleen</option>
+<option value="Saturn">Saturn</option>
+<option value="Scion">Scion</option>
+<option value="smart">smart</option>
+<option value="Sterling">Sterling</option>
+<option value="Subaru">Subaru</option>
+<option value="Suzuki">Suzuki</option>
+<option value="Tesla">Tesla</option>
+<option value="Toyota">Toyota</option>
+<option value="Volkswagen">Volkswagen</option>
+<option value="Volvo">Volvo</option>
+<option value="Yugo">Yugo</option>
+</select>
+<input type="button" class="button" name="go" value="Go" onclick="if (this.form.make.selectedIndex == 0) { return(false); } 
+var newurl = '';
+if (this.form.model.options[this.form.model.selectedIndex].value) {
+newurl = '/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=' + escape(this.form.make.options[this.form.make.selectedIndex].value) + '&amp;model=' + escape(this.form.model.options[this.form.model.selectedIndex].value);
+} else {
+newurl = '/WebX?ed_displayMakeRelatedDiscussions@@.ef14c39!make=' + escape(this.form.make.options[this.form.make.selectedIndex].value);
+}
+location.href = newurl;
+return(false);
+" /><br />
+<select name="model">
+<option value="">Select Model</option>
+<option value="">Any Model</option>
+</select><br />
+<a href="/WebX?ed_displayMakeTopicIndex@@.ef14c39">View All Vehicles</a>
+</form>
+</div>
+
+<!-- boxad -->
+<!-- Ad I -->
+<div class="boxAd">
+<img src="http://www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("box");
+var dartparams = ed_genDartParams("box");
+var uparams = ed_genUParams("box");
+
+var adUnitObj_boxI = new YAHOO.Edmunds.AdUnit('adUnitObj_boxI', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=1;tile=3;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_1:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 300, 250, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_boxI.getAdUrl()+' -->');
+adUnitObj_boxI.registerAd();
+adUnitObj_boxI.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_boxI" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="250" scrolling="no" width="300"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;pos=1;tile=3;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;pos=1;tile=3;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="300" height="250" border="0" alt="" /></a>
+</noscript>
+</div>
+<!-- end Ad -->
+
+<!-- related models -->
+
+<div class="learn-more"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/learn-more-widget/learn-more-title.gif" alt="Learn More" title="Learn More" />
+<!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp -->    <!--START Vehicle Informaton-->    <p class="learn-more-section-title">2009 Honda Civic</p>    <div class="learn-more-vehicle-section"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp --><a href="http://www.edmunds.com/honda/civic/2009/index.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.photo.0.*'; setTID(s_objectID);"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/pictures/VEHICLE/2009/Honda/2009.honda.civic.20250166-T.jpg" alt="2009 Honda Civic Si Coupe Shown" height="73" width="115" border="0" /></a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp -->        <!--START ratings and reviews-->        <div class="learn-more-vehicle-ratings-reviews"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->            <a href="http://www.edmunds.com/honda/civic/2009/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><img alt="" border="0" height="30" width="32" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/edmunds/media/editorial/consumer-ratings/learn-more-widget/8.9.gif" /></a>	<ul>        <li><a href="http://www.edmunds.com/honda/civic/2009/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><strong>95</strong>                            reviews</a></li>                                    <li><a href="#" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.write_a_review.0.*'; setTID(s_objectID); popWinTwo('http://www.edmunds.com/crr/CrrController?op=1&amp;forums=true&amp;year=2009&amp;make=Honda&amp;model=Civic&amp;isnewflag=', 'WriteConsumerReviews','menubar=yes,scrollbars=yes,width=600,height=500'); return false;">Write a Review</a></li></ul><!-- (JSP_END) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->        </div>        <!--START ratings and reviews-->        <!--START extra vehicle info-->        <ul class="learn-more-vehicle-info">    <li><a href="http://www.edmunds.com/apps/vdpcontainers/global/navigation/widget.jsp?target=dealerpricing.html%3ftid%3dedmunds%2en%2ecommunity_forums_discussion%2elearn_more%2eget_price_quote%2e0%2e%2a&amp;usein=n&amp;model=civic">Get a price quote</a></li>        <li><!-- (JSP_START) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --><a href="http://www.edmunds.com/honda/civic/review.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.research.0.*'; setTID(s_objectID);">Vehicle Information</a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --></li>        </ul>        <!--END extra vehicle info-->    </div>    <p class="more-photos"><a href="http://www.edmunds.com/honda/civic/2009/pictures.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.more_pictures.0..*'; setTID(s_objectID);">More Pictures</a></p>    <!--END Vehicle Informaton--><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp --><!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp -->    <!--START Vehicle Informaton-->    <p class="learn-more-section-title">2010 Toyota Corolla</p>    <div class="learn-more-vehicle-section"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp --><a href="http://www.edmunds.com/toyota/corolla/2010/index.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.photo.0.*'; setTID(s_objectID);"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/pictures/VEHICLE/2009/Toyota/2009.toyota.corolla.20209198-T.jpg" alt="2009 Toyota Corolla XLE Sedan Shown" height="73" width="115" border="0" /></a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp -->        <!--START ratings and reviews-->        <div class="learn-more-vehicle-ratings-reviews"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->            <a href="http://www.edmunds.com/toyota/corolla/2010/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><img alt="" border="0" height="30" width="32" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/edmunds/media/editorial/consumer-ratings/learn-more-widget/8.4.gif" /></a>	<ul>        <li><a href="http://www.edmunds.com/toyota/corolla/2010/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><strong>2</strong>                            reviews</a></li>                                    <li><a href="#" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.write_a_review.0.*'; setTID(s_objectID); popWinTwo('http://www.edmunds.com/crr/CrrController?op=1&amp;forums=true&amp;year=2010&amp;make=Toyota&amp;model=Corolla&amp;isnewflag=', 'WriteConsumerReviews','menubar=yes,scrollbars=yes,width=600,height=500'); return false;">Write a Review</a></li></ul><!-- (JSP_END) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->        </div>        <!--START ratings and reviews-->        <!--START extra vehicle info-->        <ul class="learn-more-vehicle-info">    <li><a href="http://www.edmunds.com/apps/vdpcontainers/global/navigation/widget.jsp?target=dealerpricing.html%3ftid%3dedmunds%2en%2ecommunity_forums_discussion%2elearn_more%2eget_price_quote%2e0%2e%2a&amp;usein=n&amp;model=corolla">Get a price quote</a></li>        <li><!-- (JSP_START) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --><a href="http://www.edmunds.com/toyota/corolla/review.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.research.0.*'; setTID(s_objectID);">Vehicle Information</a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --></li>        </ul>        <!--END extra vehicle info-->    </div>    <p class="more-photos"><a href="http://www.edmunds.com/toyota/corolla/2010/pictures.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.more_pictures.0..*'; setTID(s_objectID);">More Pictures</a></p>    <!--END Vehicle Informaton--><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp --><!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp -->    <!--START Vehicle Informaton-->    <p class="learn-more-section-title">2010 Mazda MAZDA3</p>    <div class="learn-more-vehicle-section"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp --><a href="http://www.edmunds.com/mazda/mazda3/2010/index.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.photo.0.*'; setTID(s_objectID);"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/pictures/VEHICLE/2010/Mazda/2010.mazda.mazda3.20267144-T.jpg" alt="2010 Mazda MAZDA3 s Grand Touring Sedan Shown" height="73" width="115" border="0" /></a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehiclePhoto.jsp -->        <!--START ratings and reviews-->        <div class="learn-more-vehicle-ratings-reviews"><!-- (JSP_START) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->            <a href="http://www.edmunds.com/mazda/mazda3/2010/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><img alt="" border="0" height="30" width="32" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/edmunds/media/editorial/consumer-ratings/learn-more-widget/9.1.gif" /></a>	<ul>        <li><a href="http://www.edmunds.com/mazda/mazda3/2010/consumerreview.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.consumer_reviews.0.*'; setTID(s_objectID);"><strong>31</strong>                            reviews</a></li>                                    <li><a href="#" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.write_a_review.0.*'; setTID(s_objectID); popWinTwo('http://www.edmunds.com/crr/CrrController?op=1&amp;forums=true&amp;year=2010&amp;make=Mazda&amp;model=MAZDA3&amp;isnewflag=', 'WriteConsumerReviews','menubar=yes,scrollbars=yes,width=600,height=500'); return false;">Write a Review</a></li></ul><!-- (JSP_END) /Edmunds/Townhall/WebRoot/consumerRating.jsp -->        </div>        <!--START ratings and reviews-->        <!--START extra vehicle info-->        <ul class="learn-more-vehicle-info">    <li><a href="http://www.edmunds.com/apps/vdpcontainers/global/navigation/widget.jsp?target=dealerpricing.html%3ftid%3dedmunds%2en%2ecommunity_forums_discussion%2elearn_more%2eget_price_quote%2e0%2e%2a&amp;usein=n&amp;model=mazda3">Get a price quote</a></li>        <li><!-- (JSP_START) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --><a href="http://www.edmunds.com/mazda/mazda3/review.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.research.0.*'; setTID(s_objectID);">Vehicle Information</a><!-- (JSP_END) /Edmunds/Townhall/WebRoot/seoDoorway.jsp --></li>        </ul>        <!--END extra vehicle info-->    </div>    <p class="more-photos"><a href="http://www.edmunds.com/mazda/mazda3/2010/pictures.html" onClick="s_objectID='edmunds.n.community_forums_discussion.learn_more.more_pictures.0..*'; setTID(s_objectID);">More Pictures</a></p>    <!--END Vehicle Informaton--><!-- (JSP_END) /Edmunds/Townhall/WebRoot/vehicleInfo.jsp --><p class="do-more-section-title"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/learn-more-widget/domore-title.gif" alt="DoMore" title="DoMore" /></p><ul class="do-more-section" id="left-column-list"><li><a href="http://www.edmunds.com/carreviews.html" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.write_car_review.0..*'; setTID(s_objectID);">Write a Car Review</a></li><li><a href="http://www.edmunds.com/ownership/parts/articles/120189/article.html" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.owners_manual.0..*'; setTID(s_objectID);">Owner's Manuals</a></li><li><a href="http://www.edmunds.com/incentives/step1.jsp" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.incentive_rebate.0..*'; setTID(s_objectID);">Incentives &amp; Rebates</a></li></ul>
+<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/learn-more-widget/do-more-divider.gif" class="do-more-section-divider" /><ul class="do-more-section" id="right-column-list"><li><a href="http://www.edmunds.com/maintenance/MaintenanceServlet" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.maintenance_schedules.0..*'; setTID(s_objectID);">Maintenance Schedules</a></li><li><a href="http://www.edmunds.com/maintenance/MaintenanceServlet" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.vehicle_recall_info.0..*'; setTID(s_objectID);">Vehicle Recall Information</a></li><li><a href="http://www.edmunds.com/tmv/used/index.html" onclick="s_objectID='edmunds.n.community_forums_discussion.learn_more.used_car_appraiser.0..*'; setTID(s_objectID);">Used Car Appraiser</a></li></ul>
+</div>
+
+<!-- answers -->
+
+<!-- START ask the community -->
+<div id="askCommunity"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/askTheCommunity.gif" alt="Ask the Community" width="299" border="0" title="Ask the Community" /><br />
+  <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/seeWhatPeopleAreAsking.gif" border="0" alt="See What People Are Asking" title="See What People Are Asking" /><br />
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var answers_topic = (ed_req_model_raw) ? ed_req_model_raw : ( (ed_req_make_raw) ? ed_req_make_raw : ed_req_category_raw );
+document.write('<link rel="stylesheet" type="text/css" href="http://answers.edmunds.com/styles/QnAWidget1.css" /><script language="javascript" type="text/javascript" src="http://answers.edmunds.com/javascript/Widget1JS.aspx?category=' + encodeURI(answers_topic) + '"><\/script>');
+//]]>
+</script>
+</div>
+
+
+<!-- discussion board dropdown. -->
+
+<div class="box" id="browseByBoard">
+<p class="gradientHeader"><strong>Browse by Board</strong></p>
+<form method="post" action="">
+<select name="select" onchange="jumpToBoard('parent',this,0)">
+<option value="#" selected="selected">Select a Board</option>
+<option value="/direct/view/.ee9202c">Automotive News</option>
+<option value="/direct/view/.ee92042">Classic Cars</option>
+<option value="/direct/view/.ee92044">Convertibles</option>
+<option value="/direct/view/.ee92044">Coupes</option>
+<option value="/direct/view/.ee9c367">Finance</option>
+<option value="/direct/view/.ef0d616">Future Vehicles</option>
+<option value="/direct/view/.ee9a948">Hatchbacks</option>
+<option value="/direct/view/.ef27a26">Hybrid Vehicles</option>
+<option value="/direct/view/.ee9c367">Insurance</option>
+<option value="/direct/view/.ee9203e">Maintenance</option>
+<option value="/direct/view/.ef60953">Modifications</option>
+<option value="/direct/view/.f11d9f4">Motorsports</option>
+<option value="/direct/view/.f11d9fa">Off-Topic Chatter</option>
+<option value="/direct/view/.ee92032">Pickups</option>
+<option value="/direct/view/.ef17997">Prices Paid</option>
+<option value="/direct/view/.ee9203e">Repair</option>
+<option value="/direct/view/.ee9e22f">Sedans</option>
+<option value="/direct/view/.ee9c367">Smart Shopper</option>
+<option value="/direct/view/.ef60953">Speed Shop</option>
+<option value="/direct/view/.ee92034">SUVs</option>
+<option value="/direct/view/.ef60953">Tuning</option>
+<option value="/direct/view/.ee92030">Vans</option>
+<option value="/direct/view/.ee92038">Wagons</option>
+<option value="/direct/view/.ee9c367">Warranty</option>
+</select>
+</form>
+</div>
+
+<!-- topic search -->
+<div class="box" id="browseByTopic">
+<p class="gradientHeader"><strong>Browse by Topic</strong></p>
+<form name="tsearch" method="get" action="">
+<select name="topic">
+<option value="">Select a Topic</option>
+
+<option value=""> =Buying &amp; Selling= </option>
+<option value="Car Buying">Car Buying</option>
+<option value="Car Comparisons">Car Comparisons</option>
+<option value="Car Financing">Car Financing</option>
+<option value="Car Leasing">Car Leasing</option>
+<option value="Car Selling">Car Selling</option>
+<option value="Car Values">Car Values</option>
+<option value="Car Warranties">Car Warranties</option>
+<option value="Certified Used (CPO)">Certified Used (CPO)</option>
+<option value="True Market Value (TMV)">True Market Value (TMV)</option>
+
+<option value=""> =Car Accessories= </option>
+<option value="Audio">Audio</option>
+<option value="Entertainment System">Entertainment System</option>
+<option value="Exterior">Exterior</option>
+<option value="Navigation System">Navigation System</option>
+<option value="Performance Mods">Performance Mods</option>
+<option value="Security System">Security System</option>
+<option value="Towing">Towing</option>
+<option value="Wheels">Wheels</option>
+
+<option value=""> =Car Insurance= </option>
+<option value="Accidents">Accidents</option>
+<option value="Buying Insurance">Buying Insurance</option>
+<option value="Insurance Claims">Insurance Claims</option>
+
+<option value=""> =Car Safety= </option>
+<option value="Child Passenger Safety">Child Passenger Safety</option>
+<option value="Crash Test Ratings">Crash Test Ratings</option>
+<option value="Safe Driving">Safe Driving</option>
+<option value="Safety Technology">Safety Technology</option>
+
+<option value=""> =Fuel Type / Drivetrain= </option>
+<option value="Alternative Fuels">Alternative Fuels</option>
+<option value="Biodiesel">Biodiesel</option>
+<option value="Diesel">Diesel</option>
+<option value="Ethanol">Ethanol</option>
+<option value="Hybrid Cars">Hybrid Cars</option>
+<option value="Electric Cars">Electric Cars</option>
+
+<option value=""> =Maintenance &amp; Repair= </option>
+<option value="Auto Body">Auto Body</option>
+<option value="Auto Repair">Auto Repair</option>
+<option value="Brakes">Brakes</option>
+<option value="Electrical">Electrical</option>
+<option value="Engine">Engine</option>
+<option value="Exhaust">Exhaust</option>
+<option value="Fuel Efficiency (MPG)">Fuel Efficiency (MPG)</option>
+<option value="Fuel System">Fuel System</option>
+<option value="Heating / Cooling">Heating / Cooling</option>
+<option value="Interior">Interior</option>
+<option value="Lights">Lights</option>
+<option value="Oil">Oil</option>
+<option value="Paint">Paint</option>
+<option value="Scheduled Maintenance">Scheduled Maintenance</option>
+<option value="Steering">Steering</option>
+<option value="Suspension">Suspension</option>
+<option value="Tires">Tires</option>
+<option value="Transmission">Transmission</option>
+
+<option value=""> =News &amp; Events= </option>
+<option value="Automotive News">Automotive News</option>
+<option value="Legislation">Legislation</option>
+<option value="Motorsports">Motorsports</option>
+<option value="Traffic Laws">Traffic Laws</option>
+<option value="Classic Cars">Classic Cars</option>
+<option value="Concept Cars">Concept Cars</option>
+<option value="Future Vehicle">Future Vehicle</option>
+</select>
+<input type="button" class="button" name="go" value="Go" onclick="if (this.form.topic.selectedIndex == 0) { return(false); } 
+var newurl = '';
+var topic = escape(this.form.topic.options[this.form.topic.selectedIndex].value);
+if (!topic) { return; }
+newurl = '/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=CATS' + '&amp;model=' + topic;
+location.href = newurl;
+return(false);
+" />
+<br />
+<a href="/WebX?ed_displayMakeTopicIndex@@.ef14c39">View All Topics</a>
+</form>
+</div>
+
+<!-- today's chats -->
+
+
+<div class="box clearfix" id="todaysChats">
+<p class="gradientHeader"><strong>Today's Chats</strong></p>
+<ul><li><a href="http://www.edmunds.com/townhall/chat/index.html">Chat Schedule</a></li></ul>
+
+
+</div>
+
+<!-- boxad -->
+<!-- Ad II -->
+<div class="boxAd">
+<img src="http://www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("box");
+var dartparams = ed_genDartParams("box");
+var uparams = ed_genUParams("box");
+
+var adUnitObj_boxII = new YAHOO.Edmunds.AdUnit('adUnitObj_boxII', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=2;tile=4;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_2:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 300, 250, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_boxII.getAdUrl()+' -->');
+adUnitObj_boxII.registerAd();
+adUnitObj_boxII.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_boxII" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="250" scrolling="no" width="300"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;pos=2;tile=4;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;pos=2;tile=4;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="300" height="250" border="0" alt="" /></a>
+</noscript>
+</div>
+<!-- end Ad -->
+
+</div>
+<!-- end sidebar -->
+
+<!-- END COLUMN TWO -->
+
+</div>
+<!-- END FORUMS CONTENT -->
+
+<!-- global footer -->
+<script language="javascript" type="text/javascript" src="http://js.revsci.net/gateway/gw.js?csid=B05501"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+DM_addEncToLoc("Make", ed_req_make);
+DM_addEncToLoc("Model", ed_req_model);
+DM_addEncToLoc("Category", ed_req_category);
+DM_addEncToLoc("Zip", ed_req_zipcode);
+DM_tag();
+//]]>
+</script>
+<div id="footer">
+<table width="100%" id="specialCopyright">
+<tr>
+<td>&copy; 1995-2009 Edmunds Inc.</td>
+<td align="right">
+<a href="javascript:void(0)" onclick="window.open('http://www.carspace.com/privacy.html','Privacy','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Privacy Statement</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/help/about/visitoragreement.html','VisitorAgreement','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Visitor Agreement</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/townhall/memberagreement.html','MembershipAgreement','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Membership Agreement</a> |
+<a href="http://help.carspace.com/cgi-bin/carspace.cfg/php/enduser/std_alp.php?p_cat_lvl1=65" target="_blank">Help</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/help/about/','About','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">About</a> |
+<a href="http://help.carspace.com/cgi-bin/carspace.cfg/php/enduser/ask.php" target="_blank">Contact Us</a> 
+</td>
+</tr>
+</table>
+</div>
+<!-- end global footer -->
+
+</body>
+</html>

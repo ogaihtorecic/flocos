@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalModels.owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:taxid="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#"
+	xmlns:ts="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:res="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Resources.owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+	xmlns:hier="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#"
+	xmlns:termdef="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:eco="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:units="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#"
+	xmlns:mb="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalModels.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl" />
+	</owl:Ontology>
+	<owl:Class rdf:ID="EcologicalModelParameter">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#hasName" />
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:minCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#value" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A parameter of a model, entity or interation
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#unit" />
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MetapopulationEntity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityModelEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ConsumerResourceModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BioenergeticEntity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ConsumerResourceEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LVCompetitionEntity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CompetitionModelEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ConsumerResourceModelParameter">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityModelParameter" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="OrganismDataMethod">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DataAnalysisMethod" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ExponentialModel">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A model of exponential growth in a population of organisms
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#ExponentialModelEntity" />
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ContinuousPopulationModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PopulationModelEntity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalModelEntity">
+		<rdfs:comment>
+			Models of entities within the system of interest
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#EcologicalEntity" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LVCompetitionModelInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelInteraction" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#InterSpecificInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="LotkaVolterraCompetitionModel">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom
+					rdf:resource="#LVCompetitionModelInteraction" />
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelInteractions" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CompetitionModel" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom rdf:resource="#LVCompetitionEntity" />
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ConsumerResourceEntity">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityModelEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LVConsumer">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="IslandBiogeography">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BiodiversityModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EnvironmentDataMethod">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DataAnalysisMethod" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CompetitionModelParameter">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityModelParameter" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SuccessionModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcosystemModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LogisticModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ContinuousPopulationModel" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#LogisticModelEntity" />
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A model of logistic growth in a population of organisms
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="BioenergeticResource">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LogisticModelEntity" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#BioenergeticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="CaptureRate">
+		<rdfs:comment>
+			Per-capita rate at which the predator captures the prey
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyInteractionParameter" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LVLogisticResource">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityModelEntity">
+		<rdfs:subClassOf rdf:resource="#EcologicalModelEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="ExponentialModelEntity">
+		<rdfs:subClassOf rdf:resource="#PopulationModelEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="BiodiversityModel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcosystemModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityModel">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					2
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#EcologicalModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityModelParameter">
+		<rdfs:subClassOf rdf:resource="#EcologicalModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="MetaPopulationModel">
+		<rdfs:subClassOf rdf:resource="#CommunityModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalModelInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalModelConcepts" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#EcologicalInteraction" />
+		<rdfs:comment>
+			Models of interactions in the system of interest
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="LVResource">
+		<rdfs:subClassOf rdf:resource="#ExponentialModelEntity" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcosystemModel">
+		<rdfs:subClassOf rdf:resource="#EcologicalModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioenergeticInteraction">
+		<rdfs:subClassOf rdf:resource="#EcologicalModelInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="DataAnalysisMethod">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalAnalysisConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BioenergeticModel">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelInteractions" />
+				</owl:onProperty>
+				<owl:allValuesFrom
+					rdf:resource="#BioenergeticInteraction" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#ConsumerResourceModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="PopulationModelParameter">
+		<rdfs:subClassOf rdf:resource="#EcologicalModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="CompetitionModelEntity">
+		<rdfs:subClassOf rdf:resource="#CommunityModelEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="LogisticModelEntity">
+		<rdfs:subClassOf rdf:resource="#PopulationModelEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="LVPredPreyEntity">
+		<rdfs:subClassOf rdf:resource="#ConsumerResourceEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="DeathRate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyEntityParameter" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="OrganismModel">
+		<rdfs:subClassOf rdf:resource="#EcologicalModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="SpeciesAreaModel">
+		<rdfs:subClassOf rdf:resource="#BiodiversityModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="MetapopulationModelParameter">
+		<rdfs:subClassOf rdf:resource="#CommunityModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalAnalysisConcepts">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#EcologicalConcepts" />
+	</owl:Class>
+	<owl:Class rdf:ID="PopulationModel">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#EcologicalModel" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A model of a single entity, a popupation of organisms
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="ConversionRate">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LVPredPreyInteractionParameter" />
+		</rdfs:subClassOf>
+		<rdfs:comment>
+			Per-capita rate at which captured prey are converted into
+			new predators
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="BiogeochemicalModel">
+		<rdfs:subClassOf rdf:resource="#EcosystemModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="DiscreteLogisticModel">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#LogisticModelEntity" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DiscretePopulationModel" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CarryingCapacity">
+		<rdfs:subClassOf rdf:resource="#PopulationModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="CompetitionModel">
+		<rdfs:subClassOf rdf:resource="#CommunityModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="LotkaVolterraPredPreyModel">
+		<rdfs:subClassOf rdf:resource="#ConsumerResourceModel" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelEntities" />
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#LVPredPreyEntity" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#modelInteractions" />
+				</owl:onProperty>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#LVPredPreyInteraction" />
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="OrganismModelEntity">
+		<rdfs:subClassOf rdf:resource="#EcologicalModelEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="GrowthRate">
+		<rdfs:subClassOf rdf:resource="#PopulationModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioenergeticConsumer">
+		<rdfs:subClassOf rdf:resource="#BioenergeticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="LVPredPreyInteractionParameter">
+		<rdfs:subClassOf rdf:resource="#ConsumerResourceModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="DiscretePopulationModel">
+		<rdfs:subClassOf rdf:resource="#PopulationModel" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A population model in which the time domain is model as a
+			discrete variable, so the model steps from one time to the
+			next.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityDataMethod">
+		<rdfs:subClassOf rdf:resource="#DataAnalysisMethod" />
+	</owl:Class>
+	<owl:Class rdf:ID="LVPredPreyInteraction">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#MaterialFlow" />
+		<rdfs:subClassOf rdf:resource="#EcologicalModelInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="ContinuousPopulationModel">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A population model in which the time domain is model as a
+			continuous variable
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#PopulationModel" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalModelConcepts">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#EcologicalConcepts" />
+	</owl:Class>
+	<owl:Class rdf:ID="LVPredPreyEntityParameter">
+		<rdfs:subClassOf rdf:resource="#ConsumerResourceModelParameter" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcosystemDataMethod">
+		<rdfs:subClassOf rdf:resource="#DataAnalysisMethod" />
+	</owl:Class>
+	<owl:Class rdf:ID="PopulationDataMethod">
+		<rdfs:subClassOf rdf:resource="#DataAnalysisMethod" />
+	</owl:Class>
+	<owl:Class rdf:ID="NicheSpacingModel">
+		<rdfs:subClassOf rdf:resource="#EcosystemModel" />
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="conversionRate">
+		<rdfs:domain rdf:resource="#LVPredPreyInteraction" />
+		<rdfs:range rdf:resource="#ConversionRate" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="deathRate">
+		<rdfs:domain rdf:resource="#LVConsumer" />
+		<rdfs:range rdf:resource="#DeathRate" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="modelEntities">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#PopulationModel" />
+					<owl:Class rdf:about="#EcosystemModel" />
+					<owl:Class rdf:about="#CommunityModel" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#EcologicalModelEntity" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="growthRate">
+		<rdfs:range rdf:resource="#GrowthRate" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#LogisticModelEntity" />
+					<owl:Class rdf:about="#ExponentialModelEntity" />
+					<owl:Class rdf:about="#LVCompetitionEntity" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="carryingCapacity">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#LVCompetitionEntity" />
+					<owl:Class rdf:about="#LogisticModelEntity" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#CarryingCapacity" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="modelInteractions">
+		<rdfs:range rdf:resource="#EcologicalModelInteraction" />
+		<rdfs:domain rdf:resource="#CommunityModel" />
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="captureRate">
+		<rdfs:domain rdf:resource="#LVPredPreyInteraction" />
+		<rdfs:range rdf:resource="#CaptureRate" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

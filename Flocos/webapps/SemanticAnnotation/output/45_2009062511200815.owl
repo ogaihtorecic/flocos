@@ -1,0 +1,47 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Article">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Article"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+A relatively short &amp;%Text that either is unbound or is
+bound with other &amp;%Articles in a &amp;%Book.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#CorpuscularObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SelfConnectedObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#ContentBearingObject"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Artifact"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Text"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#LinguisticExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

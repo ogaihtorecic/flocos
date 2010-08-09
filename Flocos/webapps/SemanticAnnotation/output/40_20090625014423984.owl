@@ -1,0 +1,150 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.1="http://www.owl-ontologies.com/autos.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Honda">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Honda"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#MidSizeCars">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#MidSizeCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#PassengerCars"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#vw">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Volkswagen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Ford">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Ford"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Cars">
+    <j.1:hasDifferential rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasDifferential>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <j.1:hasSizzleOrFizzle rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasSizzleOrFizzle>
+    <j.1:hasModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasModel>
+    <j.1:hasCargoCapacityRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasCargoCapacityRating>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <j.1:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasYear>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <j.1:hasRide rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasRide>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <j.1:hasExpertReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasExpertReviews>
+    <j.1:hasMPGmin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasMPGmin>
+    <j.1:hasAcceleration_0-60 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasAcceleration_0-60>
+    <j.0:SLOT-CONSTRAINTS rdf:resource="http://www.owl-ontologies.com/autos.owl#autos_Instance_93"/>
+    <j.1:hasPassengerSpaceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasPassengerSpaceRating>
+    <j.1:hasComfortAndConvenienceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasComfortAndConvenienceRating>
+    <j.1:hasInvoice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasInvoice>
+    <j.1:hasSafetyFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasSafetyFeatures>
+    <j.1:hasMSRP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasMSRP>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Volkswagen">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Volkswagen"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Trucks">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Trucks"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#OffRoadCars"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Buick">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Buick"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Mazda">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Mazda"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Minivans">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Minivans"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Vans"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#liter">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Ford"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Wheels">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Wheels"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarParts"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#midsize">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#MidSizeCars"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#sportiness">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#pickuptrucks">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Trucks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#sedan">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Honda"/>
+  </rdf:Description>
+</rdf:RDF>

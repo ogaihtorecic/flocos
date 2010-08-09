@@ -1,0 +1,112 @@
+/*
+Author : Gilberto Martins
+Date (last change) : 20071229
+Comments : You can copy, but keep this credits
+*/
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}
+
+BODY.blankPage {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; BACKGROUND-COLOR: white
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #888888; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #888888; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; COLOR: #888888; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #888888; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: underline
+}
+}
+TD {
+	FONT-WEIGHT: bold; COLOR: gray; FONT-SIZE: 14px; FONT-FAMILY: Verdana, Arial
+}
+H4 {
+	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Verdana,Arial; TEXT-DECORATION: none
+}
+BR.10px {
+	
+}
+.10px {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.headerFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #888888; FONT-FAMILY: Arial Black, Verdana,Arial
+}
+.titleFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Verdana,Arial
+}
+.titleFont2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; FONT-FAMILY: Verdana,Arial
+}
+.middleFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Verdana,Arial
+}
+.blackFont {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.blackFont:link {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.blackFont:hover {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.blackFont:visited {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica
+}
+A.blackFont:active {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica
+}
+.menuFont {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+A.menuFont:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+A.menuFont:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+A.menuFont:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+A.menuFont:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+TD.menuFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+.greenFont {
+	FONT-SIZE: 11px; COLOR: #0f2b42; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.greenFont:link {
+	FONT-SIZE: 11px; COLOR: #0f2b42; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.greenFont:hover {
+	FONT-SIZE: 11px; COLOR: #0f2b42; FONT-FAMILY: verdana,arial,helvetica; TEXT-DECORATION: none
+}
+A.greenFont:visited {
+	FONT-SIZE: 11px; COLOR: #0f2b42; FONT-FAMILY: verdana,arial,helvetica
+}
+A.greenFont:active {
+	FONT-SIZE: 11px; COLOR: #0f2b42; FONT-FAMILY: verdana,arial,helvetica
+}
+.tableHeader {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; FONT-FAMILY: verdana,arial,helvetica
+}
+.tableFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 14x; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}
+.tableFont2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #888888; FONT-FAMILY: verdana,arial,helvetica
+}

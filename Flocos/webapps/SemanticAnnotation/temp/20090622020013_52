@@ -1,0 +1,1516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="description" content="My wife and I run an ecotourism business and use a 1974 Land rover Series III.  It will be getting a frame off restoration next year and we decided to go look at the Wrangler Unlimited.  I had done some research so I had a few questions.The dealer (Neuwirth Motors, Wilmington, NC) had already convinced me that I would NOT be buying from them because of their adveritising; At Neuwirth Motors we put..." />
+<meta name="keywords" content="Jeep Wrangler Unlimited, SUV" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[ 
+var ed_req_make_raw = "Jeep";
+var ed_req_model_raw = "Wrangler Unlimited";
+var ed_req_category_raw = "";
+var ed_req_make = "jeep";
+var ed_req_model = "wranglerunlimited";
+var ed_req_category = "";
+var ed_req_zipcode = "";
+var ed_req_category_list = []
+var ed_req_type_list = ["suv"];
+//]]>
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Forums - Top 10 Discussions [RSS]" href="/topTenRSS" />
+<link rel="shortcut icon" href="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/carspace_favicon.ico" type="image/x-icon" />
+<link rel="search" type="application/opensearchdescription+xml" title="CarSpace Forums" href="http://www.edmunds.com/townhall/search.xml" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/carspace/styles/csGlobal.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/carspace/styles/csForum.css" />
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+
+// Change the current location to the select object url.
+function jumpToBoard(targ, selObj, restore) {
+    var url = selObj.options[selObj.selectedIndex].value;
+
+    // Skip no-ops.
+    if (url == "#") { return; }
+
+    // Load the new page.
+    eval(targ + ".location='" + url + "'");
+    if (restore) { selObj.selectedIndex=0; }
+}
+
+// Open a narrow, non-tabbar window.
+function popWindow(strFile) {
+    window.open(strFile, "pop", "height=400,width=525,scrollbars,resizable,status,menubar");}
+
+// Open a window with a full tabbar width.
+function popWinTwo(strFile) {
+    window.open(strFile, "pop", "height=400,width=800,scrollbars,resizable,status,menubar");}
+
+// Set tid value in cookie.
+function setTID(value){
+    var today = new Date();
+    var expdate = new Date(today.getTime() +  30000); //expire in 30 seconds
+    document.cookie="tid=" + escape(value) + "; expires=" + expdate.toGMTString() + "; path=/; domain=.edmunds.com";
+}
+
+function ed_genDartFile(adtype) {
+if (adtype == "spotlight" && ed_req_model) {
+return(ed_req_make + ".forums.dart");
+} else  {
+return("forums.dart");
+}
+}
+
+function ed_genDartParams(adtype) {
+var params = "";
+if (adtype == "spotlight" && ed_req_model) {
+params += "mdl=" + ed_req_model + ";";
+} else {
+if (ed_req_make) {
+params += "make=" + ed_req_make + ";";
+}
+if (ed_req_model) {
+params += "mdl=" + ed_req_model + ";";
+}
+}
+for (var i = 0; i < ed_req_category_list.length; i++) {
+params += "theme=" + ed_req_category_list[i] + ";";
+}
+for (var i = 0; i < ed_req_type_list.length; i++) {
+params += "type=" + ed_req_type_list[i] + ";";
+}
+return(params);
+}
+
+function ed_genUParams(adtype) {
+var params = "";
+if (ed_req_make) {
+params += ":make_" + ed_req_make;
+}
+if (ed_req_model) {
+params += ":mdl_" + ed_req_model;
+}
+for (var i = 0; i < ed_req_category_list.length; i++) {
+params += ":theme_" + ed_req_category_list[i];
+}
+for (var i = 0; i < ed_req_type_list.length; i++) {
+params += ":type_" + ed_req_type_list[i];
+}
+return(params);
+}
+
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+  var edwcat="Community_Forums";
+  var edwpg="community_forums_otherpage";
+  var edomniacct="edmundscommunity,edmunds";
+  var edwmk = ed_req_make;
+  var edwmdl = ed_req_model;
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript" src="http://origin-www.edmunds.com/new/dma/dmacookieproxy.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/yahooui/utilities/utilities.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/edmunds/edmunds.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/adunit/adunit.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/usertrack/usertrack.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/ad_util.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/townhall/scripts/forums-ads.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/hpscripts.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/identity/identity.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/popprofile.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/tinttext.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/smoicons.js"></script>
+
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/townhall/scripts/vehmakemodelarray.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/townhall/vehmakemodel.js"></script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var pageInit = function() {
+
+
+// Initialize popup profiles.
+YAHOO.forumsPopProfile.init();
+
+// If a search, tint keywords.
+
+// Tint incoming searches from google.
+// http://www.google.com/search?hl=en&q=future+honda+odyssey&btnG=Search
+if (document.referrer.indexOf('http://www.google.') > -1) {
+var query;
+if ((query = document.referrer.match(/q=([^& ;]+)/)) != null) {
+var kw = query[1];
+kw = kw.replace(/\+/g, "%20");
+YAHOO.forumsTintText.tint(kw);
+}
+}
+
+// Tint incoming searches from yahoo.
+// http://search.yahoo.com/search?p=diesel+vs+gasoline
+if (document.referrer.indexOf('http://www.yahoo.com') > -1) {
+var query;
+if ((query = document.referrer.match(/p=([^& ;]+)/)) != null) {
+var kw = query[1];
+kw = kw.replace(/\+/g, "%20");
+YAHOO.forumsTintText.tint(kw);
+}
+}
+
+};
+
+YAHOO.util.Event.addListener( window, "load", pageInit ); 
+
+//]]>
+</script>
+
+
+<title>Article Comments: 2007 Jeep Wrangler Unlimited Sahara Full Test - CarSpace Automotive Forums</title>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+edwpg = "community_forums_discussion";
+//]]>
+</script>
+</head>
+<body >
+     
+
+
+
+
+
+
+<div id="regHeader">
+    <p id="hWelcome">
+    <!-- Include user info component -->
+    <script language="javascript" type="text/javascript">
+//<![CDATA[
+displayUserInfo('Welcome,', 'Guest');
+//]]>
+    </script>
+
+    
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52&amp;fromUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52" onclick="s_objectID='edmunds..forums.regheader..0..navigation_Par_2044_ImageRef_gif*'; setTID(s_objectID);"><img src="http://www.edmunds.com/etc/medialib/Images/media/navigation.Par.2044.ImageRef.gif" border="0" alt="Sign In" title="Sign In" /></a>&nbsp;<a href="https://secure.edmunds.com/era/secure/nlb/registration.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52&amp;fromUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52" onclick="s_objectID='edmunds..forums..1..navigation_Par_7699_ImageRef_gif*'; setTID(s_objectID);"><img src="http://www.edmunds.com/etc/medialib/Images/media/navigation.Par.7699.ImageRef.gif" border="0" alt="Join" title="Join" /></a>
+    </p>
+
+    <p id="hLinks">
+    <a href="http://www.edmunds.com" onclick="s_objectID='edmunds..forums.headersecondarynav..1..Edmunds_com*'; setTID(s_objectID);" target="_top">Edmunds.com</a> 
+    | <a href="http://www.edmunds.com/insideline/" onclick="s_objectID='edmunds..forums.headersecondarynav..2..InsideLine*'; setTID(s_objectID);" target="_top">Inside Line</a> 
+    | <a href="http://www.autoobserver.com" onclick="s_objectID='edmunds..forums.headersecondarynavnew..3..AutoObserver*'; setTID(s_objectID);" target="_top">Auto Observer</a>
+
+    <span id="hdLinks"><a href="https://secure.edmunds.com/era/secure/MyAccount.load.action?app=carspace.com" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..1..YourAccount*'; setTID(s_objectID); " target="_top">Your Account</a> 
+| <a href="http://www.edmunds.com/help/" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..2..Help*'; setTID(s_objectID); " title="Help" target="_top">Help</a> 
+| <a href="http://www.edmunds.com/help/about/sitedirectory.html" onclick="s_objectID='edmunds..forums.headerhelpdirectorynav..3..Directory*'; setTID(s_objectID); " title="Directory" target="_top">Directory</a></span> 
+    </p>
+</div>
+
+<div id="gutter">
+<div style="display:none;">
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/external/edwstatic.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.edmunds.com/day/scripts/omniture/omniture.js"></script>
+<noscript>
+<a href="http://www.omniture.com" title="Web Analytics"><img src="http://edmunds.112.2O7.net/b/ss/edmunds/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" /></a>
+</noscript><!-- /DO NOT REMOVE/-->
+</div>
+
+
+<div id="header">
+  <p id="sitename"><a href="http://www.carspace.com/" onclick="s_objectID='edmunds..forums.headerimg..0.*'; setTID(s_objectID);"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/global_header/cs_logo.gif" alt="Carspace.com" title="Carspace.com" /></a></p>
+<div id="leaderboard">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("leader");
+var dartparams = ed_genDartParams("leader");
+var uparams = ed_genUParams("leader");
+
+var adUnitObj_leaderboard = new YAHOO.Edmunds.AdUnit('adUnitObj_leaderboard', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=1;tile=1;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_1:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 728, 90, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_leaderboard.getAdUrl()+' -->');
+adUnitObj_leaderboard.registerAd();
+adUnitObj_leaderboard.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_leaderboard" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="90" scrolling="no" width="728"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;rsu=community;ptile=1;sz=728x90;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;rsu=community;ptile=1;sz=728x90;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="728" height="90" border="0" alt="" /></a>
+</noscript>
+</div>
+    <!--START nav-->
+    <div id="nav">
+        <ul>
+<li id="nav_home"><a href="http://www.edmunds.com/" onclick="s_objectID='edmunds..forums.header..0.*'; setTID(s_objectID);" title="Home">Home</a></li>
+<li id="nav_newc"><a href="http://www.edmunds.com/new-cars/" onclick="s_objectID='edmunds..forums.header..1.*'; setTID(s_objectID);" title="New Cars">New Cars</a></li>
+<li id="nav_certified"><a href="http://www.edmunds.com/certified-cars.html" onclick="s_objectID='edmunds..forums.header..2.*'; setTID(s_objectID);" title="Certified Cars">Certified Cars</a></li>
+<li id="nav_used"><a href="http://www.edmunds.com/used-cars/" onclick="s_objectID='edmunds..forums.header..3.*'; setTID(s_objectID);" title="Used Cars">Used Cars</a></li>
+<li id="nav_reviews"><a href="http://www.edmunds.com/car-reviews.html" onclick="s_objectID='edmunds..forums.header..4.*'; setTID(s_objectID);" title="Car Reviews">Car Reviews</a></li>
+<li id="nav_advice"><a href="http://www.edmunds.com/car-advice.html" onclick="s_objectID='edmunds..forums.header..5.*'; setTID(s_objectID);" title="Tips &amp; Advice">Tips &amp; Advice</a></li>
+<li id="nav_finance"><a href="http://www.edmunds.com/car-loans/" onclick="s_objectID='edmunds..forums.header..6.*'; setTID(s_objectID);" title="Car Loans">Car Loans</a></li>
+<li id="nav_insurance"><a href="http://www.edmunds.com/auto-insurance/" onclick="s_objectID='edmunds..forums.header..7.*'; setTID(s_objectID);" title="Auto Insurance">Auto Insurance</a></li>
+<li id="nav_forums"><a href="http://www.carspace.com/csGroups" class="active" onclick="s_objectID='edmunds..forums.header..8.*'; setTID(s_objectID);" title="Forums">Forums</a></li>
+<li id="nav_localservices"><a href="http://www.edmunds.com/local.html" onclick="s_objectID='edmunds..forums.header..9.*'; setTID(s_objectID);" title="Local Services">Local Services</a></li>
+        </ul>
+    </div>
+    <!--END nav-->
+</div>
+<!--END global header-->
+
+<!--START 2nd tier -->
+<div id="navSTier">
+  <ul>
+    <li>
+<a href="http://www.carspace.com" onclick="s_objectID='edmunds..forums.2ndtier..7.*'; setTID(s_objectID);">CarSpace</a> |
+<a href="http://www.carspace.com/csGroups" onclick="s_objectID='edmunds..forums.2ndtier..0.*'; setTID(s_objectID);">Forums</a>
+| <a href="http://answers.edmunds.com" onclick="s_objectID='edmunds..forums.2ndtier..1.*'; setTID(s_objectID);">Answers</a> 
+| <a href="http://www.carspace.com/blogs" onclick="s_objectID='edmunds..forums.2ndtier..2.*'; setTID(s_objectID);">Blogs</a> 
+| <a href="http://www.carspace.com/csPhotos" onclick="s_objectID='edmunds..forums.2ndtier..3.*'; setTID(s_objectID);">Photos</a> 
+| <a href="http://www.carspace.com/videos" onclick="s_objectID='edmunds..forums.2ndtier..4.*'; setTID(s_objectID);">Videos</a> 
+| <a href="http://www.carspace.com/guides" onclick="s_objectID='edmunds..forums.2ndtier..5.*'; setTID(s_objectID);">Guides</a> 
+| <a href="http://www.carspace.com/txUserSearch" onclick="s_objectID='edmunds..forums.2ndtier..6.*'; setTID(s_objectID);">People</a>
+    </li>
+  </ul>
+</div>
+<!--END 2nd tier nav -->
+
+</div>
+<!-- END CS HEADER -->
+
+<!-- BEGIN FORUMS CONTENT -->
+<div id="discussionList" class="clearfix mainContainer">
+
+<!-- START COLUMN ONE -->
+<div id="column1" class="clearfix">
+
+<!-- Display the breadcrumb. -->
+<!-- webx.tpl backPath -->
+
+
+<p class="breadCrumb">
+<strong>You are here:</strong> 
+<img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/site.gif" alt="[F]" WIDTH=16 HEIGHT=16 />
+<a href="http://www.carspace.com/csGroups">Forums</a> 
+  <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.ee92034/">SUVs</a>     <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.f0a4ae0/">Jeep Wrangler</a>   <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> Article Comments: 2007 Jeep Wrangler Unlimited Sahara Full Test</p>
+
+
+
+
+
+
+<!-- START FORUMS CONTENT -->
+
+
+
+
+
+
+<a href="http://townhall-talk.edmunds.com/direct/view/.f1d8ba8"><img 
+src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/adunit/CarSpaceChat/chat500x50green.jpg" border="0" /></a><br><br>
+<h1>Article Comments: 2007 Jeep Wrangler Unlimited Sahara Full Test</h1>
+
+
+<p>
+83&nbsp;messages,&nbsp;
+
+
+
+Last post on Jan 24, 2009 at 6:31 PM</p>
+
+<p class="hostName">
+You are in the <a href="/WebX/.f0a4ae0/">Jeep Wrangler</a> Forum. 
+Your Hosts are <span class="profileLink"><a href="javascript:popWindow('/WebX/.f0ec78b?viewUserProfile!vuserName=steve_')">steve_</a></span>  &amp; <span class="profileLink"><a href="javascript:popWindow('/WebX/.f0ec78b?viewUserProfile!vuserName=tidester')">tidester</a></span> </p>
+
+
+
+<p class="tags">
+        <b>What is this discussion about?</b>
+        <a href='/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=Jeep&amp;model=Wrangler Unlimited'>Jeep Wrangler Unlimited</a>, <a href='/WebX/.ee92034'>SUV</a></p>
+
+
+<p class="hostName">Article comments for <a href="http://www.edmunds.com/insideline/do/Drives/FullTests/articleId=116688"> Full Test: 2007 Jeep Wrangler Unlimited Sahara</a> - You see, unlike previous Wranglers which at 75 mph provided all the solitude of a parachute jump, the 2007 Wrangler has a tight canvas top and much less wind howl. <a href="http://www.edmunds.com/insideline/do/Drives/FullTests/articleId=116688">(more)</a></p>
+
+
+
+
+<!-- incontext -->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+document.write(YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/WebX?14@@.f0ec78b/52", document.title, "discussion"));
+//]]>
+</script>
+<div class="floatRight">
+<ul class="discussMsgTools">
+<li><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/roundCornerLft.gif" alt="/" align="absmiddle" /></li>
+
+<li><a href="/WebX?230@@.f0ec78b"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/outline.gif" alt="Outline" border="0" align="absmiddle" /></a> <a href="/WebX?230@@.f0ec78b">Outline</a></li>
+<li><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/roundCornerRght.gif" alt="/" align="absmiddle" /></li>
+</ul>
+</div>
+<br clear="all" />
+
+
+<!-- First: 52 Last: 61 -->
+<!-- _First:  _Last:  -->
+<!-- location: .f0ec78b msgListPrev: .f0ec78b/51 -->
+<!-- location: .f0ec78b msgListFollow: .f0ec78b/62 -->
+
+
+
+
+
+
+<!-- cur: 52 last: 82 numPerPage: 10 -->
+
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="paginationMsgSearch">
+<tr>
+
+<td>
+<dl class="pagination"><dt>Messages&nbsp;Page 7&nbsp;of&nbsp;9</dt>
+<dd><a href="/direct/view/.f0ec78b/0">1</a></dd><dd>...</dd><dd><a href="/direct/view/.f0ec78b/12">3</a></dd><dd><a href="/direct/view/.f0ec78b/22">4</a></dd><dd><a href="/direct/view/.f0ec78b/32">5</a></dd><dd><a href="/direct/view/.f0ec78b/42">6</a></dd><dd><strong>7</strong></dd><dd><a href="/direct/view/.f0ec78b/62">8</a></dd><dd><a href="/direct/view/.f0ec78b/72">9</a></dd><dd><a href="/direct/view/.f0ec78b/42">Prev</a></dd><dd><a href="/direct/view/.f0ec78b/62">Next</a></dd><dd><a href="/WebX/.f0ec78b?displayRecent">Last</a></dd></dl>
+</td>
+
+<td><form class="floatLeft" name="jumpToMessageForm" method="post" action="/WebX?jumpToMessageNumber@@.f0ec78b" onsubmit="
+if (!this.message_number.value) { return false; } var last = 83 - 1; var num = parseInt(this.message_number.value) - 1; if (isNaN(num) || num < 0) { num = 0; } if (num > last) { num = last; } this.message_number.value = num+1; return true;
+">
+<strong>Go To Msg #</strong><br />
+<input name="message_number" type="text" size="5" value="" /><input type="submit" name="Submit" border="0" value="Go" /> 
+</form>
+<form class="floatRight" name="searchDiscussionForm" method="post" action="/WebX?127@@.f0ec78b" onsubmit="if (!this.keywords.value) { return false; }"><input type="hidden" name="search_cmd" value="intext:discussion" />
+<input type="hidden" name="discussionfid" value=".f0ec78b" />
+
+<input type="hidden" name="as_limit" value=".f0ec78b" />
+<input type="hidden" name="as_allin" value="msgtext" />
+<input type="hidden" name="count" value="20" />
+<strong>Search This Discussion</strong><br />
+<input name="keywords" type="text" size="20" value="" /><input type="submit" name="Submit" border="0" value="Search" /> </form></td>
+
+</tr>
+</table>
+<br clear="all" />
+<table width="100%" cellpadding="0" cellspacing="0" class="postsList">
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG52" href="/direct/view/.f0ec78b/52#MSG52">53</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Stupid Salespeople</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/52!vuserName=jerrydock');">jerrydock</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 03, 2007 (12:01 pm)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F52&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+
+<span class="postText">My wife and I run an ecotourism business and use a 1974 Land rover Series III.  It will be getting a frame off restoration next year and we decided to go look at the Wrangler Unlimited.  I had done some research so I had a few questions. <br>
+&nbsp;<br>
+The dealer (Neuwirth Motors, Wilmington, NC) had already convinced me that I would NOT be buying from them because of their adveritising; "At Neuwirth Motors we put God Country and You first.  PLEASE. I need you to sell me a vehicle, not stuff religion, country and family into the deal.  <br>
+&nbsp;<br>
+They only had 3 and they were all fully equipped. <br>
+&nbsp;<br>
+What we are going to buy is a white (so we can have zebra stripes on it) 6 speed, soft top (which will be stored and never used), half doors, no carpet, no A/C. <br>
+&nbsp;<br>
+The moron who "waited on us" did not have a clue.  I had to tell him about the half doors AND he could not tell me how much "delete A/C" would take off the price. <br>
+&nbsp;<br>
+I will let you know how well I do with the Shalotte, NC dealer. </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/52", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG53" href="/direct/view/.f0ec78b/53#MSG53">54</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Wrangler Unlimited diesel</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/53!vuserName=jerrydock');">jerrydock</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 04, 2007 (7:28 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F53&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+
+<span class="postText">I just got off the phone with the Shalotte Jeep dealer (nabor Chrysler Dodge jeep) and put a deposit on a 2008 Wrangler Unlimited diesel. <br>
+&nbsp;<br>
+They will custom order to my specs.  <br>
+White <br>
+Half doors <br>
+No carpet <br>
+No A/C <br>
+Diesel <br>
+Manual transmission <br>
+&nbsp;<br>
+Best of all, no one said a thing about God/Country/Family. <br>
+&nbsp;<br>
+&nbsp;Not like the morons I ran into at Neuwirth Motors in Wilmington. </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/53", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/54#MSG54" class="forumsreplies">goducks1 (May 05, 2007 7:19 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/55#MSG55" class="forumsreplies">erickpl (May 07, 2007 8:28 am)</a></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG54" href="/direct/view/.f0ec78b/54#MSG54">55</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Wrangler Unlimited diesel [jerrydock]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/54!vuserName=goducks1');">goducks1</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 05, 2007 (7:19 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F54&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/53#MSG53" class="forumsreplies">jerrydock (May 04, 2007 7:28 am)</a><br /></p>
+
+<span class="postText">I've used the Jeep dealer in Shallotte before, my parents live in Holden Beach (I live up in Atlantic Beach).  They are quite nice. </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/54", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/55#MSG55" class="forumsreplies">erickpl (May 07, 2007 8:28 am)</a></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG55" href="/direct/view/.f0ec78b/55#MSG55">56</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Wrangler Unlimited diesel [goducks1]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/55!vuserName=erickpl');">erickpl</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 07, 2007 (8:28 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F55&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/54#MSG54" class="forumsreplies">goducks1 (May 05, 2007 7:19 am)</a><br /></p>
+
+<span class="postText">So it is a confirmed deal that the diesel is going in the JK now?  I didn't know that it had been decided.  Which diesel?  Any information on the engine for this? <br>
+&nbsp;<br>
+-Paul </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/55", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG56" href="/direct/view/.f0ec78b/56#MSG56">57</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Here you go..specs</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/56!vuserName=jerrydock');">jerrydock</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (5:48 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F56&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+
+<span class="postText">Jeep Wrangler Unlimited Sport l4 Diesel 2.8 Specifications   <br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;Engine  <br>
+&nbsp;&nbsp;Bore &amp; Stroke: -  <br>
+&nbsp;&nbsp;Displacement: -  <br>
+&nbsp;&nbsp;Compression Ratio: -  <br>
+&nbsp;&nbsp;Fuel System: Diesel  <br>
+&nbsp;&nbsp;Engine Block: 2.8 liters, CRD I  <br>
+&nbsp;&nbsp;Maximum Power: 130kW<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0">3800rpm  <br>
+&nbsp;&nbsp;Max Torque: 410Nm<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0">2000rpm  <br>
+&nbsp;&nbsp;Cylinders: -  <br>
+&nbsp;&nbsp;Valves:  -  <br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;Transmission: 6 speed manual </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/56", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/57#MSG57" class="forumsreplies">erickpl (May 08, 2007 6:57 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/58#MSG58" class="forumsreplies">mac24 (May 08, 2007 7:28 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/59#MSG59" class="forumsreplies">mac24 (May 08, 2007 7:32 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/60#MSG60" class="forumsreplies">erickpl (May 08, 2007 8:14 am)</a> and 4 more...</li>
+</ul>
+</li>
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/62#MSG62" class="forumsreplies">jerrydock (May 08, 2007 11:47 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/63#MSG63" class="forumsreplies">dnorrell (May 09, 2007 12:14 am)</a> and 5 more...</ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG57" href="/direct/view/.f0ec78b/57#MSG57">58</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Here you go..specs [jerrydock]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/57!vuserName=erickpl');">erickpl</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (6:57 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F57&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/56#MSG56" class="forumsreplies">jerrydock (May 08, 2007 5:48 am)</a><br /></p>
+
+<span class="postText">What is your source for this?  Not doubting you, just want to see this for myself (I'm from Missouri, so you gotta show me!) <br>
+&nbsp;<br>
+I have a LOT of friends who are wanting a diesel Wrangler and know nothing of this. <br>
+&nbsp;<br>
+-Paul </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/57", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/58#MSG58" class="forumsreplies">mac24 (May 08, 2007 7:28 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/59#MSG59" class="forumsreplies">mac24 (May 08, 2007 7:32 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/60#MSG60" class="forumsreplies">erickpl (May 08, 2007 8:14 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/61#MSG61" class="forumsreplies">mac24 (May 08, 2007 10:51 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/76#MSG76" class="forumsreplies">bigtoys2 (Jun 29, 2007 4:55 am)</a> and 2 more...</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/62#MSG62" class="forumsreplies">jerrydock (May 08, 2007 11:47 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/63#MSG63" class="forumsreplies">dnorrell (May 09, 2007 12:14 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/64#MSG64" class="forumsreplies">jerrydock (May 09, 2007 3:12 am)</a> and 4 more...</ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG58" href="/direct/view/.f0ec78b/58#MSG58">59</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Here you go..specs [erickpl]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/58!vuserName=mac24');">mac24</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (7:28 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F58&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/57#MSG57" class="forumsreplies">erickpl (May 08, 2007 6:57 am)</a><br /></p>
+
+<span class="postText">Wrangler enthusiasts have been begging for a diesel for years.  For reasons best known to themselves, DC has apparently decided to build one, but keep its launch a secret.  Given that build numbers of current Rubicon are severely restricted due to low component volume, they're probably worried it would be too popular!   <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/emo_frown.gif" align="top" border="0">  <br>
+&nbsp;<br>
+I had no idea it was going to be immediately available here in the US, however you might find this information from Australia interesting.  Measurements are metric and pricing is $AUS. <br>
+&nbsp;<br>
+<b>"2007 Jeep Wrangler Unlimited Pricing &amp; Specifications  <br>
+13 Feb, 2007  Car News | 1 Comment | Email This  <br>
+&nbsp;<br>
+Jeep today finally revealed the pricing structure for the 2007 all new Jeep Wrangler and Jeep Wrangler Unlimited. <br>
+&nbsp;<br>
+Pricing starts from $30,990 for the Wranlger whilst the Wrangler Unlimited is priced from $34,990. For the first time ever in a civilian model, the new Jeep Wrangler range will be available with a diesel engine, a 2.8-litre common-rail turbo diesel, which is joined by a 3.8-litre V6 petrol engine. <br>
+&nbsp;<br>
+Gerry Jenkins, managing director for the Chrysler Group in Australia said enabling customers to ?go anywhere, do anything? at a great value was a prime consideration in the development of the 2007 Jeep Wrangler and Wrangler Unlimited. <br>
+&nbsp;<br>
+?The Jeep Wrangler is the undisputed global icon in four-wheel driving and to have the best ever Wrangler arriving for sale in Australia in March priced from just $30,990 gets my four-wheel drive juices bubbling! <br>
+&nbsp;<br>
+Australians are already in love with the Wrangler ? we are the biggest market in the world for the four-wheel drive icon outside of North America - it suits our thirst for adventure and freedom, and there?s just nothing else like it on the market. <br>
+&nbsp;<br>
+The new Wrangler and Wrangler Unlimited take rugged capability and refinement to new levels providing tremendous value to a range of customers and with our sharp pricing we expect the love affair to prosper,? said Jenkins. <br>
+&nbsp;<br>
+Offered in three models ? <br>
+&nbsp;<br>
+Wrangler Sport - 3.8-liter V6 engine coupled with a six-speed manual transmission. The recommended retail price (RRP) for Jeep Wrangler Sport is $30,990.  <br>
+Wrangler Renegade - Same engine as Sport with added extras - $32,990.  <br>
+Wrangler Rubicon ?  <br>
+VEHICLE PRICING <br>
+&nbsp;<br>
+Jeep Wrangler: <br>
+&nbsp;<br>
+Jeep Wrangler Sport 3.8L V6 Petrol 5-spd manual $30,990  <br>
+Jeep Wrangler Sport 3.8L V6 Petrol 4-spd automatic $32,990  <br>
+Jeep Wrangler Sport 2.8L I4 Diesel 6-spd manual $34,990  <br>
+Jeep Wrangler Sport 2.8L I4 Diesel 5-spd automatic $36,990  <br>
+eep Wrangler Rubicon 3.8L V6 Petrol 5-spd manual $39,990  <br>
+Jeep Wrangler Rubicon 3.8L V6 Petrol 4-spd automatic $41,990  <br>
+OPTIONS PRICING <br>
+&nbsp;<br>
+Premium Paint (Sport and Rubicon) $300 <br>
+Renegade Pack (Sport only) $2,000 <br>
+6-disc CD (Rubicon only) $600 <br>
+Dual Top Group (Rubicon only) $2,000 <br>
+Half Doors -($250) <br>
+Front Seat-mounted Side Airbags <br>
+(Sport and Rubicon) $600 <br>
+&nbsp;<br>
+Jeep Wrangler Unlimited: <br>
+&nbsp;<br>
+Jeep Wrangler Unlimited Sport 3.8L V6 Petrol 5-spd manual $34,990  <br>
+Jeep Wrangler Unlimited Sport 3.8L V6 Petrol 4-spd automatic $36,990  <br>
+Jeep Wrangler Unlimited Sport 2.8L I4 Diesel 6-spd manual $38,990  <br>
+Jeep Wrangler Unlimited Sport 2.8L I4 Diesel 5-spd automatic $40,990  <br>
+Jeep Wrangler Unlimited Rubicon 3.8L V6 Petrol 5-spd manual $43,990  <br>
+Jeep Wrangler Unlimited Rubicon 3.8L V6 Petrol 4-spd automatic $45,990  <br>
+OPTIONS PRICING <br>
+&nbsp;<br>
+Premium Paint (Sport and Rubicon) $300 <br>
+Renegade Pack (Sport only) $2,500 <br>
+6-disc CD (Rubicon only) $600 <br>
+Dual Top Group (Rubicon only) $2,500 <br>
+Half Doors -($500) <br>
+Front Seat-mounted Side Airbags <br>
+(Sport and Rubicon) $600 <br>
+&nbsp;<br>
+With dozens of different top, door and windshield combinations, nine unique exterior colours and available 16 or 17-inch wheels, the all-new 2007 Jeep Wrangler provides a customised appearance for a variety of customers. <br>
+&nbsp;<br>
+Jeep Wrangler Sport <br>
+&nbsp;<br>
+Standard equipment on Jeep Wrangler Sport includes <br>
+&nbsp;<br>
+Electronic Stability Program (ESP),  <br>
+Electronic Roll Mitigation (ERM),  <br>
+four-wheel-disc brakes with Anti-lock Braking System (ABS),  <br>
+4-wheel brake traction control (4BTC),  <br>
+Sentry Key Theft Deterrent System,  <br>
+driver and front passenger multi-stage front airbags,  <br>
+cruise control,  <br>
+fog lamps,  <br>
+power locks with keyless entry,  <br>
+power front windows, soft top,  <br>
+16-inch alloy wheels,  <br>
+full-size spare tire and P225/75R on/off road tires,  <br>
+skid plates for transfer case and fuel tank,  <br>
+easy access tip-and-slide seats,  <br>
+driver-seat height adjuster,  <br>
+rear folding seat,  <br>
+air conditioning,  <br>
+mini floor console,  <br>
+locking glove box,  <br>
+compass and temperature gauge,  <br>
+12-volt auxiliary power outlet,  <br>
+tilt steering wheel  <br>
+AM/FM CD radio with MP3/Auxillary input and six speakers.  <br>
+Optional features offered with Jeep Wrangler Sport model <br>
+&nbsp;<br>
+four-speed automatic transmission,  <br>
+half doors and front seat mounted side air bags.  <br>
+&nbsp;<br>
+Jeep Wrangler Renegade <br>
+&nbsp;<br>
+Over $4,000 of additional value for only $2,000 is the point of this car. You can get the four-door form only an extra $2,500. <br>
+&nbsp;<br>
+In addition to standard features on the Jeep Wrangler Sport, Renegade includes <br>
+&nbsp;<br>
+a dual top with Sunrider soft-top and Freedom Top 3-piece modular hard top,  <br>
+deep tint glass,  <br>
+6-disc CD/DVD player,  <br>
+Infinity premium speakers with subwoofer and  <br>
+tubular side steps.  <br>
+Jeep Wrangler Rubicon <br>
+&nbsp;<br>
+In addition to standard features on the Jeep Wrangler Sport the Rubicon model includes <br>
+&nbsp;<br>
+electric-disconnecting front sway bar,  <br>
+Rock-Trac® 4:1 part-time transfer case,  <br>
+heavy-duty Dana 44 front and rear axles,  <br>
+Tru-lok® locking front and rear differentials,  <br>
+4.10 axle ratio,  <br>
+rock rails,  <br>
+17-inch machined-cast aluminium wheels with 225/75 Goodyear All Terrain tyres and yes Essentials stain,  <br>
+odour-resistant seat fabric  <br>
+infinity premium speakers and subwoofer.  <br>
+Beyond the optional equipment offered with Jeep Wrangler Sport, available options with Wrangler Rubicon include dual top and 6 disk CD changer. <br>
+&nbsp;<br>
+TECHNICAL SPECIFICATIONS <br>
+Wheelbase 2424; 2947 <br>
+Overall length ? includes spare tyre 4223; 4751 <br>
+Overall width without mirrors 1873; 1877 <br>
+Overall height (soft top/hardtop) 1865/1840; 1865/1840 <br>
+Track ? front/rear 1572; 1572 <br>
+Kerb weight kg <br>
+? 3.8L V6 1745-1855; 1875-2050 <br>
+? 2.8L CRD Turbo Diesel 1805-1975; 1955-2105 <br>
+Turning diameter m 10.36; 12.25 <br>
+Seating capacity ? front/rear 2/2; 2/3 <br>
+Head room ? front/rear 1048/1025; 1048/1025 <br>
+Leg room ? front/rear 1040/905; 1040/945 <br>
+Shoulder room ? front/rear 1417/1566; 1417/1443 <br>
+Hip room ? front/rear 1413/1136; 1413/1440 <br>
+Cargo capacity L <br>
+? All seats in place 490; 1310 <br>
+? 2nd row folded 1600; 2320 <br>
+? 2nd row removed 1730; not applicable <br>
+Fuel tank capacity L <br>
+- Petrol 70.4; 79.5 <br>
+- Diesel 66.6; 79.5 <br>
+Standard Engine 3.8L V6 <br>
+? Power kW (Hp) <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> rpm 146 (199) <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 5000 <br>
+? Torque Nm <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> rpm 315 <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 4000 <br>
+Optional Engine 2.8L CRD Turbo Diesel <br>
+? Power kW (Hp) <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> rpm 130 (177) <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 3800 <br>
+? Torque Nm <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> rpm 410 <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 2000-2600 man. transmission <br>
+400 <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 2000-2600 auto transmission <br>
+Transmissions <br>
+? 6-speed manual overdrive (NSG370) Std (all mode</b> </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/58", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/59#MSG59" class="forumsreplies">mac24 (May 08, 2007 7:32 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/60#MSG60" class="forumsreplies">erickpl (May 08, 2007 8:14 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/61#MSG61" class="forumsreplies">mac24 (May 08, 2007 10:51 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/76#MSG76" class="forumsreplies">bigtoys2 (Jun 29, 2007 4:55 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/77#MSG77" class="forumsreplies">erickpl (Jun 29, 2007 7:15 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/78#MSG78" class="forumsreplies">jerrydock (Jul 06, 2007 4:42 pm)</a></ul></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG59" href="/direct/view/.f0ec78b/59#MSG59">60</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Here you go..specs [mac24]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/59!vuserName=mac24');">mac24</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (7:32 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F59&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/58#MSG58" class="forumsreplies">mac24 (May 08, 2007 7:28 am)</a><br /></p>
+
+<span class="postText">continued....... <br>
+&nbsp;<br>
+<b>"? 4-speed automatic overdrive (42RLE-VLP) Opt (3.8L petrol only); Opt (3.8L petrol only) <br>
+? 5-speed automatic overdrive (545RFE) Opt (2.8L diesel only); Opt (2.8L diesel only) <br>
+Max towing capacity/tongue weight kg 1600/160; 2300/170 <br>
+4×4 systems <br>
+? Command-Trac® (Sport, Renegade) Part-time; Part-time <br>
+? Rock-Trac® (Rubicon) w/front and rear diff locks Part-time heavy-duty; Part-time heavy-duty <br>
+Running ground clearance <br>
+? Front axle to ground ? P245/75R16 (Sport Renegade) 243; 243 <br>
+? Front axle to ground ? P255/75R17 (Rubicon) 261; 258 <br>
+? Rear axle to ground ? P245/75R16 (Sport, Renegade) 238; 236 <br>
+? Rear axle to ground ? P255/75R17 (Rubicon) 256; 253 <br>
+Approach angle (Sport, Renegade) 36.4; 36.5 <br>
+Approach angle (Rubicon) 37.8; 37.9 <br>
+Departure angle (Sport, Renegade) 29.8; 29.8 <br>
+Departure angle (Rubicon) 31.2; 31.3 <br>
+Breakover angle (Sport, Renegade) 23.1 19.0 <br>
+Breakover angle (Rubicon) 24.9 20.3 <br>
+Water Fording Depth 482mm <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 8Kph; 482mm <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/emotorcons/at.gif" align="top" border="0"> 8Kph"</b> <br>
+&nbsp;<br>
+<a href="http://" target=_blank>LINK HERE.</a> </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/59", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG60" href="/direct/view/.f0ec78b/60#MSG60">61</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Here you go..specs [mac24]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/60!vuserName=erickpl');">erickpl</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (8:14 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F60&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/58#MSG58" class="forumsreplies">mac24 (May 08, 2007 7:28 am)</a><br /></p>
+
+<span class="postText">Mac, thanks for that posting.  I just wanted to see the North America/US availability saying that same thing... <br>
+&nbsp;<br>
+-Paul </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/60", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+<ul class="replyTo">
+Replies to this message:
+<li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/61#MSG61" class="forumsreplies">mac24 (May 08, 2007 10:51 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/76#MSG76" class="forumsreplies">bigtoys2 (Jun 29, 2007 4:55 am)</a>
+<ul><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/77#MSG77" class="forumsreplies">erickpl (Jun 29, 2007 7:15 am)</a>
+</li><li><a href="/WebX?14@846.bCVtaPdtgxQ@.f0ec78b/78#MSG78" class="forumsreplies">jerrydock (Jul 06, 2007 4:42 pm)</a></ul></ul>
+
+</td>
+</tr>
+
+<tr>
+<th colspan="2">
+<dl>
+<dt>#<a name="MSG61" href="/direct/view/.f0ec78b/61#MSG61">62</a> of 83</dt>
+<dd class="postTitle">
+<span class="forumstitle">Re: Here you go..specs [erickpl]</span>
+
+<span class="postListBy">
+by <span class="profileLink"><a href="javascript:popWindow('/WebX?viewUserProfile@@.f0ec78b/61!vuserName=mac24');">mac24</a></span></span>
+</dd>
+
+<dd class="postListTimeStamp">
+May 08, 2007 (10:51 am)</dd>
+
+<dd class="postListTools">
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F229%40%40.f0ec78b%2F61&amp;tid=edmunds.t.townhall.reply..1.*"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/replyPost.gif" alt="Reply" border="0" /></a>
+
+</dd>
+</dl>
+</th>
+</tr>
+
+<tr valign="top">
+<td width="100%">
+<p class="replyTo">
+Replying to: <a href="/WebX?14@@.f0ec78b/60#MSG60" class="forumsreplies">erickpl (May 08, 2007 8:14 am)</a><br /></p>
+
+<span class="postText">So would I, because it's obviously slipped by under my radar (not that that's significant to anyone else). </span>
+
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var ret = YAHOO.forumsSMOLinks.genlinks("all", "http://townhall-talk.edmunds.com/direct/view/.f0ec78b/61", document.title, "post");
+if (ret) {
+   document.write(ret);
+}
+//]]>
+</script>
+
+
+</td>
+</tr>
+</table>
+<br clear="all" />
+
+<!-- First: 52 Last: 61 -->
+<!-- _First:  _Last:  -->
+<!-- location: .f0ec78b msgListPrev: .f0ec78b/51 -->
+<!-- location: .f0ec78b msgListFollow: .f0ec78b/62 -->
+
+
+
+
+
+
+<!-- cur: 52 last: 82 numPerPage: 10 -->
+
+
+<table width="100%" border="0" cellpadding="5" cellspacing="0" class="paginationMsgSearch">
+<tr>
+
+<td>
+<dl class="pagination"><dt>Messages&nbsp;Page 7&nbsp;of&nbsp;9</dt>
+<dd><a href="/direct/view/.f0ec78b/0">1</a></dd><dd>...</dd><dd><a href="/direct/view/.f0ec78b/12">3</a></dd><dd><a href="/direct/view/.f0ec78b/22">4</a></dd><dd><a href="/direct/view/.f0ec78b/32">5</a></dd><dd><a href="/direct/view/.f0ec78b/42">6</a></dd><dd><strong>7</strong></dd><dd><a href="/direct/view/.f0ec78b/62">8</a></dd><dd><a href="/direct/view/.f0ec78b/72">9</a></dd><dd><a href="/direct/view/.f0ec78b/42">Prev</a></dd><dd><a href="/direct/view/.f0ec78b/62">Next</a></dd><dd><a href="/WebX/.f0ec78b?displayRecent">Last</a></dd></dl>
+</td>
+
+<td><form class="floatLeft" name="jumpToMessageForm" method="post" action="/WebX?jumpToMessageNumber@@.f0ec78b" onsubmit="
+if (!this.message_number.value) { return false; } var last = 83 - 1; var num = parseInt(this.message_number.value) - 1; if (isNaN(num) || num < 0) { num = 0; } if (num > last) { num = last; } this.message_number.value = num+1; return true;
+">
+<strong>Go To Msg #</strong><br />
+<input name="message_number" type="text" size="5" value="" /><input type="submit" name="Submit" border="0" value="Go" /> 
+</form>
+<form class="floatRight" name="searchDiscussionForm" method="post" action="/WebX?127@@.f0ec78b" onsubmit="if (!this.keywords.value) { return false; }"><input type="hidden" name="search_cmd" value="intext:discussion" />
+<input type="hidden" name="discussionfid" value=".f0ec78b" />
+
+<input type="hidden" name="as_limit" value=".f0ec78b" />
+<input type="hidden" name="as_allin" value="msgtext" />
+<input type="hidden" name="count" value="20" />
+<strong>Search This Discussion</strong><br />
+<input name="keywords" type="text" size="20" value="" /><input type="submit" name="Submit" border="0" value="Search" /> </form></td>
+
+</tr>
+</table>
+
+
+<div align="right"><font class="small"><b>To POST a message, please
+<a href="https://secure.edmunds.com/era/secure/nlb/login.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52&amp;tid=edmunds.t.townhall.messagefooter..0.*">Sign In</a>.</b></font></div>
+
+
+
+        <p class="discussMsgTools" id="readNewWatchMyItems">
+</p>
+
+<!-- Display the breadcrumb. -->
+<!-- webx.tpl backPath -->
+
+
+<p class="breadCrumb">
+<strong>You are here:</strong> 
+<img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/site.gif" alt="[F]" WIDTH=16 HEIGHT=16 />
+<a href="http://www.carspace.com/csGroups">Forums</a> 
+  <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.ee92034/">SUVs</a>     <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> <a href="/WebX/.f0a4ae0/">Jeep Wrangler</a>   <img align="absmiddle" border="0" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/townhall/webxicons/pathdiv.gif" alt=" / " WIDTH=16 HEIGHT=16 /> Article Comments: 2007 Jeep Wrangler Unlimited Sahara Full Test</p>
+
+
+
+</div>
+<!-- END COLUMN ONE -->
+
+<!-- START COLUMN TWO -->
+
+<!-- sidebar -->
+<div id="column2">
+
+<!-- START LOGIN PANE -->
+
+<!-- START DISPLAYLOGIN PANE -->
+ <p class="greetingHeader"><strong>New? <a href="https://secure.edmunds.com/era/secure/nlb/registration.jsp?app=carspace.com&amp;toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52">Join Now!</a></strong></p>
+ <div class="box clearfix" id="forumTools">
+ <p class="gradientHeader"><strong>Forum Tools</strong></p>
+ <form name="Login" method="post" action="https://secure.edmunds.com/era/j_spring_security_check">
+ <strong>Please sign in.</strong><br />
+ 
+<input type="hidden" name="app" value="carspace.com" />
+<input type="hidden" name="toUrl" value="http://townhall-talk.edmunds.com/WebX?14@@.f0ec78b/52" />
+<input type="hidden" name="fromUrl" value="http://townhall-talk.edmunds.com/WebX?14@@.f0ec78b/52" />
+
+ Email Address:<br />
+ <input type="text" name="email" tabindex="1" />
+ <input type="checkbox" name="rememberMe" value="checked" class="radioCheckButton" id="rememberme" style="float: none;" tabindex="0" /><label for="rememberme">Remember me</label><br />
+ Password:<br />
+ <input type="password" name="password" tabindex="2" />
+ <input type="submit" name="forumssignin-submit" class="button" value="Sign In" />
+ <br />
+ <a href="http://www.edmunds.com/era/nlb/forgotPassword.jsp?toUrl=http%3A%2F%2Ftownhall-talk.edmunds.com%2FWebX%3F14%40%40.f0ec78b%2F52">Forgot Password?</a>
+ </form>
+</div>
+
+<!-- END DISPLAYLOGIN PANE -->
+<!-- END LOGIN PANE -->
+
+<!-- search -->
+<div class="box" id="searchForums">
+<p class="gradientHeader"><strong>Search Forums</strong></p>
+<form name="thsearch" method="post" action="/WebX?searchResults@@.f0ec78b/52">
+Enter Keyword(s)<br />
+<input type=text name="keywords" size="15" maxlength="75" style="width:160px" />
+<input type="submit" class="button" name="submitsearch" value="Search" /><br />
+<a href="/WebX?search@@.f0ec78b/52">Advanced Search</a>
+</form>
+</div>
+
+<!-- make search -->
+<div class="box" id="browseByVehicle">
+<p class="gradientHeader"><strong>Browse by Vehicle</strong></p>
+<form name="msearch" method="get" action="">
+<select name="make" onchange="updateModelSelect(this.form.model, this.options[this.selectedIndex].text, '');">
+<option value="">Select Make</option>
+<option value="Acura">Acura</option>
+<option value="Alfa Romeo">Alfa Romeo</option>
+<option value="AM General">AM General</option>
+<option value="AMC">AMC</option>
+<option value="Aston Martin">Aston Martin</option>
+<option value="Audi">Audi</option>
+<option value="Bentley">Bentley</option>
+<option value="BMW">BMW</option>
+<option value="Bugatti">Bugatti</option>
+<option value="Buick">Buick</option>
+<option value="Cadillac">Cadillac</option>
+<option value="Chevrolet">Chevrolet</option>
+<option value="Chrysler">Chrysler</option>
+<option value="Daewoo">Daewoo</option>
+<option value="Daihatsu">Daihatsu</option>
+<option value="Datsun">Datsun</option>
+<option value="Dodge">Dodge</option>
+<option value="Eagle">Eagle</option>
+<option value="Ferrari">Ferrari</option>
+<option value="Fisker">Fisker</option>
+<option value="Ford">Ford</option>
+<option value="Geo">Geo</option>
+<option value="GMC">GMC</option>
+<option value="Honda">Honda</option>
+<option value="HUMMER">HUMMER</option>
+<option value="Hyundai">Hyundai</option>
+<option value="Infiniti">Infiniti</option>
+<option value="Isuzu">Isuzu</option>
+<option value="Jaguar">Jaguar</option>
+<option value="Jeep">Jeep</option>
+<option value="Kia">Kia</option>
+<option value="Lamborghini">Lamborghini</option>
+<option value="Land Rover">Land Rover</option>
+<option value="Lexus">Lexus</option>
+<option value="Lincoln">Lincoln</option>
+<option value="Lotus">Lotus</option>
+<option value="Maserati">Maserati</option>
+<option value="Maybach">Maybach</option>
+<option value="Mazda">Mazda</option>
+<option value="Mercedes-Benz">Mercedes-Benz</option>
+<option value="Mercury">Mercury</option>
+<option value="Merkur">Merkur</option>
+<option value="MG">MG</option>
+<option value="MINI">MINI</option>
+<option value="Mitsubishi">Mitsubishi</option>
+<option value="Nissan">Nissan</option>
+<option value="Oldsmobile">Oldsmobile</option>
+<option value="Panoz">Panoz</option>
+<option value="Plymouth">Plymouth</option>
+<option value="Pontiac">Pontiac</option>
+<option value="Porsche">Porsche</option>
+<option value="Renault">Renault</option>
+<option value="Rolls-Royce">Rolls-Royce</option>
+<option value="Saab">Saab</option>
+<option value="Saleen">Saleen</option>
+<option value="Saturn">Saturn</option>
+<option value="Scion">Scion</option>
+<option value="smart">smart</option>
+<option value="Sterling">Sterling</option>
+<option value="Subaru">Subaru</option>
+<option value="Suzuki">Suzuki</option>
+<option value="Tesla">Tesla</option>
+<option value="Toyota">Toyota</option>
+<option value="Volkswagen">Volkswagen</option>
+<option value="Volvo">Volvo</option>
+<option value="Yugo">Yugo</option>
+</select>
+<input type="button" class="button" name="go" value="Go" onclick="if (this.form.make.selectedIndex == 0) { return(false); } 
+var newurl = '';
+if (this.form.model.options[this.form.model.selectedIndex].value) {
+newurl = '/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=' + escape(this.form.make.options[this.form.make.selectedIndex].value) + '&amp;model=' + escape(this.form.model.options[this.form.model.selectedIndex].value);
+} else {
+newurl = '/WebX?ed_displayMakeRelatedDiscussions@@.ef14c39!make=' + escape(this.form.make.options[this.form.make.selectedIndex].value);
+}
+location.href = newurl;
+return(false);
+" /><br />
+<select name="model">
+<option value="">Select Model</option>
+<option value="">Any Model</option>
+</select><br />
+<a href="/WebX?ed_displayMakeTopicIndex@@.ef14c39">View All Vehicles</a>
+</form>
+</div>
+
+<!-- boxad -->
+<!-- Ad I -->
+<div class="boxAd">
+<img src="http://www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("box");
+var dartparams = ed_genDartParams("box");
+var uparams = ed_genUParams("box");
+
+var adUnitObj_boxI = new YAHOO.Edmunds.AdUnit('adUnitObj_boxI', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=1;tile=3;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_1:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 300, 250, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_boxI.getAdUrl()+' -->');
+adUnitObj_boxI.registerAd();
+adUnitObj_boxI.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_boxI" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="250" scrolling="no" width="300"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;pos=1;tile=3;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;pos=1;tile=3;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="300" height="250" border="0" alt="" /></a>
+</noscript>
+</div>
+<!-- end Ad -->
+
+<!-- related models -->
+
+<!-- answers -->
+
+<!-- START ask the community -->
+<div id="askCommunity"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/askTheCommunity.gif" alt="Ask the Community" width="299" border="0" title="Ask the Community" /><br />
+  <img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/carspace/media/forums/seeWhatPeopleAreAsking.gif" border="0" alt="See What People Are Asking" title="See What People Are Asking" /><br />
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var answers_topic = (ed_req_model_raw) ? ed_req_model_raw : ( (ed_req_make_raw) ? ed_req_make_raw : ed_req_category_raw );
+document.write('<link rel="stylesheet" type="text/css" href="http://answers.edmunds.com/styles/QnAWidget1.css" /><script language="javascript" type="text/javascript" src="http://answers.edmunds.com/javascript/Widget1JS.aspx?category=' + encodeURI(answers_topic) + '"><\/script>');
+//]]>
+</script>
+</div>
+
+
+<!-- discussion board dropdown. -->
+
+<div class="box" id="browseByBoard">
+<p class="gradientHeader"><strong>Browse by Board</strong></p>
+<form method="post" action="">
+<select name="select" onchange="jumpToBoard('parent',this,0)">
+<option value="#" selected="selected">Select a Board</option>
+<option value="/direct/view/.ee9202c">Automotive News</option>
+<option value="/direct/view/.ee92042">Classic Cars</option>
+<option value="/direct/view/.ee92044">Convertibles</option>
+<option value="/direct/view/.ee92044">Coupes</option>
+<option value="/direct/view/.ee9c367">Finance</option>
+<option value="/direct/view/.ef0d616">Future Vehicles</option>
+<option value="/direct/view/.ee9a948">Hatchbacks</option>
+<option value="/direct/view/.ef27a26">Hybrid Vehicles</option>
+<option value="/direct/view/.ee9c367">Insurance</option>
+<option value="/direct/view/.ee9203e">Maintenance</option>
+<option value="/direct/view/.ef60953">Modifications</option>
+<option value="/direct/view/.f11d9f4">Motorsports</option>
+<option value="/direct/view/.f11d9fa">Off-Topic Chatter</option>
+<option value="/direct/view/.ee92032">Pickups</option>
+<option value="/direct/view/.ef17997">Prices Paid</option>
+<option value="/direct/view/.ee9203e">Repair</option>
+<option value="/direct/view/.ee9e22f">Sedans</option>
+<option value="/direct/view/.ee9c367">Smart Shopper</option>
+<option value="/direct/view/.ef60953">Speed Shop</option>
+<option value="/direct/view/.ee92034">SUVs</option>
+<option value="/direct/view/.ef60953">Tuning</option>
+<option value="/direct/view/.ee92030">Vans</option>
+<option value="/direct/view/.ee92038">Wagons</option>
+<option value="/direct/view/.ee9c367">Warranty</option>
+</select>
+</form>
+</div>
+
+<!-- topic search -->
+<div class="box" id="browseByTopic">
+<p class="gradientHeader"><strong>Browse by Topic</strong></p>
+<form name="tsearch" method="get" action="">
+<select name="topic">
+<option value="">Select a Topic</option>
+
+<option value=""> =Buying &amp; Selling= </option>
+<option value="Car Buying">Car Buying</option>
+<option value="Car Comparisons">Car Comparisons</option>
+<option value="Car Financing">Car Financing</option>
+<option value="Car Leasing">Car Leasing</option>
+<option value="Car Selling">Car Selling</option>
+<option value="Car Values">Car Values</option>
+<option value="Car Warranties">Car Warranties</option>
+<option value="Certified Used (CPO)">Certified Used (CPO)</option>
+<option value="True Market Value (TMV)">True Market Value (TMV)</option>
+
+<option value=""> =Car Accessories= </option>
+<option value="Audio">Audio</option>
+<option value="Entertainment System">Entertainment System</option>
+<option value="Exterior">Exterior</option>
+<option value="Navigation System">Navigation System</option>
+<option value="Performance Mods">Performance Mods</option>
+<option value="Security System">Security System</option>
+<option value="Towing">Towing</option>
+<option value="Wheels">Wheels</option>
+
+<option value=""> =Car Insurance= </option>
+<option value="Accidents">Accidents</option>
+<option value="Buying Insurance">Buying Insurance</option>
+<option value="Insurance Claims">Insurance Claims</option>
+
+<option value=""> =Car Safety= </option>
+<option value="Child Passenger Safety">Child Passenger Safety</option>
+<option value="Crash Test Ratings">Crash Test Ratings</option>
+<option value="Safe Driving">Safe Driving</option>
+<option value="Safety Technology">Safety Technology</option>
+
+<option value=""> =Fuel Type / Drivetrain= </option>
+<option value="Alternative Fuels">Alternative Fuels</option>
+<option value="Biodiesel">Biodiesel</option>
+<option value="Diesel">Diesel</option>
+<option value="Ethanol">Ethanol</option>
+<option value="Hybrid Cars">Hybrid Cars</option>
+<option value="Electric Cars">Electric Cars</option>
+
+<option value=""> =Maintenance &amp; Repair= </option>
+<option value="Auto Body">Auto Body</option>
+<option value="Auto Repair">Auto Repair</option>
+<option value="Brakes">Brakes</option>
+<option value="Electrical">Electrical</option>
+<option value="Engine">Engine</option>
+<option value="Exhaust">Exhaust</option>
+<option value="Fuel Efficiency (MPG)">Fuel Efficiency (MPG)</option>
+<option value="Fuel System">Fuel System</option>
+<option value="Heating / Cooling">Heating / Cooling</option>
+<option value="Interior">Interior</option>
+<option value="Lights">Lights</option>
+<option value="Oil">Oil</option>
+<option value="Paint">Paint</option>
+<option value="Scheduled Maintenance">Scheduled Maintenance</option>
+<option value="Steering">Steering</option>
+<option value="Suspension">Suspension</option>
+<option value="Tires">Tires</option>
+<option value="Transmission">Transmission</option>
+
+<option value=""> =News &amp; Events= </option>
+<option value="Automotive News">Automotive News</option>
+<option value="Legislation">Legislation</option>
+<option value="Motorsports">Motorsports</option>
+<option value="Traffic Laws">Traffic Laws</option>
+<option value="Classic Cars">Classic Cars</option>
+<option value="Concept Cars">Concept Cars</option>
+<option value="Future Vehicle">Future Vehicle</option>
+</select>
+<input type="button" class="button" name="go" value="Go" onclick="if (this.form.topic.selectedIndex == 0) { return(false); } 
+var newurl = '';
+var topic = escape(this.form.topic.options[this.form.topic.selectedIndex].value);
+if (!topic) { return; }
+newurl = '/WebX?ed_displayMakeModelRelatedDiscussions@@.ef14c39!make=CATS' + '&amp;model=' + topic;
+location.href = newurl;
+return(false);
+" />
+<br />
+<a href="/WebX?ed_displayMakeTopicIndex@@.ef14c39">View All Topics</a>
+</form>
+</div>
+
+<!-- today's chats -->
+
+
+<div class="box clearfix" id="todaysChats">
+<p class="gradientHeader"><strong>Today's Chats</strong></p>
+<ul><li><a href="http://www.edmunds.com/townhall/chat/index.html">Chat Schedule</a></li></ul>
+
+
+</div>
+
+<!-- boxad -->
+<!-- Ad II -->
+<div class="boxAd">
+<img src="http://www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" />
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var dartfile = ed_genDartFile("box");
+var dartparams = ed_genDartParams("box");
+var uparams = ed_genUParams("box");
+
+var adUnitObj_boxII = new YAHOO.Edmunds.AdUnit('adUnitObj_boxII', false, dartparams+'sect=insiders;page=forums;rsu=community;pos=2;tile=4;zip=!ZIP;st=!STATE;cty=!COUNTYFIP;dma=!DMA;!RSISEG;u=cty_!COUNTYFIP:dma_!DMA:pos_2:sect_insiders:page_forums' + uparams + '|!EDMUNDSID|!EDW|!TIMESTAMP|!PAGEURL|!ZIP;ord=!TIMESTAMP', false, 'iframe', 300, 250, dartfile, '', '', 'townhall-talk.edmunds.com','_parent');
+document.write('<!-- '+adUnitObj_boxII.getAdUrl()+' -->');
+adUnitObj_boxII.registerAd();
+adUnitObj_boxII.outputAd();
+//]]>
+</script>
+<iframe id="adUnitObj_boxII" name="" src="" border="0" marginwidth="0" marginheight="0" frameborder="no" height="250" scrolling="no" width="300"></iframe>
+<noscript>
+<a href="http://ad.doubleclick.net/jump/forums.dart;sect=insiders;page=forums;pos=2;tile=4;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/forums.dart;sect=insiders;page=forums;pos=2;tile=4;sz=300x250;abr=!ie4;abr=!ie5;abr=!ie6;ord=123456789?" width="300" height="250" border="0" alt="" /></a>
+</noscript>
+</div>
+<!-- end Ad -->
+
+</div>
+<!-- end sidebar -->
+
+<!-- END COLUMN TWO -->
+
+</div>
+<!-- END FORUMS CONTENT -->
+
+<!-- global footer -->
+<script language="javascript" type="text/javascript" src="http://js.revsci.net/gateway/gw.js?csid=B05501"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+DM_addEncToLoc("Make", ed_req_make);
+DM_addEncToLoc("Model", ed_req_model);
+DM_addEncToLoc("Category", ed_req_category);
+DM_addEncToLoc("Zip", ed_req_zipcode);
+DM_tag();
+//]]>
+</script>
+<div id="footer">
+<table width="100%" id="specialCopyright">
+<tr>
+<td>&copy; 1995-2009 Edmunds Inc.</td>
+<td align="right">
+<a href="javascript:void(0)" onclick="window.open('http://www.carspace.com/privacy.html','Privacy','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Privacy Statement</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/help/about/visitoragreement.html','VisitorAgreement','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Visitor Agreement</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/townhall/memberagreement.html','MembershipAgreement','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">Membership Agreement</a> |
+<a href="http://help.carspace.com/cgi-bin/carspace.cfg/php/enduser/std_alp.php?p_cat_lvl1=65" target="_blank">Help</a> |
+<a href="javascript:void(0)" onclick="window.open('http://www.edmunds.com/help/about/','About','scrollbars=yes,resizable=no,toolbar=no,width=800,height=600');">About</a> |
+<a href="http://help.carspace.com/cgi-bin/carspace.cfg/php/enduser/ask.php" target="_blank">Contact Us</a> 
+</td>
+</tr>
+</table>
+</div>
+<!-- end global footer -->
+
+</body>
+</html>

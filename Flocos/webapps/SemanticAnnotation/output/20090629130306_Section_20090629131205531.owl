@@ -1,0 +1,512 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.1="http://www.owl-ontologies.com/autos.owl#"
+    xmlns:j.2="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#mix">
+    <rdf:type rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#BMW">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#BMW"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Honda">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Honda"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Selling">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#IntentionalProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Selling"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#FinancialTransaction"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Transaction"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+A &amp;%FinancialTransaction in which an instance of
+&amp;%Physical is exchanged for an instance of &amp;%CurrencyMeasure.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#DualObjectProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SocialInteraction"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#ChangeOfPossession"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Chrysler">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Chrysler"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Mercury">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Mercury"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Cars">
+    <j.1:hasDifferential rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasDifferential>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <j.1:hasSizzleOrFizzle rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasSizzleOrFizzle>
+    <j.1:hasModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasModel>
+    <j.1:hasCargoCapacityRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasCargoCapacityRating>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <j.1:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasYear>
+    <j.1:hasRide rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasRide>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <j.1:hasExpertReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.1:hasExpertReviews>
+    <j.1:hasMPGmin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasMPGmin>
+    <j.1:hasAcceleration_0-60 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasAcceleration_0-60>
+    <j.0:SLOT-CONSTRAINTS rdf:resource="http://www.owl-ontologies.com/autos.owl#autos_Instance_93"/>
+    <j.1:hasPassengerSpaceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasPassengerSpaceRating>
+    <j.1:hasComfortAndConvenienceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasComfortAndConvenienceRating>
+    <j.1:hasInvoice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasInvoice>
+    <j.1:hasSafetyFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</j.1:hasSafetyFeatures>
+    <j.1:hasMSRP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</j.1:hasMSRP>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Pontiac">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Pontiac"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#luxury">
+    <rdf:type rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Clothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Saturn">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Saturn"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Transportation">
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Translocation"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Transportation"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+&amp;%Motion from one point to another by means
+of a &amp;%TransportationDevice.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Motion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Series">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#ContentBearingObject"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+A &amp;%Text consisting of multiple self-contained units.  
+Some examples are an encyclopedia containing a couple dozen volumes, a television 
+series made up of many episodes, a film serial, etc.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Artifact"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SelfConnectedObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#CorpuscularObject"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Series"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Text"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#LinguisticExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Government">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Collection"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#GovernmentOrganization"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Group"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SentientAgent"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Government"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+The ruling body of a &amp;%GeopoliticalArea.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Organization"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#CognitiveAgent"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#midsize">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#MidSizeCars"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Food">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+Any &amp;%SelfConnectedObject containing &amp;%Nutrients,
+such as carbohydrates, proteins, and fats, that can be ingested by a
+living &amp;%Animal and metabolized into energy and body tissue.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SelfConnectedObject"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Food"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Cadillac">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cadillac"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#mercedes">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Mercedes-Benz"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Rolls-Royce">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Rolls-Royce"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#pickuptrucks">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Trucks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#accord">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Honda"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Prius">
+    <j.1:hasMPGmin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51</j.1:hasMPGmin>
+    <j.1:hasCargoCapacityRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</j.1:hasCargoCapacityRating>
+    <j.1:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</j.1:hasRating>
+    <j.1:hasExpertReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The all-new Prius is a legitimate family sedan that offers everything you would expect -- like solid build quality and refinement -- and a few things you don't -- like a base price of just $20,000. — Edmunds.com</j.1:hasExpertReviews>
+    <j.1:hasAcceleration_0-60 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.4</j.1:hasAcceleration_0-60>
+    <j.1:hasSafetyFeaturesDetails rdf:resource="http://www.owl-ontologies.com/autos.owl#Prius_SF"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#PassengerCars"/>
+    <j.1:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</j.1:hasYear>
+    <j.1:hasPassengerSpaceDetails rdf:resource="http://www.owl-ontologies.com/autos.owl#Prius_PS"/>
+    <j.1:hasInvoice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20006</j.1:hasInvoice>
+    <j.1:hasModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base 4dr Sedan</j.1:hasModel>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <j.1:hasMSRP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21725</j.1:hasMSRP>
+    <j.1:hasPerformanceAndHandlingDetails rdf:resource="http://www.owl-ontologies.com/autos.owl#Prius_PnH"/>
+    <j.1:hasPassengerSpaceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</j.1:hasPassengerSpaceRating>
+    <j.1:hasSafetyFeaturesRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</j.1:hasSafetyFeaturesRating>
+    <j.1:hasSizzleOrFizzle rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.6</j.1:hasSizzleOrFizzle>
+    <j.1:hasMPGmax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</j.1:hasMPGmax>
+    <j.1:hasPerformanceAndHandlingRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</j.1:hasPerformanceAndHandlingRating>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <j.1:hasSellingPoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acceleration</j.1:hasSellingPoint>
+    <j.1:hasComfortAndConvenienceRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.1</j.1:hasComfortAndConvenienceRating>
+    <j.1:hasMake rdf:resource="http://www.owl-ontologies.com/autos.owl#Toyota_1"/>
+    <j.1:hasCargoCapacityDetails rdf:resource="http://www.owl-ontologies.com/autos.owl#Prius_CC"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#CompactCars"/>
+    <j.1:hasComfortandConvenienceDetails rdf:resource="http://www.owl-ontologies.com/autos.owl#Prius_CnC"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#MidSizeCars">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#PassengerCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#MidSizeCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#List">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Relation"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#List"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Abstract"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+Every &amp;%List is a particular ordered n-tuple of 
+items.  Generally speaking, &amp;%Lists are created by means of the &amp;%ListFn 
+&amp;%Function, which takes any number of items as arguments and returns a 
+&amp;%List with the items in the same order.  Anything, including other 
+&amp;%Lists, may be an item in a &amp;%List.  Note too that &amp;%Lists are 
+extensional - two lists that have the same items in the same order are 
+identical.  Note too that a &amp;%List may contain no items.  In that case, 
+the &amp;%List is the &amp;%NullList.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Kia">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Kia"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Infiniti">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Infiniti"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#malibu">
+    <rdf:type rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Food"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Lexus">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Lexus"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Ford">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Ford"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Room">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#StationaryArtifact"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Artifact"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+A &amp;%properPart of a &amp;%Building which is separated from
+the exterior of the &amp;%Building and/or other &amp;%Rooms of the &amp;%Building by walls.
+Some &amp;%Rooms may have a specific purpose, e.g. sleeping, bathing, cooking,
+entertainment, etc.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SelfConnectedObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Room"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#CorpuscularObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Nissan">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Nissan"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#RadiatingSound"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Radiating"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Motion"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+The &amp;%subclass of &amp;%RadiatingSound where the
+sound is intended to be melodic and is produced deliberately.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Trucks">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#OffRoadCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Trucks"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Interpreting">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#PsychologicalProcess"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+Any &amp;%Process of assigning a &amp;%Proposition to
+a &amp;%Text, i.e. understanding the &amp;%Text.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Interpreting"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#IntentionalProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#BiologicalProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#IntentionalPsychologicalProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#InternalChange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#rolls">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/autos.owl#Rolls-Royce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Chevrolet">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Chevrolet"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#en">
+    <rdf:type rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Government"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Acura">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Acura"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Dodge">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Dodge"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Class">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+&amp;%Classes differ from &amp;%Sets in three important respects.  
+First, &amp;%Classes are not assumed to be extensional.  That is, distinct 
+&amp;%Classes might well have exactly the same instances.  Second, &amp;%Classes typically 
+have an associated `condition' that determines the instances of the &amp;%Class.  So, 
+for example, the condition `human' determines the &amp;%Class of &amp;%Humans.  Note that 
+some &amp;%Classes might satisfy their own condition (e.g., the &amp;%Class of &amp;%Abstract 
+things is &amp;%Abstract) and hence be instances of themselves.  Third, the instances 
+of a class may occur only once within the class, i.e. a class cannot contain 
+duplicate instances.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Abstract"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SetOrClass"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Clothing">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+&amp;%Artifact made out of fabrics and possibly other
+materials that are used to cover the bodies of &amp;%Humans.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#CorpuscularObject"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SelfConnectedObject"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Clothing"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#CompactCars">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#PassengerCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CompactCars"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Cars"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Buying">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#DualObjectProcess"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#IntentionalProcess"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#FinancialTransaction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Buying"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#SocialInteraction"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#ChangeOfPossession"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Transaction"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+A &amp;%FinancialTransaction in which an instance of
+&amp;%CurrencyMeasure is exchanged for an instance of &amp;%Physical.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/autos.owl#Toyota">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#CarMake"/>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/autos.owl#Toyota"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

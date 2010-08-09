@@ -1,0 +1,1609 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:taxid="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#"
+	xmlns:ts="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:res="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Resources.owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+	xmlns:hier="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:termdef="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:units="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#"
+	xmlns:mb="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Resources.owl" />
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl" />
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl" />
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl" />
+	</owl:Ontology>
+	<owl:Class
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#AmountConsumed">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+	</owl:Class>
+	<owl:ObjectProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#hasEcologicalClassification">
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#SpatialContext" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#EcologicalClassification" />
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="hasFrequency">
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#Frequency" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:ObjectProperty rdf:ID="hasCertainty">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#CertaintyTrait" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#IntegerValue" />
+	</owl:ObjectProperty>
+	<owl:Class
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#CertaintyTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+	</owl:Class>
+	<owl:ObjectProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#dietFraction">
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#DietFractionTrait" />
+	</owl:ObjectProperty>
+	<owl:Class
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/EcologicalConcepts.owl#DietFractionTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingTermDefinition">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#FeedingRoleDescr" />
+				</owl:allValuesFrom>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#denotes" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#TermDefinition" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioticAggregateTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingRoleDescrTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DescriptiveTrait" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AnimalTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Ecosystem">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AggregateBioticAbioticEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LifeStageDescr">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityDescr" />
+		</rdfs:subClassOf>
+		<rdfs:label>Life-stage</rdfs:label>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Term describing the life stage of an organism
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Biome">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Broad biotic grouping characteristic of a set of
+			environmental features including climatic type
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AggregateBioticAbioticEntity" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BodyMassTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticItemTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhysicalInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DirectedInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LifeForm">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PlantDescription" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcoInteractionTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcoProcessTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeologicalEnvironment">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PhysicalEnvironment" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EvennessIndex">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ComputableTrait" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BiodiversityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Terrestrial">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PhysicalHabitat" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhysicalHabitat">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalClassification" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalEnvironment">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A system of interest is typically compised of one or more
+			entities that exist within an environment. An
+			EcologicalEnvironment describes the environment of one or
+			more EcologicalEntities. The environment is itself one or
+			more entities, as the distinction between entity and
+			environment is dependent on the perspective of the
+			researcher.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EnvironmentalTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AbioticEntityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="IntraSpecificCompetition">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#IntraSpecificInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PlantParts">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SetOfPartsOfOrganisms" />
+					<owl:Restriction>
+						<owl:allValuesFrom>
+							<owl:Class rdf:about="#PlantSpecies" />
+						</owl:allValuesFrom>
+						<owl:onProperty>
+							<owl:ObjectProperty
+								rdf:about="#ofOrganismGroup" />
+						</owl:onProperty>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="InformationInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DirectedInteraction" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#IntraSpecificInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Community">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticAggregate" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="MetabolicType">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A characterization of an organism's metabolism based on its
+			morphology and physiology
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityDescr" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhysicalHabitatTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AbioticEntityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcoEntityTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalTrait" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A trait of an ecological entity
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="SetOfPartsOfOrganisms">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticAggregate" />
+		</rdfs:subClassOf>
+		<rdfs:label>Organism parts</rdfs:label>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			All group members are some part(s) of organisms
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Competition">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityMatrixInteraction" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#UndirectedInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BioticHabitatTrait">
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="ChangingPhysicalMatrix">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PhysicalMatrix" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The part of the physical environment that, on the time scale
+			of interest to the observed entity, is changing. These are
+			typically physical factors such as ecologically important
+			climate variables, though climate could be viewed as fixed
+			in some systems, depending on the timescale of interest.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Frequency">
+		<rdfs:comment>
+			Average number of individuals observed across a number of
+			observations
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#Abundance" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ComputableTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="Organism">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#SetOfOrganisms" />
+				</owl:allValuesFrom>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#partOf" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticItem" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="DetritusStock">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#MaterialStock" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Freshwater">
+		<rdfs:subClassOf rdf:resource="#PhysicalHabitat" />
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityMatrixInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#InterSpecificInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Mutualism">
+		<rdfs:subClassOf rdf:resource="#CommunityMatrixInteraction" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#DirectedInteraction" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="StemDescrTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PlantPartDescriptiveTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FixedPhysicalMatrix">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The part of the physical environment that, on the time scale
+			of interest to the observed entity, is unchanging. Typically
+			physical factors such as soil type and other ecologically
+			important geological properties.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PhysicalMatrix" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AbioticEntity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			a non-living entity
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalEntity" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasTraits" />
+				</owl:onProperty>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#AbioticEntityTrait" />
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Plant">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#Organism" />
+					<owl:Restriction>
+						<owl:onProperty>
+							<owl:FunctionalProperty
+								rdf:about="#taxonomicID" />
+						</owl:onProperty>
+						<owl:allValuesFrom
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#PlantTaxonomicIdentifier" />
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingDuration">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#FeedingRoleDescr" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhotosynthesisDescr">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The various methods of photosynthesis
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#ResourceUptakeDescr" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LifeSpan">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PlantDescription" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalEntity">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ObservableEntity" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Any ecological entity defined and observed by a scientist.
+			All entities might be partOf some aggregate entity. Any
+			entity might be embedded within an environment, which itself
+			is an entity.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class
+						rdf:about="#AggregateBioticAbioticEntity" />
+				</owl:allValuesFrom>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#partOf" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LeafDescrTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PlantPartDescriptiveTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AggregateBioticAbioticEntity">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#hasPart" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#hasPart" />
+				<owl:allValuesFrom rdf:resource="#EcologicalEntity" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#EcologicalEntity" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An entity composed of other entities, possibly both biotic
+			and abiotic
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="DirectedInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalInteraction" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A binary interaction that is directed (the origin and
+			destination of the interaction play different roles in the
+			interaction)
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="EcosystemTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticAbioticEntityTrait" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#location" />
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ClimaticEnvironment">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PhysicalEnvironment" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalTrait">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measured or observed trait of an ecological entity or
+			process
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#Trait" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Abundance">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measurement of the abundance of a group of individual
+			organisms
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="FunctionalGroup">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#SetOfOrganisms" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityDiversityTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CommunityTrait" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="TrophicSpecies">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#ofSetOfOrganisms" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#FunctionalGroup" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioticEntity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			a living entity, possibly composed of multiple sub-entities
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+							<owl:Class rdf:about="#BioticEntityTrait" />
+							<owl:Class
+								rdf:about="#PhysicalHabitatTrait" />
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasTraits" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#EcologicalEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="UndirectedInteraction">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalInteraction" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A binary interaction that is not directed (there is no
+			distinction of origin and destination in the interaction)
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalInteraction">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An interaction between two or more ecological entities. An
+			interaction is a process that is known to occur between two
+			entities.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalProcess" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LifeStageGroup">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#SetOfOrganisms" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A set of organisms that are all a particular life stage of a
+			set of organisms
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="SetOfOrganisms">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticAggregate" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			All group members are whole organisms
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="RiverStream">
+		<rdfs:subClassOf rdf:resource="#Freshwater" />
+	</owl:Class>
+	<owl:Class rdf:ID="Estuarine">
+		<rdfs:subClassOf rdf:resource="#PhysicalHabitat" />
+	</owl:Class>
+	<owl:Class rdf:ID="AnimalSpecies">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#TaxonomicGroup" />
+					<owl:Restriction>
+						<owl:onProperty>
+							<owl:FunctionalProperty
+								rdf:about="#taxonomicID" />
+						</owl:onProperty>
+						<owl:allValuesFrom
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#AnimalTaxonomicIdentifier" />
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="IntraSpecificInteraction">
+		<rdfs:subClassOf rdf:resource="#EcologicalInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="PlantDescription">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Descriptions of plants
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityDescr" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BodyMassRange">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AggregateBodyMass" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NutrientFlow">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#MaterialFlow" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="CommonNameGroup">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A set or organisms identified only by a non-scientific name
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:subClassOf rdf:resource="#SetOfOrganisms" />
+	</owl:Class>
+	<owl:Class rdf:ID="PhysicalMatrix">
+		<rdfs:subClassOf rdf:resource="#EcologicalEnvironment" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom rdf:resource="#AbioticEntity" />
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#environmentEntity" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The physical environment that an ecological entity exists
+			within
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="BioticAggregate">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#hasPart" />
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A grouping of organisms or their parts - subclasses define
+			the conditions for membership in the group.
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#BioticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="PhysicalEnvironment">
+		<rdfs:subClassOf rdf:resource="#AbioticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="LakePond">
+		<rdfs:subClassOf rdf:resource="#Freshwater" />
+	</owl:Class>
+	<owl:Class rdf:ID="Leaves">
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Stems" />
+		</owl:disjointWith>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AboveGroundPlantParts" />
+		</rdfs:subClassOf>
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Seeds" />
+		</owl:disjointWith>
+	</owl:Class>
+	<owl:Class rdf:ID="BioticAbioticEntityTrait">
+		<rdfs:subClassOf rdf:resource="#EcoEntityTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="Roots">
+		<owl:disjointWith>
+			<owl:Class rdf:about="#AboveGroundPlantParts" />
+		</owl:disjointWith>
+		<rdfs:subClassOf rdf:resource="#PlantParts" />
+	</owl:Class>
+	<owl:Class rdf:ID="PlantTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicRole">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#FeedingRoleDescr" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class>
+				<owl:oneOf rdf:parseType="Collection">
+					<TaxonomicRole rdf:ID="AnimalConsumer" />
+					<TaxonomicRole rdf:ID="PlantConsumer" />
+					<TaxonomicRole rdf:ID="TaxonomicOmnivore" />
+				</owl:oneOf>
+			</owl:Class>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Stems">
+		<owl:disjointWith>
+			<owl:Class rdf:about="#Seeds" />
+		</owl:disjointWith>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AboveGroundPlantParts" />
+		</rdfs:subClassOf>
+		<owl:disjointWith rdf:resource="#Leaves" />
+	</owl:Class>
+	<owl:Class rdf:ID="MeteorologicalProperty">
+		<rdfs:subClassOf rdf:resource="#EnvironmentalTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="CommunityTrait">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#location" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#traitOf" />
+				<owl:allValuesFrom rdf:resource="#Community" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SpaceStock">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EnvironmentalStock" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#location" />
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalProcess">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalConcepts" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasTraits" />
+				</owl:onProperty>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#EcoProcessTrait" />
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ObservableEntity" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A process leads to some change over time in the entity or
+			entities of interest
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="AnimalTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticEntityTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FieldExperiment">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An experiment performed in "the field" (as defined by the
+			spatial and temporal contexts).
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#Experiment" />
+	</owl:Class>
+	<owl:Class rdf:ID="VegetationClassification">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A commonly occuring grouping of plants
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalClassification" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingTerm">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalTerm" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BioticEntityTrait">
+		<rdfs:subClassOf rdf:resource="#EcoEntityTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioticItem">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#partOf" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An individual living entity. Individual entities are always
+			defined by reference to the BioticAggregate that the
+			individual is a member of.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#partOf" />
+				<owl:allValuesFrom rdf:resource="#BioticAggregate" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+							<owl:Class rdf:about="#BioticItemTrait" />
+							<owl:Class rdf:about="#LifeStageTrait" />
+						</owl:unionOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasTraits" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#BioticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalTerm">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#Term" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalTerminology" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A possible ambiguous term, defined using one or more
+			EcologicalDescriptions, that has one or more commonly
+			accepted meanings within ecology.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="AboveGroundPlantParts">
+		<rdfs:subClassOf rdf:resource="#PlantParts" />
+		<owl:disjointWith rdf:resource="#Roots" />
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicGroup">
+		<rdfs:subClassOf rdf:resource="#SetOfOrganisms" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A set of organisms all with the same taxonomic
+			classification
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="PartOfOrganism">
+		<rdfs:label>Organism part</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom
+					rdf:resource="#SetOfPartsOfOrganisms" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#partOf" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#BioticItem" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcoProcessTrait">
+		<rdfs:subClassOf rdf:resource="#EcologicalTrait" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A trait of an ecological process
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="BodySizeTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#BioticItemTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BioticEntityDescr">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalDescription" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="EnergySourceDescr">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A description of an organism's enrgy source - light, organic
+			sources or non-organic chemical sources
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#BioticEntityDescr" />
+	</owl:Class>
+	<owl:Class rdf:ID="AbioticEntityTrait">
+		<rdfs:subClassOf rdf:resource="#EcoEntityTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="TerritorialMarker">
+		<rdfs:subClassOf rdf:resource="#InformationInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricExtent">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf rdf:resource="#EnvironmentalTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="Marine">
+		<rdfs:subClassOf rdf:resource="#PhysicalHabitat" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalConcepts">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			This is an abstract class that exists simple to organize the
+			class hierarchy. It is a superclass for concepts relating to
+			ecology
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="ManipulationExperiment">
+		<rdfs:subClassOf rdf:resource="#FieldExperiment" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A field experiment in which some manipulation of the
+			conditions is performed by the researcher
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingRoleDescr">
+		<rdfs:subClassOf rdf:resource="#BioticEntityDescr" />
+	</owl:Class>
+	<owl:Class rdf:ID="MaterialStock">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EnvironmentalStock" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ResourceUptakeDescr">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Descriptions of the methods of resource uptake in a plant
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#PlantDescription" />
+	</owl:Class>
+	<owl:Class rdf:ID="FieldManipulation">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#MeasurementProcedureConcepts" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A description of the manipulation performed in the field
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="TrophicRole">
+		<rdfs:subClassOf rdf:resource="#FeedingRoleDescr" />
+		<rdfs:subClassOf>
+			<owl:Class>
+				<owl:oneOf rdf:parseType="Collection">
+					<TrophicRole rdf:ID="PrimaryProducer" />
+					<TrophicRole rdf:ID="SecondaryConsumer" />
+					<TrophicRole rdf:ID="PrimaryConsumer" />
+					<TrophicRole rdf:ID="TrophicOmnivore" />
+				</owl:oneOf>
+			</owl:Class>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingMortality">
+		<rdfs:subClassOf>
+			<owl:Class>
+				<owl:oneOf rdf:parseType="Collection">
+					<FeedingMortality rdf:ID="EventualDeath" />
+					<FeedingMortality rdf:ID="ImmediateDeath" />
+					<FeedingMortality rdf:ID="NoDeath" />
+				</owl:oneOf>
+			</owl:Class>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#FeedingRoleDescr" />
+	</owl:Class>
+	<owl:Class rdf:ID="PlantSpecies">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#TaxonomicGroup" />
+					<owl:Restriction>
+						<owl:allValuesFrom
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#PlantTaxonomicIdentifier" />
+						<owl:onProperty>
+							<owl:FunctionalProperty
+								rdf:about="#taxonomicID" />
+						</owl:onProperty>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="Animal">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#Organism" />
+					<owl:Restriction>
+						<owl:onProperty>
+							<owl:FunctionalProperty
+								rdf:about="#taxonomicID" />
+						</owl:onProperty>
+						<owl:allValuesFrom
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#AnimalTaxonomicIdentifier" />
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="EcosystemClassification">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcologicalClassification" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AnimalParts">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SetOfPartsOfOrganisms" />
+					<owl:Restriction>
+						<owl:allValuesFrom
+							rdf:resource="#AnimalSpecies" />
+						<owl:onProperty>
+							<owl:ObjectProperty
+								rdf:about="#ofOrganismGroup" />
+						</owl:onProperty>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="RootDescrTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PlantPartDescriptiveTrait" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LifeStageDescrTrait">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LifeStageTrait" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DescriptiveTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioticItemTrait">
+		<rdfs:subClassOf rdf:resource="#BioticEntityTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="InterSpecificInteraction">
+		<rdfs:subClassOf rdf:resource="#EcologicalInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="AggregateBodyMass">
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measure of individual body mass across a group of
+			individuals
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="NonMaterialEnergyFlow">
+		<rdfs:subClassOf rdf:resource="#PhysicalInteraction" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Such as an organism gaining heat from its environment
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="AggregateBodySize">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measure of individual body size across a group of
+			individuals
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="BioticEnvironment">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Environmental components that are biotic entities
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#environmentEntity" />
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#BioticEntity" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#EcologicalEnvironment" />
+	</owl:Class>
+	<owl:Class rdf:ID="LifeStageTrait">
+		<rdfs:subClassOf rdf:resource="#BioticEntityTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="BiodiversityTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ValueTrait" />
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalTerminology">
+		<rdfs:subClassOf rdf:resource="#EcologicalConcepts" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DescriptiveTerm" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A descriptive term that can be a trait value of an entity or
+			interaction
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="FeedingTechnique">
+		<rdfs:subClassOf rdf:resource="#FeedingTerm" />
+	</owl:Class>
+	<owl:Class rdf:ID="PlantPartDescriptiveTrait">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DescriptiveTrait" />
+		<rdfs:subClassOf rdf:resource="#PlantTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="EnvironmentalStock">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Something inthe environment that has fluxes into or out of
+			the system of interest
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#AbioticEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="PartEaten">
+		<rdfs:subClassOf rdf:resource="#FeedingRoleDescr" />
+	</owl:Class>
+	<owl:Class rdf:ID="MaterialFlow">
+		<rdfs:subClassOf rdf:resource="#PhysicalInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="MaterialEnergyFlow">
+		<rdfs:subClassOf rdf:resource="#MaterialFlow" />
+	</owl:Class>
+	<owl:Class rdf:ID="EnergyStock">
+		<rdfs:subClassOf rdf:resource="#EnvironmentalStock" />
+	</owl:Class>
+	<owl:Class rdf:ID="MatingSignal">
+		<rdfs:subClassOf rdf:resource="#InformationInteraction" />
+	</owl:Class>
+	<owl:Class rdf:ID="SeedDescrTrait">
+		<rdfs:subClassOf rdf:resource="#PlantPartDescriptiveTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="TrophicLevel">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measure of the trophic level of a group of organisms
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#BioticAggregateTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalDescription">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The value of a descriptive trait of some ecological entity.
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#EcologicalTerminology" />
+	</owl:Class>
+	<owl:Class rdf:ID="Seeds">
+		<owl:disjointWith rdf:resource="#Stems" />
+		<rdfs:subClassOf rdf:resource="#AboveGroundPlantParts" />
+		<owl:disjointWith rdf:resource="#Leaves" />
+	</owl:Class>
+	<owl:Class rdf:ID="RichnessIndex">
+		<rdfs:subClassOf rdf:resource="#BiodiversityTrait" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ComputableTrait" />
+	</owl:Class>
+	<owl:Class rdf:ID="BodySizeRange">
+		<rdfs:subClassOf rdf:resource="#AggregateBodySize" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A measure of the range of body sizes in a group of
+			individuals
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="EcologicalClassification">
+		<rdfs:subClassOf rdf:resource="#EcologicalTerminology" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Root for hierarchical classifications used in ecology
+		</rdfs:comment>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="hasFieldManipulation">
+		<rdfs:range rdf:resource="#FieldManipulation" />
+		<rdfs:domain rdf:resource="#ManipulationExperiment" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="cmnNameOf">
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#TaxonomicGroup" />
+					<owl:Class rdf:about="#LifeStageGroup" />
+					<owl:Class rdf:about="#FunctionalGroup" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain rdf:resource="#CommonNameGroup" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="partEaten">
+		<rdfs:range rdf:resource="#PartEaten" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="habitat">
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#PhysicalHabitat" />
+					<owl:Class rdf:about="#VegetationClassification" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain rdf:resource="#PhysicalHabitatTrait" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasTraits">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#EcologicalEntity" />
+					<owl:Class rdf:about="#EcologicalProcess" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="hasEnvironment">
+		<rdfs:range rdf:resource="#EcologicalEnvironment" />
+		<rdfs:domain rdf:resource="#EcologicalEntity" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="feedingMortality">
+		<rdfs:range rdf:resource="#FeedingMortality" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="preyFeedingTerm">
+		<rdfs:range rdf:resource="#FeedingTerm" />
+		<rdfs:domain rdf:resource="#FeedingTermDefinition" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofOrganismGroup">
+		<rdfs:range rdf:resource="#SetOfOrganisms" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#LifeStageGroup" />
+					<owl:Class rdf:about="#SetOfPartsOfOrganisms" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="ofSetOfOrganisms">
+		<rdfs:range rdf:resource="#SetOfOrganisms" />
+		<rdfs:domain rdf:resource="#FunctionalGroup" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="feedingDuration">
+		<rdfs:range rdf:resource="#FeedingDuration" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="lifeStage">
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#LifeStageGroup" />
+					<owl:Class rdf:about="#LifeStageTrait" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#LifeStageDescr" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="interactionOrigin">
+		<rdfs:subPropertyOf>
+			<owl:ObjectProperty rdf:about="#processEntities" />
+		</rdfs:subPropertyOf>
+		<rdfs:range rdf:resource="#EcologicalEntity" />
+		<rdfs:domain rdf:resource="#DirectedInteraction" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="processEntities">
+		<rdfs:range rdf:resource="#EcologicalEntity" />
+		<rdfs:domain rdf:resource="#EcologicalProcess" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The entities that are changed by this process
+		</rdfs:comment>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="environmentOf">
+		<rdfs:range rdf:resource="#EcologicalEntity" />
+		<rdfs:domain rdf:resource="#EcologicalEnvironment" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="taxonomicRole">
+		<rdfs:range rdf:resource="#TaxonomicRole" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="trophicRole">
+		<rdfs:range rdf:resource="#TrophicRole" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="environmentEntity">
+		<rdfs:domain rdf:resource="#EcologicalEnvironment" />
+		<rdfs:range rdf:resource="#EcologicalEntity" />
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="bodyPart">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A text description of the part of the body that was measured
+		</rdfs:comment>
+		<rdfs:domain rdf:resource="#AggregateBodySize" />
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="nextLifeStage">
+		<rdfs:range rdf:resource="#LifeStageDescr" />
+		<rdfs:domain rdf:resource="#LifeStageDescr" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="interactionDestination">
+		<rdfs:subPropertyOf rdf:resource="#processEntities" />
+		<rdfs:range rdf:resource="#EcologicalEntity" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain rdf:resource="#DirectedInteraction" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="taxonomicID">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#TaxonomicIdentifier" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#TaxonomicGroup" />
+					<owl:Class rdf:about="#Organism" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="duration">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#Duration" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="time">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#Time" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="previousLifeStage">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range rdf:resource="#LifeStageDescr" />
+		<rdfs:domain rdf:resource="#LifeStageDescr" />
+	</owl:FunctionalProperty>
+	<FeedingTerm rdf:ID="Folivore" />
+	<FeedingTechnique rdf:ID="SapSucker" />
+	<AggregateBodyMass rdf:ID="MaxBodyMass">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#mass" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The maximum body mass of a group of individuals
+		</rdfs:comment>
+	</AggregateBodyMass>
+	<TaxonomicRole rdf:ID="FungusConsumer" />
+	<FeedingTerm rdf:ID="Fungivore" />
+	<FeedingTerm rdf:ID="RootFeeder" />
+	<Abundance rdf:ID="IndividualCount">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Number of individuals in an aggregate group of individual
+			organisms
+		</rdfs:comment>
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#dimensionless" />
+	</Abundance>
+	<BodySizeTrait rdf:ID="BodyLength">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#length" />
+	</BodySizeTrait>
+	<FeedingDuration rdf:ID="ShortDurationFeeding" />
+	<FeedingTechnique rdf:ID="Scraper" />
+	<AggregateBodySize rdf:ID="MaxBodyLength">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#length" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The maximum body length of a group of individuals
+		</rdfs:comment>
+	</AggregateBodySize>
+	<AggregateBodySize rdf:ID="MaxBodyArea">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#Area" />
+	</AggregateBodySize>
+	<FeedingTechnique rdf:ID="Engulfer" />
+	<FeedingTermDefinition rdf:ID="KB_991684_Individual_52">
+		<termdef:denotes rdf:resource="#AnimalConsumer" />
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			definition of parasitism using various descriptive
+			properties of the feeding interaction
+		</rdfs:comment>
+		<termdef:denotes>
+			<FeedingDuration rdf:ID="LongDurationFeeding" />
+		</termdef:denotes>
+		<termdef:denotes rdf:resource="#NoDeath" />
+		<termdef:denotes rdf:resource="#SecondaryConsumer" />
+		<prop:hasName>parasitism</prop:hasName>
+	</FeedingTermDefinition>
+	<FeedingTechnique rdf:ID="Filter" />
+	<FeedingTerm rdf:ID="HyperHyperParasitoid" />
+	<FeedingTerm rdf:ID="Herbivore" />
+	<Frequency rdf:ID="VolumetricPopulationDensity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Count per unit volume
+		</rdfs:comment>
+	</Frequency>
+	<EnergySourceDescr rdf:ID="autotroph">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Gets energy from light
+		</rdfs:comment>
+	</EnergySourceDescr>
+	<Abundance rdf:ID="CoverFraction">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#dimensionless" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Fraction of area covered by the organism
+		</rdfs:comment>
+	</Abundance>
+	<BodySizeTrait rdf:ID="BodyVolume">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#Volume" />
+	</BodySizeTrait>
+	<GeometricExtent rdf:ID="GeometricVolume" />
+	<LifeStageDescr rdf:ID="pupa" />
+	<EnergySourceDescr rdf:ID="chemotroph">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Gets energy from non-organic chemical sources
+		</rdfs:comment>
+	</EnergySourceDescr>
+	<Abundance rdf:ID="Biomass">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Total biomass of an aggregate group of individual organisms
+		</rdfs:comment>
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#mass" />
+	</Abundance>
+	<FeedingTermDefinition rdf:ID="KB_991684_Individual_51">
+		<termdef:denotes rdf:resource="#AnimalConsumer" />
+		<prop:hasName>predation</prop:hasName>
+		<termdef:denotes rdf:resource="#ShortDurationFeeding" />
+		<termdef:denotes rdf:resource="#ImmediateDeath" />
+		<termdef:denotes rdf:resource="#SecondaryConsumer" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			definition of predation using various descriptive properties
+			of the feeding interaction
+		</rdfs:comment>
+	</FeedingTermDefinition>
+	<BodyMassTrait rdf:ID="BodyMass">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#mass" />
+	</BodyMassTrait>
+	<FeedingTechnique rdf:ID="Collector" />
+	<FeedingTechnique rdf:ID="Shredder" />
+	<Frequency rdf:ID="ArealBiomassDensity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Biomass per unit area
+		</rdfs:comment>
+	</Frequency>
+	<FeedingTerm rdf:ID="Parasitoid" />
+	<FeedingTerm rdf:ID="Predator">
+		<termdef:definition rdf:resource="#KB_991684_Individual_51" />
+	</FeedingTerm>
+	<AggregateBodySize rdf:ID="AvgBodyLength">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#length" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The average length of a group of individuals
+		</rdfs:comment>
+	</AggregateBodySize>
+	<FeedingTechnique rdf:ID="Miner" />
+	<LifeStageDescr rdf:ID="adult" />
+	<LifeStageDescrTrait rdf:ID="lifeStageDescription" />
+	<Frequency rdf:ID="ArealPopulationDensity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Count per unit area
+		</rdfs:comment>
+	</Frequency>
+	<MetabolicType rdf:ID="metabolicInvertebrate" />
+	<FeedingTerm rdf:ID="HyperParasitoid" />
+	<LifeStageDescr rdf:ID="juvenile" />
+	<AggregateBodySize rdf:ID="AvgBodyArea">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#Area" />
+	</AggregateBodySize>
+	<GeometricExtent rdf:ID="GeometricArea" />
+	<EnergySourceDescr rdf:ID="heterotroph">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Gets energy from living or non-living organic sources
+		</rdfs:comment>
+	</EnergySourceDescr>
+	<Frequency rdf:ID="VolumetricBiomassDensity">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Biomass perunit volume
+		</rdfs:comment>
+	</Frequency>
+	<GeometricExtent rdf:ID="GeometricLength" />
+	<MetabolicType rdf:ID="metabolicEndothermicVertebrate" />
+	<FeedingTechnique rdf:ID="Grazer" />
+	<FeedingRoleDescrTrait rdf:ID="feedingRoleDescription" />
+	<AggregateBodySize rdf:ID="AvgBodyVolume">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#Volume" />
+	</AggregateBodySize>
+	<CommunityDiversityTrait rdf:ID="SpeciesCnt">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			number of species observed
+		</rdfs:comment>
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#dimensionless" />
+	</CommunityDiversityTrait>
+	<LifeStageDescr rdf:ID="egg" />
+	<FeedingTerm rdf:ID="Parasite">
+		<termdef:definition rdf:resource="#KB_991684_Individual_52" />
+	</FeedingTerm>
+	<AggregateBodySize rdf:ID="MaxBodyVolume">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#Volume" />
+	</AggregateBodySize>
+	<LifeStageDescr rdf:ID="larva" />
+	<LifeStageDescr rdf:ID="nymph" />
+	<FeedingTerm rdf:ID="Omnivore" />
+	<BodyMassTrait rdf:ID="DryBodyMass">
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#mass" />
+	</BodyMassTrait>
+	<Frequency rdf:ID="BiomassFraction">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Fraction of biomass in the community/ecosystem
+		</rdfs:comment>
+	</Frequency>
+	<AggregateBodyMass rdf:ID="AvgBodyMass">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The average body mass of a group of individuals
+		</rdfs:comment>
+		<mb:traitDimension
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#mass" />
+	</AggregateBodyMass>
+	<Frequency rdf:ID="PopulationFraction">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Fraction of individuals in the community/ecosystem
+		</rdfs:comment>
+	</Frequency>
+	<FeedingTerm rdf:ID="PodSeedFeeder" />
+	<FeedingTechnique rdf:ID="Gatherer" />
+	<MetabolicType rdf:ID="metabolicEctothermicVertebrate" />
+	<FeedingTerm rdf:ID="Disease" />
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

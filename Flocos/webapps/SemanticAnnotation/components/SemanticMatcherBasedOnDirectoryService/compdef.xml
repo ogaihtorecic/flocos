@@ -1,0 +1,10 @@
+<SWAFComponent>
+	<name>SemanticMatcherBasedOnDirectoryService</name>
+	<jarFile>SemanticMatcherBasedOnDirectoryService.jar</jarFile>
+	<semanticMatcher>
+		<description>Concept element mapping based on Directory Service: an element must have the same name of the concept or a search will be made in a directory service, and the five terms most relevant with the element are used to find the most close element in the ontology.</description>
+		<className>
+			br.edu.ufam.sw.component.cms.SemanticMatcherBasedOnDirectoryService
+		</className>
+	</semanticMatcher>
+</SWAFComponent>

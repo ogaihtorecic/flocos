@@ -1,0 +1,1560 @@
+<?xml version="1.0"?>
+<!DOCTYPE owl [
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY event "http://ebiquity.umbc.edu/v2.1/ontology/event.owl#">
+<!ENTITY biodiv20050622 "http://cain.nbii.gov/schemas/biodiv20050622.owl#">
+<!ENTITY geoCoordinateSystems20040307 "http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#">
+<!ENTITY foaf "http://xmlns.com/foaf/0.1/">
+<!ENTITY swed "http://www.swed.org.uk/2004/02/swed#">
+<!ENTITY terms "http://purl.org/dc/terms/">
+<!ENTITY geoFeatures20040307 "http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY contact "http://www.w3.org/2000/10/swap/pim/contact#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY geoRelations20040307 "http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+]>
+<rdf:RDF
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:event="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#"
+ xmlns:biodiv20050622="http://cain.nbii.gov/schemas/biodiv20050622.owl#"
+ xmlns:geoCoordinateSystems20040307="http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:swed="http://www.swed.org.uk/2004/02/swed#"
+ xmlns:terms="http://purl.org/dc/terms/"
+ xmlns:geoFeatures20040307="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:geoRelations20040307="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xml:base="http://cain.nbii.gov/schemas/biodiv20050622.owl"
+>
+<owl:Ontology rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl">
+<rdfs:comment>CAIN Biodiversity Resources Ontology@en</rdfs:comment>
+<owl:versionInfo>2005-05-23@en</owl:versionInfo>
+<rdfs:comment>An ontology describing resources important in biodiversity information management.@en</rdfs:comment>
+</owl:Ontology>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Bibliography">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment>A bibliographic collection</rdfs:comment>
+  <rdfs:label>Bibliography</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Just dropped LandUseAndManagement - don't know what an instance of it would be.</rdfs:comment>
+  <rdfs:label>Biodiversity information resource</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A container for data.  Properties here give metadata for the dataset as a whole (e.g. contact information)</rdfs:comment>
+  <rdfs:label>Dataset</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EcologicalRegion">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Ecological region</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Educational institution</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Employment</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FactSheet">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Fact sheet</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Federal government</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#HydrologicalUnit">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Hydrological unit</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Image</rdfs:label>
+  <rdfs:comment>For now, all properties optional.  Josh's schema uses mostly DC terms</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#InvasivesProject">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Invasive species project</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#JobOpportunity">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Job opportunity</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#ListArchive">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Email list archive</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Local government</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Map">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Map</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#MeasuredProperty">
+  <rdfs:comment xml:lang="en">A property of an entity for which there is a measurement.</rdfs:comment>
+  <rdfs:label>Measured property</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NBIIWebResource">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/format" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/identifier" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/title" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/type" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/creator" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/publisher" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/subject" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/description" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/rights" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label>NBII web resource</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has necessary fields for NBII Web Cataloguing standard</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>NGO</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NewsReport">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>News report</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#ObservationDataset">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset composed of field observations of biological entities</rdfs:comment>
+  <rdfs:label>Observation dataset</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#ObservationUnit">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Observation unit</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a dataset, the basic entity being observed and its associated properties. Examples include a species and an associated count, or an individual with a list of size measurements.</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:equivalentClass>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Organization</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:equivalentClass>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Person</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Policy and Regulation</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is an instance of this a particular law or reg?</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:equivalentClass>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#project">
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Project</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Publication</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Quadrangle">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Quadrangle</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Regional-State-Federal Partnership</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SampleAggregation">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Sample aggregation</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SampleUnit">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label>Sample unit</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Species list</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpecimenDataset">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dataset composed of collected specimens, such as for museums</rdfs:comment>
+  <rdfs:label>Specimen dataset</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>State government</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label xml:lang="en">Township-range-section legal description</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://cain.nbii.gov/schemas/biodiv20050622.owl#usesTaxonRefSrc" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://cain.nbii.gov/schemas/biodiv20050622.owl#scientificName" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonomicRank" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label>Taxon</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonCode">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:comment>Should be a blank node</rdfs:comment>
+  <rdfs:label>Taxonomic code</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonRefSrc">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonomicRefCitation" />
+      <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Taxonomic reference source</rdfs:label>
+  <rdfs:comment>Normally a blank node with dc:identifier as</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/identifier" />
+      <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label>Web Resource</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#BiodivResource">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Event</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Could be a conference or meeting, or public program.</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem">
+</owl:Class>
+<owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Geographic feature</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+  <rdfs:label>Spatial thing</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#SpatialRelation">
+  <rdfs:label>Spatial relation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#TopologicalRelation">
+  <rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#SpatialRelation">
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:label>Topological relation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#organisation">
+</owl:Class>
+<owl:Class rdf:about="http://www.swed.org.uk/2004/02/swed#project">
+</owl:Class>
+<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string">
+</owl:Class>
+<owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+</owl:Class>
+<owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+</owl:Class>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#catalogEntryBy">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Catalog entry inputted by</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#contactPerson">
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Contact person</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#expertOn">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Expert on</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#habitatType">
+  <rdfs:label>Habitat type</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hasDistributionMap">
+  <rdfs:domain>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:label>has distribution map</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hasMeasurementOf">
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#MeasuredProperty">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Has measurement of</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hasTaxonCode">
+  <rdfs:domain>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonCode">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Has taxonomic code</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#location">
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature">
+    </owl:Class>
+  </rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#section">
+  <rdfs:domain>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:label>Section</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonStudied">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label></rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#usesMethodology">
+  <rdfs:label>Uses methodology</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should methodologies be instances or classes?</rdfs:comment>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#usesTaxonRefSrc">
+  <rdfs:domain>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range>
+    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonRefSrc">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Uses taxonomic reference source</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Contributor</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
+  <rdfs:label>Coverage</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+  <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
+  <rdfs:label>Creator</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+  <rdfs:label>Format</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+        </owl:Class>
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Publisher</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+  <rdfs:label>Rights</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+        </owl:Class>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Subject</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+  <rdfs:label>Type</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    </owl:Class>
+  </rdfs:range>
+  <owl:inverseOf rdf:resource="http://purl.org/dc/terms/isPartOf" />
+  <rdfs:label>Has part</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+  <owl:inverseOf rdf:resource="http://purl.org/dc/terms/hasPart" />
+  <rdfs:label>Is part of</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applies to data in datasets, people in organizations, species in species lists, and so on</rdfs:comment>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+  </rdfs:range>
+  <rdfs:label>Spatial coverage</rdfs:label>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#contains">
+  <rdf:type rdf:resource="&owl;TransitiveProperty" />
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+  </rdfs:range>
+  <owl:inverseOf rdf:resource="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#within" />
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#topologicalRelationProperty">
+  <rdfs:domain>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#TopologicalRelation">
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+  </rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#within">
+  <rdf:type rdf:resource="&owl;TransitiveProperty" />
+  <rdfs:range>
+    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+  </rdfs:range>
+  <owl:inverseOf rdf:resource="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#contains" />
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#catalogEntryDate">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+</rdfs:range>
+  <rdfs:label>Catalog entry date</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#codeSystem">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonCode">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:comment>e.g. ITIS TSN number</rdfs:comment>
+  <rdfs:label>Taxonomic code system</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#codeValue">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonCode">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Taxonomic code value</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#commonName">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Common name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hasProj4SRS">
+  <rdfs:label>Has Proj4 spatial reference system</rdfs:label>
+  <rdfs:comment>Spatial reference system described in Proj.4 string description</rdfs:comment>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hasSRS">
+  <rdfs:domain>    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoCoordinateSystems20040307.owl#CoordinateSystem">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:comment xml:lang="en">Example would be an EPSG code.</rdfs:comment>
+  <rdfs:label>Has spatial reference system</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#hucCode">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#HydrologicalUnit">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Hydrological unit code</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#meridian">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:comment>Meridian in township-range-section description</rdfs:comment>
+  <rdfs:label>Meridian</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#projectEndDate">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+</rdfs:range>
+  <rdfs:label>Project end date</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#projectPurpose">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Project purpose</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#projectStartDate">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+</rdfs:range>
+  <rdfs:label>Project start date</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quadName">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Quadrangle">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quad name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quadNumber">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Quadrangle">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quad number</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quarterQuarterQuarterQuarterSection">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quarter-quarter-quarter-quarter section</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quarterQuarterQuarterSection">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quarter-quarter-quarter section</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quarterQuarterSection">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quarter-quarter section</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#quarterSection">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Quarter section</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#range">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:comment xml:lang="en">Usage is in the sense of 'township-range-section' descriptions.</rdfs:comment>
+  <rdfs:label>Range</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#scientificName">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Scientific name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#section">
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#shapeWKT">
+  <rdfs:domain>    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Shape Well-Known Text description</rdfs:label>
+  <rdfs:comment xml:lang="en">OGC Well-known text description of feature geometry, suitable for reading directly into engines like PostGIS.</rdfs:comment>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonAuthor">
+  <rdfs:label>Taxonomic name author</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonomicRank">
+  <rdfs:comment>Family, order, phylum, etc.</rdfs:comment>
+  <rdfs:label>Taxonomic rank</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#taxonomicRefCitation">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TaxonRefSrc">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Taxonomic reference citation</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#textLocation">
+  <rdfs:domain>    <owl:Class rdf:about="http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Textual location description</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#township">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#TRSLegal">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:label>Township</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#unitOfMeasure">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Unit of measure</rdfs:label>
+  <rdfs:comment>Unit of measure for a data observation</rdfs:comment>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+</rdfs:range>
+  <rdfs:label>Date</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Description</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+</rdfs:range>
+  <rdfs:label>Identifier</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/language">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Language</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Relation</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Source</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Title</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/abstract">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Abstract</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+  <rdfs:domain>    <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+    </owl:Class>
+</rdfs:domain>
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Bibliographic citation</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/temporal">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Temporal coverage</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#address">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Address</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#city">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>City</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#country">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Country</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#emailAddress">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Email</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#fax">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Fax</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#firstName">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>First name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#fullName">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Full name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#homePage">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Web home page</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#lastName">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Last name</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#middleInitial">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Middle initial</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#personalTitle">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Personal title</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#phone">
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Telephone</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#postalCode">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>Postal code</rdfs:label>
+</owl:DatatypeProperty>
+<owl:DatatypeProperty rdf:about="http://www.w3.org/2000/10/swap/pim/contact#stateOrProvince">
+  <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <rdfs:range>    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+</rdfs:range>
+  <rdfs:label>State or province</rdfs:label>
+</owl:DatatypeProperty>
+
+
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Map">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Bibliography">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NewsReport">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Bibliography">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NBIIWebResource">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#ListArchive">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FactSheet">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Bibliography">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Map">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NewsReport">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#LocalGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#RegionalStateFederalOrganization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FederalGovernment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Map">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FactSheet">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NewsReport">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#FactSheet">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#NGO">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Employment">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Project">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Taxon">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Image">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#PolicyAndRegulation">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#SpeciesList">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#StateGovernment">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#EducationalInstitution">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Person">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#WebResource">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Publication">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Organization">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://cain.nbii.gov/schemas/biodiv20050622.owl#Dataset">
+  <owl:disjointWith>
+  <owl:Class rdf:about="http://ebiquity.umbc.edu/v2.1/ontology/event.owl#Event">
+  </owl:Class>
+  </owl:disjointWith>
+</owl:Class>
+<owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#contains">
+  <rdfs:subPropertyOf>
+  <owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#topologicalRelationProperty">
+  </owl:ObjectProperty>
+  </rdfs:subPropertyOf>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#within">
+  <rdfs:subPropertyOf>
+  <owl:ObjectProperty rdf:about="http://www.mindswap.org/2003/owl/geo/geoRelations20040307.owl#topologicalRelationProperty">
+  </owl:ObjectProperty>
+  </rdfs:subPropertyOf>
+</owl:ObjectProperty>
+
+</rdf:RDF>
