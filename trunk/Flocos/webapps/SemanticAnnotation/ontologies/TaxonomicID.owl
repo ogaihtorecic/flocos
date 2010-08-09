@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:hier="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TaxonomicID.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl" />
+	</owl:Ontology>
+	<owl:Class rdf:ID="AnimalTaxonomicIdentifier">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SimpleTaxonomicIdentifier" />
+					<owl:Restriction>
+						<owl:onProperty
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#rankInst" />
+						<owl:hasValue>
+							<KingdomInstance rdf:ID="Animalia">
+								<prop:hasName
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+									animal
+								</prop:hasName>
+								<hier:hasRank>
+									<TaxonomicRank rdf:ID="Kingdom">
+										<hier:subCategory>
+											<TaxonomicRank
+												rdf:ID="Phylum">
+												<prop:hasName
+													rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+													Phylum
+												</prop:hasName>
+												<hier:superCategory
+													rdf:resource="#Kingdom" />
+												<owl:sameAs>
+													<TaxonomicRank
+														rdf:ID="Division">
+														<hier:superCategory
+															rdf:resource="#Kingdom" />
+														<owl:sameAs
+															rdf:resource="#Phylum" />
+														<prop:hasName
+															rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+															Division
+														</prop:hasName>
+														<hier:subCategory>
+															<TaxonomicRank
+																rdf:ID="TaxonomicClass">
+																<hier:subCategory>
+																	<TaxonomicRank
+																		rdf:ID="Order">
+																		<prop:hasName
+																			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																			Order
+																		</prop:hasName>
+																		<hier:superCategory
+																			rdf:resource="#TaxonomicClass" />
+																		<hier:subCategory>
+																			<TaxonomicRank
+																				rdf:ID="Family">
+																				<hier:subCategory>
+																					<TaxonomicRank
+																						rdf:ID="Genus">
+																						<prop:hasName
+																							rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																							Genus
+																						</prop:hasName>
+																						<hier:subCategory>
+																							<TaxonomicRank
+																								rdf:ID="Species">
+																								<hier:subCategory>
+																									<TaxonomicRank
+																										rdf:ID="Subspecies">
+																										<prop:hasName
+																											rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																											Subspecies
+																										</prop:hasName>
+																										<hier:superCategory
+																											rdf:resource="#Species" />
+																									</TaxonomicRank>
+																								</hier:subCategory>
+																								<hier:superCategory
+																									rdf:resource="#Genus" />
+																								<prop:hasName
+																									rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																									Species
+																								</prop:hasName>
+																							</TaxonomicRank>
+																						</hier:subCategory>
+																						<hier:superCategory
+																							rdf:resource="#Family" />
+																					</TaxonomicRank>
+																				</hier:subCategory>
+																				<prop:hasName
+																					rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																					Family
+																				</prop:hasName>
+																				<hier:superCategory
+																					rdf:resource="#Order" />
+																			</TaxonomicRank>
+																		</hier:subCategory>
+																	</TaxonomicRank>
+																</hier:subCategory>
+																<prop:hasName
+																	rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+																	Class
+																</prop:hasName>
+																<hier:superCategory
+																	rdf:resource="#Phylum" />
+															</TaxonomicRank>
+														</hier:subCategory>
+													</TaxonomicRank>
+												</owl:sameAs>
+												<hier:subCategory
+													rdf:resource="#TaxonomicClass" />
+											</TaxonomicRank>
+										</hier:subCategory>
+										<prop:hasName
+											rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+											Kingdom
+										</prop:hasName>
+									</TaxonomicRank>
+								</hier:hasRank>
+							</KingdomInstance>
+						</owl:hasValue>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="PlantTaxonomicIdentifier">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SimpleTaxonomicIdentifier" />
+					<owl:Restriction>
+						<owl:onProperty
+							rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#rankInst" />
+						<owl:hasValue>
+							<KingdomInstance rdf:ID="Plantae">
+								<prop:hasName
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+									plant
+								</prop:hasName>
+								<hier:hasRank rdf:resource="#Kingdom" />
+							</KingdomInstance>
+						</owl:hasValue>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	<owl:Class rdf:ID="SpeciesInstance">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:label>Species</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Species" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="PhylumInstance">
+		<rdfs:label>Phylum/division</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Phylum" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SubspeciesInstance">
+		<rdfs:label>Subspecies</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Subspecies" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GenusInstance">
+		<rdfs:label>Genus</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Genus" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="FamilyInstance">
+		<rdfs:label>Family</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Family" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="KingdomInstance">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+				<owl:hasValue rdf:resource="#Kingdom" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>Kingdom</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicRank">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#HierarchicalRank" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicConcepts" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A taxonomic rank (Kingdom, Phylum etc)
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicIdentifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SimpleTaxonomicIdentifier">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#RankedIdentifier" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#rankInst" />
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#TaxonomicRankInstance" />
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#TaxonomicIdentifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="ClassInstance">
+		<rdfs:label>Class</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+				<owl:hasValue rdf:resource="#TaxonomicClass" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="UnspecifiedSpecies">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TaxonomicRankInstance" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A unique but unknown species
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicConcepts">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="TaxonomicRankInstance">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#RankInstance" />
+	</owl:Class>
+	<owl:Class rdf:ID="OrderInstance">
+		<rdfs:label>Order</rdfs:label>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:hasValue rdf:resource="#Order" />
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#hasRank" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#TaxonomicRankInstance" />
+	</owl:Class>
+	<owl:DatatypeProperty rdf:ID="synonym">
+		<rdfs:domain rdf:resource="#TaxonomicRank" />
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+	</owl:DatatypeProperty>
+	<KingdomInstance rdf:ID="Fungi">
+		<prop:hasName
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			fungi
+		</prop:hasName>
+		<hier:hasRank rdf:resource="#Kingdom" />
+	</KingdomInstance>
+	<KingdomInstance rdf:ID="Monera">
+		<prop:hasName
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			monera
+		</prop:hasName>
+		<hier:hasRank rdf:resource="#Kingdom" />
+	</KingdomInstance>
+	<KingdomInstance rdf:ID="Protista">
+		<hier:hasRank rdf:resource="#Kingdom" />
+		<prop:hasName
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			protist
+		</prop:hasName>
+	</KingdomInstance>
+	<UnspecifiedSpecies rdf:ID="Unspecified">
+		<prop:hasName
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			unknown
+		</prop:hasName>
+		<hier:hasRank rdf:resource="#Species" />
+	</UnspecifiedSpecies>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

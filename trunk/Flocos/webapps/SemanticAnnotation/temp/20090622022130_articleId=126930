@@ -1,0 +1,925 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/masterLayout.jsp -->
+<head>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/yahooui/utilities/utilities.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/edmui/edmunds/edmunds.js"></script>
+        
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/edmui/usertrack/usertrack.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/pagescripts.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/hpscripts.js"></script>
+      
+    <link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/day/scripts/edmui/lightbox/lightbox-media.css"/>
+    <script language="JavaScript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/identity/identity.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/lightbox/lightbox-media.js"></script>
+
+
+    <script type="text/javascript" language="javascript" src="/insideline/do/scripts/Global"></script>
+    
+        
+        
+            
+        
+    
+
+    
+        
+        
+            
+        
+    
+
+    
+        
+        
+            
+        
+    
+
+    
+
+    
+        
+        
+            <title>GM Offers First Incentives on Full-Size SUV Hybrids</title>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="-1"/>
+            <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+            <meta http-equiv="keywords" content="Inside Line: GM Offers First Incentives on Full-Size SUV Hybrids, News Page"/>
+            <meta http-equiv="description" content="Inside Line: "/>
+
+            <meta name="document-rating" content="Safe for Kids"/>
+            <meta name="PICS-Label"
+                  content='(pics-1.1 "http://www.icra.org/ratingsv02.html" | gen true for "http://www.edmunds.com" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" | gen true for "http://www.edmunds.com" r (n 0 s 0 v 0 | 0))'/>
+            <link rel="stylesheet" type="text/css" media="all" href="/il/styles/inside.css"/>
+        
+    
+
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://rss.edmunds.com/IL/rss/automotivenews.xml">
+    
+
+    
+        <link rel="alternate" type="application/atom+xml" title="ATOM" href="http://rss.edmunds.com/IL/atom/automotivenews.xml">
+    
+        
+
+
+<script language="javascript" src="/day/scripts/miniilpagescripts.js"></script>    
+    
+</head>
+
+<body>
+<!-- Login lightbox related stuff -->
+
+
+<a rel="shadowbox;width=490;height=225" class="option" id="reset-password-link" href="http://www.edmunds.com/era/secure/lb/resetPassword.jsp?email=" style="display:none"></a>
+<a rel="shadowbox;width=490;height=595" class="option" id="reset-password-link-error" href="http://www.edmunds.com/era/lb/resetPasswordLinkErr.jsp" style="display:none"></a>
+<a rel="shadowbox;width=490;height=400" class="option" id="account-activation" href="http://www.edmunds.com/era/lb/accountActivation.jsp?msg=" style="display:none"></a>
+<script language="javascript">
+YAHOO.util.Event.addListener(window, 'load', function() {
+	YAHOO.Edmunds.LightBoxMedia.init();
+	if (document.getElementById('gl-registration') != null && document.getElementById('gl-registration') != undefined){
+		document.getElementById('gl-registration').style.display = 'block';
+	}
+	if (document.getElementById('regHeader') != null && document.getElementById('regHeader') != undefined){
+		document.getElementById('regHeader').style.display = 'block';
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'reset-password') {
+		YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('reset-password-link'));
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'reset-password-link-error') {
+	    YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('reset-password-link-error'));
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'account-activation') {
+	    YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('account-activation'));
+	}
+});
+
+// The js function takes three parameters.
+// fromUrl : Current url
+// toUrl : After login, where the user intends to go
+// app : application name, e.g. insideline, autoobserver, carspace, default is edmunds
+// The look and feel of the light box changes depending upon the app
+function isLoggedIn(toUrl, app) {
+    if(user.isLoggedIn() || user.isAutoLoggedIn()){
+        if (toUrl != null && toUrl != undefined && toUrl != ''){
+            window.location = toUrl;
+        } else {
+            window.location.reload();
+        }		
+     } else {
+        var newLink=document.createElement('a');
+         newLink.href= 'http://www.edmunds.com/era/secure/lb/login.jsp?fromUrl=' + window.location.href;
+         if (toUrl != null && toUrl != undefined && toUrl != ''){
+            newLink.href= newLink.href + '&toUrl=' + toUrl;
+         }
+         if (app != null && app != undefined && app != ''){
+            newLink.href= newLink.href + '&app=' + app;
+         } 
+		newLink.className='option';
+		newLink.rel='shadowbox;width=490;height=307';
+		YAHOO.Edmunds.LightBoxMedia.open(newLink);	    
+		return;
+     }	 		    
+}
+ 
+function switchLightbox(href,rel,value){
+     	  	var newLink=document.createElement('a');
+	 			newLink.href= href + value;
+	 			newLink.className='option';
+	 			newLink.rel=rel;
+	            YAHOO.Edmunds.LightBoxMedia.switchOverlay();
+				YAHOO.Edmunds.LightBoxMedia.open(newLink);
+				return;
+	             
+}
+
+var x = function() { return YAHOO.Edmunds.LightBoxMedia.close;}();
+YAHOO.Edmunds.LightBoxMedia.close = function() {
+    new x();
+	var loc = window.location.href;	
+	if (loc.indexOf('email=') > 0){
+		var pos = loc.indexOf('email=');
+		loc = loc.substring(0,pos);		
+		window.location = loc;
+	} else if (loc.indexOf('?actionPerform=') > 0){
+		var pos = loc.indexOf('?actionPerform=');
+		loc = loc.substring(0,pos);		
+		window.location = loc;
+	}
+}
+
+function closeLightbox(){
+         	YAHOO.Edmunds.LightBoxMedia.close();
+}
+
+YAHOO.util.Event.addListener('lightbox-close', 'click', function(e) {
+             var e = e || window.event;
+             YAHOO.util.Event.preventDefault(e);
+             YAHOO.Edmunds.LightBox.hide();
+})
+
+         
+</script>
+
+
+<script language="javascript">var synpartner = 'edmunds';</script>
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/header.jsp -->
+
+
+
+
+
+
+<script type="text/javascript" language="javascript" src="/day/scripts/yahooui/utilities/utilities.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/edmui/edmunds/edmunds.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/edmui/flash/flash.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/pagescripts.js"></script>
+
+ 
+
+
+
+
+    
+        
+    
+    
+    
+
+
+
+<div class="hat" id="h-homepage">
+	<p>GM Offers First Incentives on Full-Size SUV Hybrids</p>
+</div>
+<div id="leaderboard">
+
+
+   
+    
+            
+              
+                
+                    
+                
+                
+              
+              
+              
+              
+              
+              
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+    
+    
+    
+       <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=728x90;ord=1245651688996?" width="728" height="90" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">
+  <A target="_blank" HREF="http://ad.doubleclick.net/jump/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=728x90;ord=1245651688996?">
+  <IMG SRC="http://ad.doubleclick.net/ad/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=728x90;ord=1245651688996?" width="728" height="90" border="0"></A></IFRAME>
+    
+
+    
+
+</div>
+
+    <div class="asticker" id="ast-lp">
+    
+        
+            
+            
+            
+            
+            
+        <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=126930|;;sz=770x30;ord=1245651688997?" width="770" height="30" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">  <A target="_blank" href="http://ad.doubleclick.net/jump/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=126930|;;sz=770x30;ord=1245651688997?">  <IMG SRC="http://ad.doubleclick.net/ad/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=126930|;;sz=770x30;ord=1245651688997?" width="770" height="30" border="0"></A></IFRAME>
+    
+    </div>
+
+
+<div id="mast">
+    <div class="sitelogo">
+        <p><a href="/insideline/" title="Inside Line" target="_top">Inside Line</a></p>
+        <p id="il_edmundslogo"><a href="http://www.edmunds.com" title="Go to Edmunds.com" target="_top">Edmunds.com</a></p>
+    </div>
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/header-makemodel.jsp -->
+
+
+
+
+
+<!--Start Search -->
+<div class="jumpto">
+    <form name="globalfastsearch" method="get" action="/insideline/dc/Search" onsubmit="s_objectID='edmunds.il..searchbox..1.*'; setTID('edmunds.il..searchbox..1.*');">
+    Search:
+    <input name="q" type="text" size="20" value=""/>
+    <input type="hidden" name="rP" value="1" />
+    <input name="Go" type="submit" value="Go">
+    </form>
+</div>
+<!-- End Search -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/header-makemodel.jsp -->
+    
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/timestamp.jsp -->
+
+
+
+
+
+
+
+<p class="mast-date">
+
+Sunday, June 21, 2009
+</p>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/timestamp.jsp -->
+
+    
+    
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/omniture.jsp -->
+    <!-- Cool Omniture -->
+    
+
+
+
+    
+    
+        
+        
+     <script language="JavaScript">
+
+        var edwyr="";
+        var edwmk="";
+        var edwmdl="";
+        var edwstlid="";
+
+    </script>
+
+    <script language="JavaScript" src="/day/scripts/edw.js"></script>
+        
+    
+        <script type="text/javascript" src="/day/scripts/omniture/omniture.js"></script>
+        <noscript>
+            <a href="http://www.omniture.com" title="Web Analytics"><img src="http://edmunds.112.2O7.net/b/ss/edmunds/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" /></a>
+        </noscript><!-- /DO NOT REMOVE/-->
+    
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/omniture.jsp -->
+
+    
+    <br clear="all" />
+
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/nav.jsp -->
+
+
+
+
+
+							
+
+
+	
+    
+
+
+	
+		
+			
+		
+		
+	
+
+<div id="nav">
+	<ul id="tabs">
+	
+		
+		
+			<li id="ilhome"><a href="/insideline" onClick=" s_objectID='edmunds.il.newsarticle.nav..1.*'; setTID('edmunds.il.newsarticle.nav..1.*');"  title="Inside Line Home"  target="_top" >Home</a></li>
+		
+	
+	
+		
+			<li id="news"><a href="/insideline/do/NewsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..2.*'; setTID('edmunds.il.newsarticle.nav..2.*');"  title="News"  target="_top"  class="selected" >News</a></li>
+		
+		
+	
+	
+		
+		
+			<li id="columns"><a href="/insideline/do/ColumnsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..3.*'; setTID('edmunds.il.newsarticle.nav..3.*');"  title="Columns"  target="_top" >Columns</a></li>
+		
+	
+	
+		
+		
+			<li id="drives"><a href="/insideline/do/DrivesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..4.*'; setTID('edmunds.il.newsarticle.nav..4.*');"  title="Road Tests"  target="_top" >Road Tests</a></li>
+		
+	
+	
+		
+		
+			<li id="futurevehicles"><a href="/insideline/do/FutureVehiclesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..5.*'; setTID('edmunds.il.newsarticle.nav..5.*');"  title="Future Vehicles"  target="_top" >Future Vehicles</a></li>
+		
+	
+	
+		
+		
+			<li id="features"><a href="/insideline/do/FeaturesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..6.*'; setTID('edmunds.il.newsarticle.nav..6.*');"  title="Feature Articles"  target="_top" >Feature Articles</a></li>
+		
+	
+	
+		
+		
+			<li id="autoshows"><a href="/insideline/autoshows/index.html" onClick=" s_objectID='edmunds.il.newsarticle.nav..7.*'; setTID('edmunds.il.newsarticle.nav..7.*');"  title="Auto Shows"  target="_top" >Auto Shows</a></li>
+		
+	
+	
+		
+		
+			<li id="photos-video"><a href="/insideline/do/MultimediaLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..8.*'; setTID('edmunds.il.newsarticle.nav..8.*');"  title="Photos &amp; Video"  target="_top" >Photos &amp; Video</a></li>
+		
+	
+	
+		
+		
+			<li id="forums"><a href="/insideline/do/ForumsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..9.*'; setTID('edmunds.il.newsarticle.nav..9.*');"  title="Forums"  target="_top" >Forums</a></li>
+		
+	
+ 	
+ 		
+ 		
+ 			<li id="edmundsnav"><a href="http://www.edmunds.com" onClick=" s_objectID='edmunds.il.newsarticle.nav..10.*'; setTID('edmunds.il.newsarticle.nav..10.*');"  title="Edmunds.com"  target="_top" >Edmunds.com</a></li>
+ 		
+ 		
+	</ul>
+</div><!-- end nav //-->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/nav.jsp -->
+</div><!-- end masthead-->
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/header.jsp -->
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/news/articlewithbb.jsp -->
+
+
+
+<!--startclickprintinclude-->
+<!--clickprintexcludeimages-->
+<!-- Page Title -->
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/indexpagetitle.jsp -->
+
+
+
+
+<div class="pagetitle" id="pt-news">
+	<div class="arttype" id="aty-news"><!--startclickprintexclude--><a href='/insideline/do/NewsLanding' title="News"><!--endclickprintexclude-->News<!--startclickprintexclude--></a><!--endclickprintexclude--></div>
+</div>
+
+<div class="subtitle1" id="subtitle-news">&nbsp;</div>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/indexpagetitle.jsp -->
+<!-- end Page Title -->
+
+<div class="contain" id="bg-newsart-boxad">
+<!--startclickprintexclude-->
+	<!-- Left Navigation -->
+	<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/leftnav.jsp -->
+
+	
+
+
+
+
+
+	
+<!-- Start Nav -->
+<div class="subnav" id="sn-news">
+    <p class="powered-gas" id="gas-leftnav">Powered by Global Auto Systems</p>
+	<br  clear="all" />
+	
+	<h3 id="sn-news-today">Today's Headlines</h3>
+	<ol>
+		
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126968" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..1.*'; setTID('edmunds.il.newsarticle.leftnav..1.*');" >					
+ 					Pamela Anderson's 2000 Dodge Viper RT/10 Hits the Auction Block
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126967" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..2.*'; setTID('edmunds.il.newsarticle.leftnav..2.*');" >					
+ 					Tuner Special: Hartge X6
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126966" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..3.*'; setTID('edmunds.il.newsarticle.leftnav..3.*');" >					
+ 					Toyota's Ambitious Green Initiative Includes Plug-in Hybrid Vehicle for U.S. by 2010
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126934" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..4.*'; setTID('edmunds.il.newsarticle.leftnav..4.*');" >					
+ 					TVR Founder Trevor Wilkinson Dies at Age 85
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126933" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..5.*'; setTID('edmunds.il.newsarticle.leftnav..5.*');" >					
+ 					Speculation About Hummer's Future Prompts Outcry on GM FastLane Blog
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126932" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..6.*'; setTID('edmunds.il.newsarticle.leftnav..6.*');" >					
+ 					Priced: 2009 Chevrolet Aveo
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126931" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..7.*'; setTID('edmunds.il.newsarticle.leftnav..7.*');" >					
+ 					Ford Awaits Kerkorian's Next Move
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126929" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..8.*'; setTID('edmunds.il.newsarticle.leftnav..8.*');" >					
+ 					436-HP Hertz Corvette ZHZ Joins Fun Collection
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126928" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..9.*'; setTID('edmunds.il.newsarticle.leftnav..9.*');" >					
+ 					2009 Dodge Challenger R/T To Offer Alternative Hood Stripe
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=126927" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..10.*'; setTID('edmunds.il.newsarticle.leftnav..10.*');" >					
+ 					Spy Photos: 2010 Chevrolet Cobalt
+ 				</a></li>
+ 			
+	</ol>
+	
+		
+	<h3 id="sn-news-moreinfo">More Info</h3>
+	<ul>
+		<li>
+		
+		<a href="/insideline/do/NewsIndex/month=6/year=2008" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..11.*'; setTID('edmunds.il.newsarticle.leftnav..11.*');" >
+		More News</a></li>
+
+		<li id="addmyyahoo">
+		
+		
+		<a href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Frss.edmunds.com%2FIL%2Frss%2Fautomotivenews.xml" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..12.*'; setTID('edmunds.il.newsarticle.leftnav..12.*');" >
+			<img border="0" align="absmiddle" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/addtomyyahoo.gif">
+		</a>
+		</li>
+
+	</ul>
+		
+</div>
+<!-- End Nav -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/leftnav.jsp -->
+
+	<!-- end Left Navigation -->
+<!--endclickprintexclude-->
+	<div class="centercolumn" id="cc-news-boxad">
+<!--startclickprintexclude-->
+        <!-- Ad -->
+        <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/bbad.jsp -->
+
+<div class="eb-boxad">
+<p>
+            
+            
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+        <p class="adLabel"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" vspace="2" />
+        <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=300x250;ord=1245651689037?" width="300" height="250" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">  <A target="_blank" HREF="http://ad.doubleclick.net/jump/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=300x250;ord=1245651689037?">  <IMG SRC="http://ad.doubleclick.net/ad/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245651688990|www.edmunds.com/insideline/do/News/articleId=126930|;sz=300x250;ord=1245651689037?" width="300" height="250" border="0"></A></IFRAME></p>
+    
+    
+    
+    
+</p>
+</div>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/bbad.jsp -->
+
+        <!-- end Ad -->
+        <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/sidebarphotoswithbb.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+	
+
+
+
+
+
+
+<!-- start video side section -->
+
+
+<!-- end video side section -->
+
+
+
+
+
+	<div class="eb-photo" id="header">
+		<h3>Photos</h3>
+		
+		<p class="sidebar-slideshow"><a href="#1" onClick="popupArticlePhoto('126930',  '56761');">Slideshow</a></p>
+    </div>
+    
+		
+        	
+			<div class="eb-photo"  >
+			<div class="eb-photo-img">
+			<a href="#2" onClick="popupArticlePhoto('126930',  '56761');" >
+			<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/il/news/2008/0610/2008.chevrolet.tahoe.hybrid.160.jpg" width="160" height="101" border="0" alt="2008 Chevrolet Tahoe Hybrid" /></a><br />
+			
+			<a href="#3" onClick="popupArticlePhoto('126930',  '56761');">(Enlarge photo)</a>
+			</div>
+			<div class="eb-photo-txt">
+			General Motors is hot to sell its hybrid SUVs. Buyers of the 2008 Chevrolet Tahoe Hybrid (pictured) will get as much as $4,000 in rebate incentives.
+			
+				
+					
+						(Photo courtesy of General Motors Corporation)
+					
+					
+				
+			
+			</div>
+			</div>
+		
+	
+		
+        	
+			<div class="eb-photo"  >
+			<div class="eb-photo-img">
+			<a href="#4" onClick="popupArticlePhoto('126930',  '56762');" >
+			<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/il/news/2008/0610/2008.gmc.yukon.hybrid.160.jpg" width="160" height="101" border="0" alt="2008 GMC Yukon Hybrid" /></a><br />
+			
+			<a href="#5" onClick="popupArticlePhoto('126930',  '56762');">(Enlarge photo)</a>
+			</div>
+			<div class="eb-photo-txt">
+			The 2008 GMC Yukon Hybrid (pictured) also comes with the $4,000 incentive.
+			
+				
+					
+						(Photo courtesy of General Motors Corporation)
+					
+					
+				
+			
+			</div>
+			</div>
+		
+	
+		
+        	
+			<div class="eb-photo" id="last" >
+			<div class="eb-photo-img">
+			<a href="#6" onClick="popupArticlePhoto('126930',  '56763');" >
+			<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/il/news/2008/0610/2008.cadillac.escalade.160.jpg" width="160" height="101" border="0" alt="2008 Cadillac Escalade" /></a><br />
+			
+			<a href="#7" onClick="popupArticlePhoto('126930',  '56763');">(Enlarge photo)</a>
+			</div>
+			<div class="eb-photo-txt">
+			Purchase of the big 2008 Cadillac Escalade will get its buyer up to $6,000 in cash back.
+			
+				
+					
+						(Photo courtesy of General Motors Corporation)
+					
+					
+				
+			
+			</div>
+			</div>
+		
+	
+
+
+
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/sidebarphotoswithbb.jsp -->
+
+<!--endclickprintexclude-->
+		<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/primarycontent.jsp -->
+
+
+
+
+
+
+
+
+<div class="legacy">
+	<h2>GM Offers First Incentives on Full-Size SUV Hybrids</h2>
+	<p class="dateposted">Date posted: 2008-06-10 15:59:00.0 </p>
+
+<!--startclickprintexclude-->
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/storytools.jsp -->
+
+
+<!-- start Clickability -->
+
+<div id="ilClickTracking">STORY TOOLS
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+	<td width="80"><A HREF="http://digg.com/submit" target="_blank" title="Digg this story" class="storyTool" onclick="window.open('http://digg.com/submit?phase=2&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'&bodytext=Inside+Line%3A+&topic=motorsport','digg');return false;"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/clickability/digg-icon.gif" width="20" height="15" border="0" alt="Digg this story"
+align="absmiddle" />Digg this!</a></td>
+</tr>
+<tr>
+
+	<td><A HREF="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?v=4&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'delicious','toolbar=no,width=700,height=400');return false;"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/clickability/delicious-icon.gif" width="20" height="14" border="0" alt="del.icio.us"
+align="absmiddle" />del.icio.us</a></td>
+</tr>
+</table>
+</div>
+<!-- end Clickability -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/storytools.jsp -->
+
+<!--endclickprintexclude-->
+
+	<p><strong>DETROIT &mdash; General Motors, for the first time, is offering cash incentives of as much as $4,000 on its full-size <a href="/insideline/do/ViewModelDetail/make=Chevrolet/model=Tahoe%20Hybrid">2008 Chevrolet Tahoe Hybrid</a> and <a href="/insideline/do/ViewModelDetail/make=GMC/model=Yukon%20Hybrid">2008 GMC Yukon Hybrid</a>. The automaker is also increasing cash incentives, including as much as $6,000 back, on such big SUVs as the <a href="/insideline/do/ViewModelDetail/make=Cadillac/model=Escalade">2008 Cadillac Escalade</a> and up to $5,000 on full-size pickups such as the <a href="/insideline/do/ViewModelDetail/make=Chevrolet/model=Avalanche">2008 Chevrolet Avalanche</a> and <a href="/insideline/do/ViewModelDetail/make=Chevrolet/model=Silverado%201500">Silverado</a>.</strong><br /><br />
+
+In e-mail correspondence Tuesday with <i>Inside Line</i>, GM spokesman John McDonald underscored that "this is the first time we've offered any incentives on them [the company's full-size SUV hybrids]."<br /><br />
+
+The hybrid versions of the large SUVs went on sale in late January.<br /><br />
+
+McDonald noted that owners of GM models from the 1999 model year or newer qualify for the cash offers. The cash incentives cover seven large SUVs and pickups from Cadillac, Chevrolet and GMC.<br /><br />
+
+"We really are trying to build awareness with our core base of [full-size SUV] consumers to show them they can get great technology and fuel savings with a new hybrid," said McDonald.<br /><br />
+
+The cash incentives are in effect until June 30.<br /><br />
+
+<strong>What this means to you:</strong> GM seems to be getting more desperate to move its hybrid SUVs. &mdash; <i>Anita Lienert, Correspondent</i></p>
+</div><!-- end legacy -->
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/primarycontent.jsp -->
+
+<!--startclickprintexclude-->
+		<!-- Footer content -->
+    	<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/footer.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+<br clear="all" /><br clear="all" />
+<div id="footer">
+    <p>
+    <a href="/insideline" onClick=" s_objectID='edmunds.il.newsarticle.footer..1.*'; setTID('edmunds.il.newsarticle.footer..1.*');"  title="Home" >Home</a> |
+    <a href="/insideline/do/NewsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..2.*'; setTID('edmunds.il.newsarticle.footer..2.*');"  title="News" >News</a> |
+    <a href="/insideline/do/ColumnsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..3.*'; setTID('edmunds.il.newsarticle.footer..3.*');"  title="Columns" >Columns</a> |
+    <a href="/insideline/do/DrivesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..4.*'; setTID('edmunds.il.newsarticle.footer..4.*');"  title="Road Tests" >Road Tests</a>
+    <br />
+    <a href="/insideline/do/FutureVehiclesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..5.*'; setTID('edmunds.il.newsarticle.footer..5.*');"  title="Future Vehicles" >Future Vehicles</a> |
+    <a href="/insideline/do/FeaturesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..6.*'; setTID('edmunds.il.newsarticle.footer..6.*');"  title="Feature Articles" >Feature Articles</a> |
+    <a href="/insideline/autoshows/index.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..7.*'; setTID('edmunds.il.newsarticle.footer..7.*');"  title="Auto Shows" >Auto Shows</a>
+    <br />
+    <a href="/insideline/do/MultimediaLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..8.*'; setTID('edmunds.il.newsarticle.footer..8.*');"  title="Photos &amp; Video" >Photos &amp; Video</a> |
+    <a href="/insideline/do/ForumsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..9.*'; setTID('edmunds.il.newsarticle.footer..9.*');"  title="Forums" >Forums</a> |
+    <a href="/insideline/do/MakeIndex" onClick=" s_objectID='edmunds.il.newsarticle.footer..10.*'; setTID('edmunds.il.newsarticle.footer..10.*');" >Browse All Models</a>
+    <br />
+    <a href="http://www.edmunds.com/insideline/do/About/articleId=109577">Directory</a> | 
+    <a href="http://help.insideline.com" onClick=" s_objectID='edmunds.il.newsarticle.footer..11.*'; setTID('edmunds.il.newsarticle.footer..11.*');"  title="Help" >Help</a> |
+	<a href="http://help.insideline.com/cgi-bin/edmunds.cfg/php/enduser/ask.php" onClick=" s_objectID='edmunds.il.newsarticle.footer..12.*'; setTID('edmunds.il.newsarticle.footer..12.*');"  title="Contact US" >Contact Us</a> |
+	<a href="http://www.edmunds.com/help/about">About</a>
+    </p>
+    <p>Edmunds is hiring! <b><a href="/help/about/jobs/index.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..13.*'; setTID('edmunds.il.newsarticle.footer..13.*');" >Employment Opportunities</a></b></p>
+    <p>&copy; 1995-2009 Edmunds Inc.<br /><a href="/help/about/privacy.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..14.*'; setTID('edmunds.il.newsarticle.footer..14.*');"  title="Privacy Statement" >Privacy Statement</a>&nbsp;|&nbsp;<a href="/help/about/visitoragreement.html" title="Visitor Agreement">Visitor Agreement</a></p>
+    <br /><br />
+    <p><a onClick="popupWhatisRss('/insideline/components/whatisRss.jsp');" href="#"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/feedicon-xml.gif" align="absmiddle" border="0" /></a></p>
+</div>
+
+<script language="javascript">
+    function popupWhatisRss(whatIsRssUrl) {
+        window.open(whatIsRssUrl,'','scrollbars=yes,resizable=no,width=710,height=615');
+        return false;
+    }
+</script>
+
+<script src="http://js.revsci.net/gateway/gw.js?csid=B05501"></script>
+<script>
+//3rd party pixel call
+
+var Make = 'null';
+var Model = 'null';
+var Zip = '';
+var PageCode = 'newsarticle';
+var Category = '';
+var UseIn = 'null';
+
+
+DM_addEncToLoc("Make", (Make));
+DM_addEncToLoc("Model", (Model));
+DM_addEncToLoc("Category", (Category));
+DM_addEncToLoc("Zip", (Zip));
+DM_addEncToLoc("UseIn", (UseIn));
+DM_tag();
+
+</script>
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/footer.jsp -->
+
+    	<!-- end footer content -->
+	</div><!-- end center column -->
+	<br clear="all" />
+<!--endclickprintexclude-->
+</div><!-- end contain -->
+<!--endclickprintinclude-->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/news/articlewithbb.jsp -->
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/nonEndemicAdPanel.jsp -->
+
+
+<script language="javascript" type="text/javascript">
+function resize1024PanelIFrame(width, height) {
+	var panelIframe = document.getElementById("tentwentyfour_panel");
+    if (panelIframe != null) {
+      	panelIframe.width = width;
+      	panelIframe.height = height;
+    }
+}
+</script>
+<div class="adpanel">
+<iframe id="tentwentyfour_panel" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="/insideline/1024panel.html"></iframe>
+</div>
+<!-- end ad panel -->
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/nonEndemicAdPanel.jsp -->
+
+<div class="quigo" id="q-il">
+    <center>
+        <div class="quigo-content">
+            
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+    
+    
+    
+       
+    
+
+        </div>
+    </center>
+</div>
+<!-- ns the insider -->
+</body>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/masterLayout.jsp -->
+</html>

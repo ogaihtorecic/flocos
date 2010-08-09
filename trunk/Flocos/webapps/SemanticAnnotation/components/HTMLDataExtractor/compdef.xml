@@ -1,0 +1,10 @@
+<SWAFComponent>
+	<name>HTMLDataExtractor</name>
+	<jarFile>HTMLDataExtractor.jar</jarFile>
+	<dataLoader>
+		<description>HTML Extractor: retrieve terms of the HTML files, using data extractor techniques.</description>
+		<className>
+			br.edu.ufam.sw.component.htmldataextractor.HTMLDataExtractor
+		</className>
+	</dataLoader>
+</SWAFComponent>

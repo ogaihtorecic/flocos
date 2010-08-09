@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xmlns:res="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Resources.owl#"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:units="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Units.owl#"
+	xmlns:mb="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl" />
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl" />
+	</owl:Ontology>
+
+	<owl:DatatypeProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#epoch">
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#TimeDurationContext" />
+	</owl:DatatypeProperty>
+	<owl:DatatypeProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#era">
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#TimeDurationContext" />
+	</owl:DatatypeProperty>
+
+
+	<owl:DatatypeProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#period">
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#TimeDurationContext" />
+	</owl:DatatypeProperty>
+	<owl:FunctionalProperty
+		rdf:about="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#mya">
+		<rdfs:domain
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TimeAndSpace.owl#TimeDurationContext" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty" />
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+	</owl:FunctionalProperty>
+	<owl:Class rdf:ID="GeogCoordVolume">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialVolume" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="RegularTimeSet">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#DateTime" />
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#startTime" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#DateTime" />
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#endTime" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A set of equally spaced points in time.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TemporalRange" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="DMSSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LatLongSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LakeOrPond">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#NamedWaterArea" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="BoundedGeogVolume">
+		<rdfs:comment>
+			A bounded geographic area with an elevation range
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeogVolumeSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ComplexArea">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#AreaSpecifier" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An areas defined by a set of included areas and a set of
+			excluded areas.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="CityOrTown">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#NamedLandArea" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ElevationSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CoordinateSpecifier" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#unit" />
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricVolume">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#GeometricPoint" />
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#volumeCorners" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					4
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#volumeCorners" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#VolumeSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ComplexLine">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LineSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="AreaSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LocationConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SeaLevelRelativeElevation">
+		<rdfs:subClassOf rdf:resource="#ElevationSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeogCoordArea">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialArea" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SimpleArea">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeogAreaSpecifier" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An areas specified by three of more corners. A bounding box
+			(N, S, W and E boundaries) can optionally be specified.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#areaCorners" />
+				</owl:onProperty>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					3
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeogCoordPoint">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialPoint" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="County">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#NamedLandArea" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedArea">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialArea" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedLandArea">
+		<rdfs:subClassOf rdf:resource="#NamedArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricPoint">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PointSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="ComplexDuration">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A composite Duration, made up of one or more durations, and
+			possible excluding one or more durations.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#Duration" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedTime">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#Time" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A point in time specified only by a name.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedVolume">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialVolume" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="Country">
+		<rdfs:subClassOf rdf:resource="#NamedLandArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="NamedWaterArea">
+		<rdfs:subClassOf rdf:resource="#NamedArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="LineSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LocationConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LatLongSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CoordinateSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="LatLongPoint">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#PointSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="VolumeSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LocationConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedPoint">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialPoint" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeoSpatialArea">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialRegion" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SpatialRegion">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ObservableEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="PointSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#LocationConcepts" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Duration">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TemporalRange" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A duration of time, either continuous or discontinuous.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="GeogVolumeSpecifier">
+		<rdfs:subClassOf rdf:resource="#VolumeSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="Time">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A point in time.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#TemporalRange" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeoSpatialPoint">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialRegion" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="DMmSpecifier">
+		<rdfs:subClassOf rdf:resource="#LatLongSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="LocationConcepts">
+		<rdfs:comment>
+			Concepts used when describing geographic locations, only
+			instantiated as properties of SpatialRegion subclasses
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="TemporalRange">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			One or more points in time or durations of time.
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#ObservableEntity" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeogCoordLine">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialLine" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="Continent">
+		<rdfs:subClassOf rdf:resource="#NamedLandArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="ComplexGeoSpatialRegion">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialRegion" />
+		</rdfs:subClassOf>
+		<rdfs:comment>
+			A possibly nested set of GeoSpatialRegions
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Sea">
+		<rdfs:subClassOf rdf:resource="#NamedWaterArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="LocationContext">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#SpatialContext" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#location" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GroundRelativeElevation">
+		<rdfs:subClassOf rdf:resource="#ElevationSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeoSpatialVolume">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialRegion" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SimpleVolume">
+		<rdfs:subClassOf rdf:resource="#GeogVolumeSpecifier" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom rdf:resource="#LatLongPoint" />
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#volumeCorners" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment>
+			A volume defined by 4 or more corners
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#volumeCorners" />
+				</owl:onProperty>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					4
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeoSpatialRegion">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+		<rdfs:subClassOf rdf:resource="#SpatialRegion" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#Composite" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#CompositePart" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An abstract geo-spatial region. A GeospatialRegion is a type
+			of SpatialRegion, which is an ObservableEntity
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="TimeDurationContext">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#TemporalContext" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:FunctionalProperty rdf:about="#timeDuration" />
+				</owl:onProperty>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Duration(s) or point(s) in time during which an observation
+			or set of observations occured.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricSpecifier">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#CoordinateSpecifier" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A coordinate specified relative to some origin.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricArea">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An area specified by corners relative to an origin using
+			some specified coordinate system.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					3
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#areaCorners" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#AreaSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="CartesianSpecifier">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#unit" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#GeometricSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="DateTime">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#year" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#Time" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#day" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#hour" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A point in time with a value specifies as a date-time.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#value" />
+				<owl:allValuesFrom
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DateTimeValue" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#month" />
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#minute" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty
+					rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#second" />
+				<owl:maxCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:maxCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="SimpleDuration">
+		<rdfs:subClassOf rdf:resource="#Duration" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A single continuous interval of time.
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="LatLongElevPoint">
+		<rdfs:subClassOf rdf:resource="#LatLongPoint" />
+	</owl:Class>
+	<owl:Class rdf:ID="ComplexVolume">
+		<rdfs:subClassOf rdf:resource="#VolumeSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="StateOrProvince">
+		<rdfs:subClassOf rdf:resource="#NamedLandArea" />
+	</owl:Class>
+	<owl:Class rdf:ID="NamedLine">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeoSpatialLine" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="SimpleGeogLine">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					2
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#lineBreaks" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#LineSpecifier" />
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#lineBreaks" />
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#LatLongPoint" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeoSpatialLine">
+		<rdfs:subClassOf rdf:resource="#GeoSpatialRegion" />
+	</owl:Class>
+	<owl:Class rdf:ID="DdSpecifier">
+		<rdfs:subClassOf rdf:resource="#LatLongSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="BoundedGeogArea">
+		<rdfs:comment>
+			A geographic area bounded by lines of constant latitude and
+			longitude
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#GeogAreaSpecifier" />
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:Class rdf:ID="GeometricLine">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#lineBreaks" />
+				</owl:onProperty>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					2
+				</owl:minCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A line specified as straight segment between two or more
+			points.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#lineBreaks" />
+				</owl:onProperty>
+				<owl:allValuesFrom rdf:resource="#GeometricPoint" />
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#LineSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="CoordinateSpecifier">
+		<rdfs:subClassOf rdf:resource="#LocationConcepts" />
+	</owl:Class>
+	<owl:Class rdf:ID="GeogAreaSpecifier">
+		<rdfs:subClassOf rdf:resource="#AreaSpecifier" />
+	</owl:Class>
+	<owl:Class rdf:ID="NamedDuration">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A Duration specified only by a name.
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:subClassOf rdf:resource="#Duration" />
+	</owl:Class>
+	<owl:Class rdf:ID="Ocean">
+		<rdfs:subClassOf rdf:resource="#NamedWaterArea" />
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="excludeVolumes">
+		<rdfs:range rdf:resource="#VolumeSpecifier" />
+		<rdfs:domain rdf:resource="#ComplexVolume" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="seconds">
+		<rdfs:domain rdf:resource="#DMSSpecifier" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="excludeAreas">
+		<rdfs:domain rdf:resource="#ComplexArea" />
+		<rdfs:range rdf:resource="#AreaSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="dateTime">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#DateTimeValue" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="eastBoundary">
+		<rdfs:domain rdf:resource="#BoundedGeogArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="geographicArea">
+		<rdfs:range rdf:resource="#BoundedGeogArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#BoundedGeogVolume" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="elevationOrigin">
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Description of the origin (zero-point) of the elevation
+		</rdfs:comment>
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#ElevationSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="excludeLines">
+		<rdfs:domain rdf:resource="#ComplexLine" />
+		<rdfs:range rdf:resource="#LineSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="includeDurations">
+		<rdfs:domain rdf:resource="#ComplexDuration" />
+		<rdfs:range rdf:resource="#Duration" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="lineBreaks">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Ends or direction changes in a line
+		</rdfs:comment>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SimpleGeogLine" />
+					<owl:Class rdf:about="#GeometricLine" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#PointSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="decimalMinutes">
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdfs:domain rdf:resource="#DMmSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="x">
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#CartesianSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="volumeCorners">
+		<rdfs:range rdf:resource="#PointSpecifier" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#GeometricVolume" />
+					<owl:Class rdf:about="#SimpleVolume" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="westBoundary">
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+		<rdfs:domain rdf:resource="#BoundedGeogArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="elevationValue">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#ElevationSpecifier" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="areaBounds">
+		<rdfs:range rdf:resource="#BoundedGeogArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#ComplexArea" />
+					<owl:Class rdf:about="#SimpleArea" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="includeAreas">
+		<rdfs:domain rdf:resource="#ComplexArea" />
+		<rdfs:range rdf:resource="#AreaSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="areaCorners">
+		<rdfs:range rdf:resource="#PointSpecifier" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#GeometricArea" />
+					<owl:Class rdf:about="#SimpleArea" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:comment>
+			A set of points that define the corners of an area.
+		</rdfs:comment>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="location">
+		<rdfs:domain rdf:resource="#LocationContext" />
+		<rdfs:range rdf:resource="#GeoSpatialRegion" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="excludeDurations">
+		<rdfs:range rdf:resource="#Duration" />
+		<rdfs:domain rdf:resource="#ComplexDuration" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="minElevation">
+		<rdfs:range rdf:resource="#ElevationSpecifier" />
+		<rdfs:domain rdf:resource="#BoundedGeogVolume" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="elevation">
+		<rdfs:range rdf:resource="#ElevationSpecifier" />
+		<rdfs:domain rdf:resource="#LatLongElevPoint" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="regionSpecifier">
+		<rdfs:domain rdf:resource="#ComplexGeoSpatialRegion" />
+		<rdfs:range rdf:resource="#GeoSpatialRegion" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="minutes">
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#IntegerValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#DMSSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="areaSpecifier">
+		<rdfs:range rdf:resource="#GeogAreaSpecifier" />
+		<rdfs:domain rdf:resource="#GeogCoordArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="endTime">
+		<rdfs:range rdf:resource="#Time" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SimpleDuration" />
+					<owl:Class rdf:about="#RegularTimeSet" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="longitude">
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+		<rdfs:domain rdf:resource="#LatLongPoint" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="includeLines">
+		<rdfs:range rdf:resource="#LineSpecifier" />
+		<rdfs:domain rdf:resource="#ComplexLine" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="origin">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#GeometricVolume" />
+					<owl:Class rdf:about="#GeometricArea" />
+					<owl:Class rdf:about="#GeometricLine" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="#GeoSpatialPoint" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="latitude">
+		<rdfs:domain rdf:resource="#LatLongPoint" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="includeVolumes">
+		<rdfs:domain rdf:resource="#ComplexVolume" />
+		<rdfs:range rdf:resource="#VolumeSpecifier" />
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="z">
+		<rdfs:domain rdf:resource="#CartesianSpecifier" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="volumeSpecifier">
+		<rdfs:range rdf:resource="#VolumeSpecifier" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain rdf:resource="#GeogCoordVolume" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="decimalDegrees">
+		<rdfs:domain rdf:resource="#DdSpecifier" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="degrees">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#IntegerValue" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#DMmSpecifier" />
+					<owl:Class rdf:about="#DMSSpecifier" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="startTime">
+		<rdfs:range rdf:resource="#Time" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="#SimpleDuration" />
+					<owl:Class rdf:about="#RegularTimeSet" />
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="southBoundary">
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain rdf:resource="#BoundedGeogArea" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="northBoundary">
+		<rdfs:range rdf:resource="#LatLongSpecifier" />
+		<rdfs:domain rdf:resource="#BoundedGeogArea" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="y">
+		<rdfs:domain rdf:resource="#CartesianSpecifier" />
+		<rdfs:range
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/MeasurementBase.owl#FloatingPtValue" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="geometricCoord">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain rdf:resource="#GeometricPoint" />
+		<rdfs:range rdf:resource="#GeometricSpecifier" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="deltaT">
+		<rdfs:range rdf:resource="#SimpleDuration" />
+		<rdfs:domain rdf:resource="#RegularTimeSet" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="timeDuration">
+		<rdfs:range rdf:resource="#TemporalRange" />
+		<rdfs:domain rdf:resource="#TimeDurationContext" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="maxElevation">
+		<rdfs:domain rdf:resource="#BoundedGeogVolume" />
+		<rdfs:range rdf:resource="#ElevationSpecifier" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="lineSpecifier">
+		<rdfs:range rdf:resource="#LineSpecifier" />
+		<rdfs:domain rdf:resource="#GeogCoordLine" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="pointSpecifier">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:range rdf:resource="#PointSpecifier" />
+		<rdfs:domain rdf:resource="#GeogCoordPoint" />
+	</owl:FunctionalProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

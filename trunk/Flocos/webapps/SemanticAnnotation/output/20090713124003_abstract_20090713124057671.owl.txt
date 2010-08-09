@@ -1,0 +1,9 @@
+SourceFile=http://query.nytimes.com/gst/abstract.html?res=9C05E7DB1E39E13ABC4952DFB5668382609EDE
+OutputFile=20090713124003_abstract_20090713124057671.owl
+TotalOfTermsExtracted=17
+TotalOfTermsMapped=0
+TotalOfTermsMappedBasedOnOntology=0
+TotalOfTermsMappedBasedOnDirectory=0
+TotalOfTermsAnnotated=0
+ExtractedTerms=[(secretary)][(unit)][(article)][(head)][(social)][(serve)][(bruno)][(baron)][(accepts)][(cohen)][(sacha)][(interior)][(preview)][(york)][(lane)][(archives)][(times)]
+MappedTerms=

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Hierarchy.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl" />
+	</owl:Ontology>
+	<owl:Class rdf:ID="HierarchyConcepts">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="RankInstance">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An instance of a level in a hierarchy (for example the rank
+			'Kingdom' has instance 'Animalia')
+		</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="#HierarchyConcepts" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="HierarchicalRank">
+		<rdfs:subClassOf rdf:resource="#HierarchyConcepts" />
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#NamedThing" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			One in a linked hierarchy of categories (for example,
+			Kingdom, Phylum etc)
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="RankedIDLevel">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#RankedIdentifier" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			One level in a set of linked rank category instances that
+			together form a identifier
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="RankedIdentifier">
+		<rdfs:subClassOf rdf:resource="#HierarchyConcepts" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			An identifier made up of a set of linked hierarchical
+			identifiers
+		</rdfs:comment>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="subID">
+		<rdfs:domain rdf:resource="#RankedIdentifier" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The ID of the subcategory
+		</rdfs:comment>
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:range rdf:resource="#RankedIDLevel" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="subCategory">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+		<rdfs:domain rdf:resource="#HierarchicalRank" />
+		<rdfs:range rdf:resource="#HierarchicalRank" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="rankInst">
+		<rdfs:domain rdf:resource="#RankedIdentifier" />
+		<rdfs:range rdf:resource="#RankInstance" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty" />
+	</owl:ObjectProperty>
+	<owl:FunctionalProperty rdf:ID="hasRank">
+		<rdfs:range rdf:resource="#HierarchicalRank" />
+		<rdfs:domain rdf:resource="#RankInstance" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="superID">
+		<rdfs:range rdf:resource="#RankedIDLevel" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			The ID of the supercategory
+		</rdfs:comment>
+		<rdfs:domain rdf:resource="#RankedIDLevel" />
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	</owl:FunctionalProperty>
+	<owl:FunctionalProperty rdf:ID="superCategory">
+		<rdf:type
+			rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+		<rdfs:domain rdf:resource="#HierarchicalRank" />
+		<rdfs:range rdf:resource="#HierarchicalRank" />
+	</owl:FunctionalProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->
