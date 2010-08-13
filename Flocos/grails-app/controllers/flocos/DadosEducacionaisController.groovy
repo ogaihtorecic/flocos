@@ -54,16 +54,19 @@ class DadosEducacionaisController {
     def save = {
         def dadosEducacionaisInstance = new DadosEducacionais(params)
 		
-		boolean possuiArquivo = false
-		def dominios = dadosEducacionaisInstance.dominiosPropostos
-		if(dominios[0].nomeArquivo && !"".equals(dominios[0].nomeArquivo)) {
-			possuiArquivo = true
-		}
-		if(dominios.size() > 1 && dominios[1].nomeArquivo && !"".equals(dominios[1].nomeArquivo)) {
-			possuiArquivo = true
-		}
-		
         if (dadosEducacionaisInstance.save(flush: true)) {
+			
+			boolean possuiArquivo = false
+			def dominios = dadosEducacionaisInstance.dominiosPropostos
+			if(dominios && dominios.size() > 0) {
+				if(dominios[0].nomeArquivo && !"".equals(dominios[0].nomeArquivo)) {
+					possuiArquivo = true
+				}
+				if(dominios.size() > 1 && dominios[1].nomeArquivo && !"".equals(dominios[1].nomeArquivo)) {
+					possuiArquivo = true
+				}
+			}
+			
 			if(dadosEducacionaisInstance.dominiosPropostos &&
 				possuiArquivo &&
 				dadosEducacionaisInstance.objetivoEducacional &&

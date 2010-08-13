@@ -39,6 +39,9 @@
                         </tbody>
                     </table>
                 </div>
+                
+                <g:hiddenField name="backUri" value="${params.backUri}" />
+                
                 <div class="buttons">
                     <span class="button"><g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" /></span>
                 </div>

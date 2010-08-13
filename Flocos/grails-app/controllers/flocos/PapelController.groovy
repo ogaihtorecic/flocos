@@ -23,7 +23,11 @@ class PapelController {
         def papelInstance = new Papel(params)
         if (papelInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'papel.label', default: 'Papel'), papelInstance.id])}"
-            redirect(action: "show", id: papelInstance.id)
+            if("".equals(params.backUri)) {
+            	redirect(action: "show", id: papelInstance.id)
+            } else {
+            	redirect(uri: params.backUri)
+            }
         }
         else {
             render(view: "create", model: [papelInstance: papelInstance])
