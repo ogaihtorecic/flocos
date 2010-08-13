@@ -23,7 +23,11 @@ class InstituicaoController {
         def instituicaoInstance = new Instituicao(params)
         if (instituicaoInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'instituicao.label', default: 'Instituicao'), instituicaoInstance.id])}"
-            redirect(action: "show", id: instituicaoInstance.id)
+			if("".equals(params.backUri)) {
+            	redirect(action: "show", id: instituicaoInstance.id)
+            } else {
+            	redirect(uri: params.backUri)
+            }
         }
         else {
             render(view: "create", model: [instituicaoInstance: instituicaoInstance])

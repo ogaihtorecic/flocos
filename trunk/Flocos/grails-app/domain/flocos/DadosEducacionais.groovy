@@ -27,7 +27,7 @@ class DadosEducacionais {
     	dificuldade(inList:['', 'facilimo', 'facil', 'medio', 'dificil', 'super dificil'])
     	tipoInteratividade(inList:['', 'ativa', 'passiva', 'mista'])
     	nivelInteratividade(inList:['', 'baixa', 'alta', 'muito alta'])
-    	objetivoEducacional(nullable:false, blank:false, maxSize:2000)
+    	objetivoEducacional(nullable:true, maxSize:2000)
     }
     
     String toString() {

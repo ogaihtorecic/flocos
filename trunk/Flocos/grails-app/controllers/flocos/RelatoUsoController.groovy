@@ -32,18 +32,20 @@ class RelatoUsoController {
     def save = {
         def relatoUsoInstance = new RelatoUso(params)
 		
-		boolean possuiArquivo = false
-		def dominios = relatoUsoInstance.dominiosUsados
-		if(dominios[0].nomeArquivo && !"".equals(dominios[0].nomeArquivo)) {
-			possuiArquivo = true
-		}
-		if(dominios.size() > 1 && dominios[1].nomeArquivo && !"".equals(dominios[1].nomeArquivo)) {
-			possuiArquivo = true
-		}
-		
         if (relatoUsoInstance.save(flush: true)) {
-        	if(relatoUsoInstance.dominiosUsados &&
-        		possuiArquivo &&
+			
+			boolean possuiArquivo = false
+			def dominios = relatoUsoInstance.dominiosUsados
+			if(dominios && dominios.size() > 0) {
+				if(dominios[0].nomeArquivo && !"".equals(dominios[0].nomeArquivo)) {
+					possuiArquivo = true
+				}
+				if(dominios.size() > 1 && dominios[1].nomeArquivo && !"".equals(dominios[1].nomeArquivo)) {
+					possuiArquivo = true
+				}
+			}
+			
+        	if(relatoUsoInstance.dominiosUsados && possuiArquivo &&
 			   relatoUsoInstance.objetivoEducacional &&
 			   !"".equals(relatoUsoInstance.objetivoEducacional)) {
         		redirect(action: "gerarOntologia", id: relatoUsoInstance.id, params: ['dadosEducacionais.id': params.dadosEducacionais.id])
