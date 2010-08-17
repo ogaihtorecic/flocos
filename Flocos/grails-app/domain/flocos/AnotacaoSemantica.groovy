@@ -3,7 +3,7 @@ package flocos
 class AnotacaoSemantica {
 
 	String localAnotacao
-	String tipoAnotacao = "owl"
+	String tipoAnotacao = "OWL"
 	
 	static belongsTo = [dadosEducacionais:DadosEducacionais, relatoUso:RelatoUso]
 
