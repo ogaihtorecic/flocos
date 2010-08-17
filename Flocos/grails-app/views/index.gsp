@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome to Grails</title>
+        <title>FLOCOS 2.0</title>
 		<meta name="layout" content="main" />
 		<style type="text/css" media="screen">
 
@@ -58,9 +58,16 @@
         	<div class="message">${flash.message}</div>
         </g:if>
 		<g:form name="formLogin" action="login" controller="usuario">
+		<center><div>
+			<img src="images/login.png" width="60" height="60">
 			Login: <input type="text" name="login"/><br/>
+			<img src="images/senha.png" width="60" height="60">
 			Senha: <input type="password" name="senha"/><br/>
+			<input type="submit" value="Lembrar Senha"/>	 &nbsp; &nbsp;		
+			<input type="submit" value="Registre-se"/> &nbsp; &nbsp;
 			<input type="submit" value="Entrar"/>
+		</div></center>
 		</g:form>
+
     </body>
 </html>

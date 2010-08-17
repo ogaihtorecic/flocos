@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: homepageInstance, field: "responsavel")}</td>
                             
                             <td>
-								<g:link action="show" id="${homepageInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${homepageInstance.id}">[E]</g:link>
+								<g:link action="show" id="${homepageInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${homepageInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

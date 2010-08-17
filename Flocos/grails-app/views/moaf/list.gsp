@@ -1,4 +1,3 @@
-
 <%@ page import="flocos.Moaf" %>
 <html>
     <head>
@@ -23,15 +22,15 @@
                         <tr>
                         	<th><g:message code="moaf.dadosGerais.label" default="Dados Gerais" /></th>
                         	
-                        	<th><g:message code="moaf.dadosCriacao.label" default="Dados de Criação" /></th>
+                        	<th><g:message code="moaf.dadosCriacao.label" default="Dados de Criacao" /></th>
                         	
                         	<th><g:message code="moaf.dadosTecnicos.label" default="Dados Tecnicos" /></th>
                         
                             <th><g:message code="moaf.dadosEducacionais.label" default="Dados Educacionais" /></th>
 
-							<th><g:message code="moaf.dadosDominios.label" default="Dados de Domínio" /></th>
+							<th><g:message code="moaf.dadosDominios.label" default="Dados do Dominio" /></th>
                    	    
-                            <th><g:message code="moaf.dadosAcessibilidade.label" default="Dados Acessibilidade" /></th>
+                            <th><g:message code="moaf.dadosAcessibilidade.label" default="Dados de Acessibilidade" /></th>
                    	    
                    	    	<th><g:message code="default.actions.label" default="Actions" /></th>
                    	    
@@ -54,9 +53,9 @@
                             <td><g:link controller="dadosAcessibilidade" action="show" id="${moafInstance.dadosAcessibilidade?.id}">${fieldValue(bean: moafInstance, field: "dadosAcessibilidade")}</g:link></td>
                         
                         	<td>
-                        		<g:link action="show" id="${moafInstance.id}">[V]</g:link>
+                        		<g:link action="show" id="${moafInstance.id}"><img src="../images/ver.png"></g:link>
                         		<g:if test="${moafInstance.dadosEducacionais && session.usuario.id != moafInstance.usuario.id}">
-                        			<g:link controller="relatoUso" action="create" params="['dadosEducacionais.id': moafInstance.dadosEducacionais?.id]">[R]</g:link>
+                        			<g:link controller="relatoUso" action="create" params="['dadosEducacionais.id': moafInstance.dadosEducacionais?.id]"><img src="../images/relato.png"></g:link>
                         		</g:if>
                         		<g:if test="${(!moafInstance.dadosGerais || 
                         						!moafInstance.dadosCriacao ||
@@ -66,7 +65,7 @@
 												moafInstance.dadosDominios.size() == 0 ||
                         						!moafInstance.dadosAcessibilidade) &&
                         						session.usuario.id.equals(moafInstance.usuario.id)}">
-                        			<g:link action="continuarCadastro" id="${moafInstance.id}">[>>]</g:link>
+                        			<g:link action="continuarCadastro" id="${moafInstance.id}"><img src="../images/cont.png"></g:link>
                         		</g:if>
                         	</td>
                         

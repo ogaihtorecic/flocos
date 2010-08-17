@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: classificacaoInstance, field: "subcategoria")}</td>
                         
                         	<td>
-                        		<g:link action="show" id="${classificacaoInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${classificacaoInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${classificacaoInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${classificacaoInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

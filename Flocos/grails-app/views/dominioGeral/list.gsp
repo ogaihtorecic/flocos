@@ -24,7 +24,7 @@
                         
                             <g:sortableColumn property="dominioGeral" title="${message(code: 'dominioGeral.dominioGeral.label', default: 'Dominio Geral')}" />
                         
-                            <th><g:message code="dominioGeral.dadosDominios.label" default="Dados Dominios" /></th>
+                            <th><g:message code="dominioGeral.dadosDominios.label" default="Dados dos Dominios" /></th>
                             
                            	<th><g:message code="default.actions.label" default="Actions" /></th>
                    	    
@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: dominioGeralInstance, field: "dadosDominios")}</td>
                             
                             <td>
-                        		<g:link action="show" id="${dominioGeralInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dominioGeralInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dominioGeralInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dominioGeralInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

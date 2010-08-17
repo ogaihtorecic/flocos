@@ -35,8 +35,8 @@
                             <td>${fieldValue(bean: idiomaInstance, field: "idioma")}</td>
                             
                             <td>
-								<g:link action="show" id="${idiomaInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${idiomaInstance.id}">[E]</g:link>
+								<g:link action="show" id="${idiomaInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${idiomaInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

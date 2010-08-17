@@ -18,7 +18,7 @@
             <div class="message">${flash.message}</div>
             </g:if>
             <g:form name="searchForm" action="search">
-            	<label for="criteria"><g:message code="instituicao.instituicao.label" default="Instituição" /></label><br/>
+            	<label for="criteria"><g:message code="instituicao.instituicao.label" default="Instituicao" /></label><br/>
 				<g:textField name="criteria"/>
 				<span class="button"><g:submitButton name="search" value="${message(code: 'default.button.search.label', default: 'Buscar')}" /></span>
 			</g:form>
@@ -40,8 +40,8 @@
                             <td>${fieldValue(bean: instituicaoInstance, field: "instituicao")}</td>
                             
                             <td>
-								<g:link action="show" id="${instituicaoInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${instituicaoInstance.id}">[E]</g:link>
+								<g:link action="show" id="${instituicaoInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${instituicaoInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

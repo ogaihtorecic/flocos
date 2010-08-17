@@ -35,8 +35,8 @@
                             <td>${fieldValue(bean: browserInstance, field: "browser")}</td>
                             
                             <td>
-                        		<g:link action="show" id="${browserInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${browserInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${browserInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${browserInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

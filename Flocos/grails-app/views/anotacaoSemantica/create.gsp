@@ -29,7 +29,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="localAnotacao"><g:message code="anotacaoSemantica.localAnotacao.label" default="Local da Anotação" /></label>
+                                    <label for="localAnotacao"><g:message code="anotacaoSemantica.localAnotacao.label" default="Local da Anotacao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anotacaoSemanticaInstance, field: 'localAnotacao', 'errors')}">
                                     <g:textField name="localAnotacao" value="${anotacaoSemanticaInstance?.localAnotacao}" />
@@ -38,7 +38,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="tipoAnotacao"><g:message code="anotacaoSemantica.tipoAnotacao.label" default="Tipo da Anotação" /></label>
+                                    <label for="tipoAnotacao"><g:message code="anotacaoSemantica.tipoAnotacao.label" default="Tipo da Anotacao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: anotacaoSemanticaInstance, field: 'tipoAnotacao', 'errors')}">
                                     <g:textField name="tipoAnotacao" value="${anotacaoSemanticaInstance?.tipoAnotacao}" />

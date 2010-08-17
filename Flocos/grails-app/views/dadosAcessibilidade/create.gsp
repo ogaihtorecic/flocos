@@ -38,7 +38,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="inaptidoesVisuais"><g:message code="dadosAcessibilidade.inaptidoesVisuais.label" default="Inaptidões Visuais" /></label>
+                                  <label for="inaptidoesVisuais"><g:message code="dadosAcessibilidade.inaptidoesVisuais.label" default="Inaptidoes Visuais" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosAcessibilidadeInstance, field: 'inaptidoesVisuais', 'errors')}">
                                     <g:select name="inaptidoesVisuais" from="${flocos.InaptidaoVisual.list()}" multiple="yes" optionKey="id" size="5" value="${dadosAcessibilidadeInstance?.inaptidoesVisuais*.id}" />
@@ -56,7 +56,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="inaptidoesNeuro"><g:message code="dadosAcessibilidade.inaptidoesNeuro.label" default="Inaptidões Neurológicas" /></label>
+                                  <label for="inaptidoesNeuro"><g:message code="dadosAcessibilidade.inaptidoesNeuro.label" default="Inaptidoes Neurologicas" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosAcessibilidadeInstance, field: 'inaptidoesNeuro', 'errors')}">
                                     <g:select name="inaptidoesNeuro" from="${flocos.InaptidaoNeuro.list()}" multiple="yes" optionKey="id" size="5" value="${dadosAcessibilidadeInstance?.inaptidoesNeuro*.id}" />
@@ -65,7 +65,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="descricaoPnee"><g:message code="dadosAcessibilidade.descricaoPnee.label" default="Descrição do Pnee" /></label>
+                                    <label for="descricaoPnee"><g:message code="dadosAcessibilidade.descricaoPnee.label" default="Descricao do Pnee" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosAcessibilidadeInstance, field: 'descricaoPnee', 'errors')}">
                                     <g:textArea name="descricaoPnee" cols="40" rows="5" value="${dadosAcessibilidadeInstance?.descricaoPnee}" />

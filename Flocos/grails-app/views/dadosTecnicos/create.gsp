@@ -29,7 +29,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="duracao"><g:message code="dadosTecnicos.duracao.label" default="Duração" /></label>
+                                    <label for="duracao"><g:message code="dadosTecnicos.duracao.label" default="Duracao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'duracao', 'errors')}">
                                     <g:textField name="duracao" value="${fieldValue(bean: dadosTecnicosInstance, field: 'duracao')}" />
@@ -58,7 +58,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="resolucoes"><g:message code="dadosTecnicos.resolucoes.label" default="Resoluções" /></label>
+                                  <label for="resolucoes"><g:message code="dadosTecnicos.resolucoes.label" default="Resolucoes" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'resolucoes', 'errors')}">
                                     <g:select name="resolucoes" from="${flocos.Resolucao.list()}" multiple="yes" optionKey="id" size="5" />
@@ -108,7 +108,7 @@
 
 							<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="tipoMidias"><g:message code="dadosTecnicos.tipoMidias.label" default="Tipos de Mídias" /></label>
+                                  <label for="tipoMidias"><g:message code="dadosTecnicos.tipoMidias.label" default="Tipos de Midias" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'tipoMidias', 'errors')}">
                                     <g:select name="tipoMidias" from="${flocos.TipoMidia.list()}" multiple="yes" optionKey="id" size="5" />
@@ -117,7 +117,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="tipoAplicacao"><g:message code="dadosTecnicos.tipoAplicacao.label" default="Tipo de Aplicação" /></label>
+                                    <label for="tipoAplicacao"><g:message code="dadosTecnicos.tipoAplicacao.label" default="Tipo de Aplicacao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'tipoAplicacao', 'errors')}">
                                     <g:textField name="tipoAplicacao" value="${dadosTecnicosInstance?.tipoAplicacao}" />
@@ -126,7 +126,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="obervacaoInstalacao"><g:message code="dadosTecnicos.obervacaoInstalacao.label" default="Observação de Instalação" /></label>
+                                    <label for="obervacaoInstalacao"><g:message code="dadosTecnicos.obervacaoInstalacao.label" default="Observacao de Instalacao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'obervacaoInstalacao', 'errors')}">
                                     <g:textArea name="obervacaoInstalacao" cols="40" rows="5" value="${dadosTecnicosInstance?.obervacaoInstalacao}" />
@@ -135,7 +135,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="quantidadeMaxima"><g:message code="dadosTecnicos.quantidadeMaxima.label" default="Quantidade Máxima" /></label>
+                                    <label for="quantidadeMaxima"><g:message code="dadosTecnicos.quantidadeMaxima.label" default="Quantidade Maxima" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosTecnicosInstance, field: 'quantidadeMaxima', 'errors')}">
                                     <g:textField name="quantidadeMaxima" value="${fieldValue(bean: dadosTecnicosInstance, field: 'quantidadeMaxima')}" />

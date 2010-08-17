@@ -40,8 +40,8 @@
                             <td>${fieldValue(bean: hardwareInstance, field: "hardware")}</td>
                             
                             <td>
-								<g:link action="show" id="${hardwareInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${hardwareInstance.id}">[E]</g:link>
+								<g:link action="show" id="${hardwareInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${hardwareInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

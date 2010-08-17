@@ -40,8 +40,8 @@
                             <td>${fieldValue(bean: middlewareInstance, field: "middleware")}</td>
                             
                             <td>
-								<g:link action="show" id="${middlewareInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${middlewareInstance.id}">[E]</g:link>
+								<g:link action="show" id="${middlewareInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${middlewareInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

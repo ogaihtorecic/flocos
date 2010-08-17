@@ -40,8 +40,8 @@
                             <td>${fieldValue(bean: papelInstance, field: "papel")}</td>
                             
                             <td>
-								<g:link action="show" id="${papelInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${papelInstance.id}">[E]</g:link>
+								<g:link action="show" id="${papelInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${papelInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

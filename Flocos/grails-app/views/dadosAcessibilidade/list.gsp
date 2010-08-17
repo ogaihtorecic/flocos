@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.DadosAcessibilidade" %>
 <html>
     <head>
@@ -23,11 +23,11 @@
                         
                         	<th><g:message code="dadosAcessibilidade.tiposPnee.label" default="Tipos de Pnee" /></th>
                         	
-                        	<th><g:message code="dadosAcessibilidade.inaptidoesVisuais.label" default="Inaptidões Visuais" /></th>
+                        	<th><g:message code="dadosAcessibilidade.inaptidoesVisuais.label" default="Inaptidoes Visuais" /></th>
                         	
                         	<g:sortableColumn property="inaptidaoAuditiva" title="${message(code: 'dadosAcessibilidade.inaptidaoAuditiva.label', default: 'Inaptidão Auditiva')}" />
                         
-                        	<th><g:message code="dadosAcessibilidade.inaptidoesNeuro.label" default="Inaptidões Neurológicas" /></th>
+                        	<th><g:message code="dadosAcessibilidade.inaptidoesNeuro.label" default="Inaptidoes Neurologicas" /></th>
                         
                             <g:sortableColumn property="descricaoPnee" title="${message(code: 'dadosAcessibilidade.descricaoPnee.label', default: 'Descricao Pnee')}" />
 
@@ -50,8 +50,8 @@
                             <td>${fieldValue(bean: dadosAcessibilidadeInstance, field: "descricaoPnee")}</td>
                         
                         	<td>
-                        		<g:link action="show" id="${dadosAcessibilidadeInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dadosAcessibilidadeInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dadosAcessibilidadeInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dadosAcessibilidadeInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>
