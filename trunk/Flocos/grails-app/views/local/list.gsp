@@ -48,8 +48,8 @@
                             <td>${fieldValue(bean: localInstance, field: "dadosTecnicos")}</td>
                             
                             <td>
-								<g:link action="show" id="${localInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${localInstance.id}">[E]</g:link>
+								<g:link action="show" id="${localInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${localInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

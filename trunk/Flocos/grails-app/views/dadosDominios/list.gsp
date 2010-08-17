@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.DadosDominios" %>
 <html>
     <head>
@@ -18,7 +18,7 @@
             <div class="message">${flash.message}</div>
             </g:if>
             <g:form name="searchForm" action="search">
-            	<label for="criteria"><g:message code="dadosDominios.titulo.label" default="Título" /></label><br/>
+            	<label for="criteria"><g:message code="dadosDominios.titulo.label" default="Titulo" /></label><br/>
 				<g:textField name="criteria"/>
 				<span class="button"><g:submitButton name="search" value="${message(code: 'default.button.search.label', default: 'Buscar')}" /></span>
 			</g:form>
@@ -31,7 +31,7 @@
                             
                             <th><g:message code="dadosDominios.idiomas.label" default="Idiomas" /></th>
                             
-                            <th><g:message code="dadosDominios.dominioGeral.label" default="Domínio Geral" /></th>
+                            <th><g:message code="dadosDominios.dominioGeral.label" default="Dominio Geral" /></th>
                         
                             <g:sortableColumn property="dominioEspecifico" title="${message(code: 'dadosDominios.dominioEspecifico.label', default: 'Dominio Especifico')}" />
                         
@@ -41,7 +41,7 @@
                         
                             <g:sortableColumn property="versao" title="${message(code: 'dadosDominios.versao.label', default: 'Versão')}" />
                             
-                            <th><g:message code="dadosDominios.responsaveis.label" default="Responsáveis" /></th>
+                            <th><g:message code="dadosDominios.responsaveis.label" default="Responsaveis" /></th>
                             
                             <th><g:message code="dadosDominios.formatos.label" default="Formatos" /></th>
                         
@@ -76,8 +76,8 @@
                             <td>${fieldValue(bean: dadosDominiosInstance, field: "descricaoOntologia")}</td>
                             
                             <td>
-                        		<g:link action="show" id="${dadosDominiosInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dadosDominiosInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dadosDominiosInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dadosDominiosInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

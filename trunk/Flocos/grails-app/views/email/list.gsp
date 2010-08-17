@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: emailInstance, field: "responsavel")}</td>
                         
                         	<td>
-								<g:link action="show" id="${emailInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${emailInstance.id}">[E]</g:link>
+								<g:link action="show" id="${emailInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${emailInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

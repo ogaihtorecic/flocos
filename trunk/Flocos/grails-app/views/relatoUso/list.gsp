@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.RelatoUso" %>
 <html>
     <head>
@@ -104,8 +104,8 @@
                             <td>${fieldValue(bean: relatoUsoInstance, field: "nivelInteratividade")}</td>
                             
                             <td>
-								<g:link action="show" id="${relatoUsoInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${relatoUsoInstance.id}">[E]</g:link>
+								<g:link action="show" id="${relatoUsoInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${relatoUsoInstance.id}">[<img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: anotacaoSemanticaInstance, field: "tipoAnotacao")}</td>
                         
                             <td>
-                        		<g:link action="show" id="${anotacaoSemanticaInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${anotacaoSemanticaInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${anotacaoSemanticaInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${anotacaoSemanticaInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

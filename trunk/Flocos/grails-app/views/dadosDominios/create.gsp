@@ -48,7 +48,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="dominioEspecifico"><g:message code="dadosDominios.dominioEspecifico.label" default="Domínio Especifico" /></label>
+                                    <label for="dominioEspecifico"><g:message code="dadosDominios.dominioEspecifico.label" default="Dominio Especifico" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosDominiosInstance, field: 'dominioEspecifico', 'errors')}">
                                     <g:textField name="dominioEspecifico" value="${dadosDominiosInstance?.dominioEspecifico}" />
@@ -66,7 +66,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="versao"><g:message code="dadosDominios.versao.label" default="Versão" /></label>
+                                    <label for="versao"><g:message code="dadosDominios.versao.label" default="Versao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosDominiosInstance, field: 'versao', 'errors')}">
                                     <g:textField name="versao" value="${dadosDominiosInstance?.versao}" />
@@ -75,7 +75,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="responsaveis"><g:message code="dadosDominios.responsaveis.label" default="Responsáveis" /></label>
+                                  <label for="responsaveis"><g:message code="dadosDominios.responsaveis.label" default="Responsaveis" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosDominiosInstance, field: 'responsaveis', 'errors')}">
                                     <g:select name="responsaveis" from="${flocos.Responsavel.list()}" multiple="yes" optionKey="id" size="5" value="${[flocos.Usuario.findById(session.usuario.id).responsavel?.id]}" />
@@ -85,7 +85,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="descricaoOntologia"><g:message code="dadosDominios.descricaoOntologia.label" default="Descrição da Ontologia" /></label>
+                                    <label for="descricaoOntologia"><g:message code="dadosDominios.descricaoOntologia.label" default="Descricao da Ontologia" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosDominiosInstance, field: 'descricaoOntologia', 'errors')}">
                                     <g:textArea name="descricaoOntologia" cols="40" rows="5" value="${dadosDominiosInstance?.descricaoOntologia}" />

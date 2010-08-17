@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.Parametro" %>
 <html>
     <head>
@@ -56,8 +56,8 @@
                             <td>${fieldValue(bean: parametroInstance, field: "tipo")}</td>
                         
                             <td>
-								<g:link action="show" id="${parametroInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${parametroInstance.id}">[E]</g:link>
+								<g:link action="show" id="${parametroInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${parametroInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

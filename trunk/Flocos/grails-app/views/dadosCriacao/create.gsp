@@ -29,7 +29,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="versao"><g:message code="dadosCriacao.versao.label" default="Versão" /></label>
+                                    <label for="versao"><g:message code="dadosCriacao.versao.label" default="Versao" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosCriacaoInstance, field: 'versao', 'errors')}">
                                     <g:textField name="versao" value="${dadosCriacaoInstance?.versao}" />
@@ -47,7 +47,7 @@
                         
                         	<tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="responsaveis"><g:message code="dadosCriacao.responsaveis.label" default="Responsáveis" /></label>
+                                  <label for="responsaveis"><g:message code="dadosCriacao.responsaveis.label" default="Responsaveis" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: dadosCriacaoInstance, field: 'responsaveis', 'errors')}">
                                     <g:select name="responsaveis" from="${flocos.Responsavel.list()}" multiple="yes" optionKey="id" size="5" value="${[flocos.Usuario.findById(session.usuario.id).responsavel?.id]}" />

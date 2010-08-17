@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.Responsavel" %>
 <html>
     <head>
@@ -56,8 +56,8 @@
                            	<td>${responsavelInstance.papeis}</td> 
                             
                             <td>
-								<g:link action="show" id="${responsavelInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${responsavelInstance.id}">[E]</g:link>
+								<g:link action="show" id="${responsavelInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${responsavelInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

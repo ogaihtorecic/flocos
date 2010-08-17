@@ -17,7 +17,7 @@
             <div class="message">${flash.message}</div>
             </g:if>
             <g:form name="searchForm" action="search">
-            	<label for="criteria"><g:message code="dadosEducacionais.conteudo.label" default="Conteúdo" /></label><br/>
+            	<label for="criteria"><g:message code="dadosEducacionais.conteudo.label" default="Conteudo" /></label><br/>
 				<g:textField name="criteria"/>
 				<span class="button"><g:submitButton name="search" value="${message(code: 'default.button.search.label', default: 'Buscar')}" /></span>
 			</g:form>
@@ -26,23 +26,23 @@
                     <thead>
                         <tr>
                         
-                        	<th><g:message code="dadosEducacionais.areas.label" default="Áreas" /></th>
+                        	<th><g:message code="dadosEducacionais.areas.label" default="Areas" /></th>
                         	
-                        	<th><g:message code="dadosEducacionais.dominiosPropostos.label" default="Domínios Propostos" /></th>
+                        	<th><g:message code="dadosEducacionais.dominiosPropostos.label" default="Dominios Propostos" /></th>
                         	
-                        	<th><g:message code="dadosEducacionais.niveisEscolaridade.label" default="Níveis de Escolaridade" /></th>
+                        	<th><g:message code="dadosEducacionais.niveisEscolaridade.label" default="Niveis de Escolaridade" /></th>
                         	
                             <g:sortableColumn property="idade" title="${message(code: 'dadosEducacionais.idade.label', default: 'Idade')}" />
                             
-                            <th><g:message code="dadosEducacionais.classificacoes.label" default="Classificações" /></th>
+                            <th><g:message code="dadosEducacionais.classificacoes.label" default="Classificacoes" /></th>
                         
                             <g:sortableColumn property="conteudo" title="${message(code: 'dadosEducacionais.conteudo.label', default: 'Conteudo')}" />
                             
                             <th><g:message code="dadosEducacionais.objetivoEducacional.label" default="Objetivo Educacional" /></th>
                             
-                            <th><g:message code="dadosEducacionais.anotacoesSemanticas.label" default="Anotações Semânticas" /></th>
+                            <th><g:message code="dadosEducacionais.anotacoesSemanticas.label" default="Anotacao Semantica" /></th>
                         
-                            <g:sortableColumn property="preRequisitos" title="${message(code: 'dadosEducacionais.preRequisitos.label', default: 'Pré-Requisitos')}" />
+                            <g:sortableColumn property="preRequisitos" title="${message(code: 'dadosEducacionais.preRequisitos.label', default: 'Pre-Requisitos')}" />
                         
                             <g:sortableColumn property="tempoPrevisto" title="${message(code: 'dadosEducacionais.tempoPrevisto.label', default: 'Tempo Previsto')}" />
                         
@@ -52,7 +52,7 @@
                             
                             <th><g:message code="dadosEducacionais.tipoInteratividade.label" default="Tipo de Interatividade" /></th>
                             
-                            <th><g:message code="dadosEducacionais.nivelInteratividade.label" default="Nível de Interatividade" /></th>
+                            <th><g:message code="dadosEducacionais.nivelInteratividade.label" default="Nivel de Interatividade" /></th>
                             
                             <th><g:message code="default.actions.label" default="Actions" /></th>
                         
@@ -91,10 +91,10 @@
                             <td>${dadosEducacionaisInstance.nivelInteratividade}</td>
                         
                         	<td>
-                        		<g:link action="show" id="${dadosEducacionaisInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dadosEducacionaisInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dadosEducacionaisInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dadosEducacionaisInstance.id}"><img src="../images/editar.png"></g:link>
                         		<g:if test="${session.usuario.id != dadosEducacionaisInstance.usuario.id}">
-                        			<g:link controller="relatoUso" action="create" params="['dadosEducacionais.id': dadosEducacionaisInstance?.id]">[R]</g:link>
+                        			<g:link controller="relatoUso" action="create" params="['dadosEducacionais.id': dadosEducacionaisInstance?.id]"><img src="../images/relato.png"></g:link>
                         		</g:if>
                         	</td>
                         

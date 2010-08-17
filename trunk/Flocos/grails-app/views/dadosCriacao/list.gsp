@@ -17,7 +17,7 @@
             <div class="message">${flash.message}</div>
             </g:if>
             <g:form name="searchForm" action="search">
-            	<label for="criteria"><g:message code="dadosCriacao.versao.label" default="Versão" /></label><br/>
+            	<label for="criteria"><g:message code="dadosCriacao.versao.label" default="Versao" /></label><br/>
 				<g:textField name="criteria"/>
 				<span class="button"><g:submitButton name="search" value="${message(code: 'default.button.search.label', default: 'Buscar')}" /></span>
 			</g:form>
@@ -55,8 +55,8 @@
                             <td>${dadosCriacaoInstance.meiosAcesso}</td>
                         
                         	<td>
-                        		<g:link action="show" id="${dadosCriacaoInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dadosCriacaoInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dadosCriacaoInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dadosCriacaoInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

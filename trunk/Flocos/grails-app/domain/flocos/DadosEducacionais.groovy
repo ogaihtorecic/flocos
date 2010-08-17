@@ -24,7 +24,7 @@ class DadosEducacionais {
     	preRequisitos(nullable:true)
     	tempoPrevisto(nullable:true)
     	complemento(nullable:true, maxSize:255)
-    	dificuldade(inList:['', 'facilimo', 'facil', 'medio', 'dificil', 'super dificil'])
+    	dificuldade(inList:['', 'facílimo', 'fácil', 'médio', 'difícil', 'super difícil'])
     	tipoInteratividade(inList:['', 'ativa', 'passiva', 'mista'])
     	nivelInteratividade(inList:['', 'baixa', 'alta', 'muito alta'])
     	objetivoEducacional(nullable:true, maxSize:2000)

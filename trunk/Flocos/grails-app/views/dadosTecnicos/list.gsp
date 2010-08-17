@@ -1,4 +1,4 @@
-
+﻿
 <%@ page import="flocos.DadosTecnicos" %>
 <html>
     <head>
@@ -41,13 +41,13 @@
                             
                             <th><g:message code="dadosTecnicos.plataformas.label" default="Plataformas" /></th>
                             
-                            <th><g:message code="dadosTecnicos.tiposMidia.label" default="Tipos de Mídia" /></th>
+                            <th><g:message code="dadosTecnicos.tiposMidia.label" default="Tipos de Midia" /></th>
                         
                             <g:sortableColumn property="tipoAplicacao" title="${message(code: 'dadosTecnicos.tipoAplicacao.label', default: 'Tipo Aplicacao')}" />
                             
-                            <th><g:message code="dadosTecnicos.parametros.label" default="Parâmetros" /></th>
+                            <th><g:message code="dadosTecnicos.parametros.label" default="Parametros" /></th>
                             
-                            <th><g:message code="dadosTecnicos.funcoes.label" default="Funções" /></th>
+                            <th><g:message code="dadosTecnicos.funcoes.label" default="Funcoes" /></th>
                         
                             <g:sortableColumn property="obervacaoInstalacao" title="${message(code: 'dadosTecnicos.obervacaoInstalacao.label', default: 'Obervação de Instalação')}" />
                         
@@ -94,8 +94,8 @@
                             <td>${fieldValue(bean: dadosTecnicosInstance, field: "quantidadeMaxima")}</td>
                         
                         	<td>
-                        		<g:link action="show" id="${dadosTecnicosInstance.id}">[V]</g:link>
-                        		<g:link action="edit" id="${dadosTecnicosInstance.id}">[E]</g:link>
+                        		<g:link action="show" id="${dadosTecnicosInstance.id}"><img src="../images/ver.png"></g:link>
+                        		<g:link action="edit" id="${dadosTecnicosInstance.id}"><img src="../images/editar.png"></g:link>
                         	</td>
                         
                         </tr>

@@ -40,8 +40,8 @@
                             <td>${fieldValue(bean: sistemaOperacionalInstance, field: "sistemaOperacional")}</td>
                             
                             <td>
-								<g:link action="show" id="${sistemaOperacionalInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${sistemaOperacionalInstance.id}">[E]</g:link>
+								<g:link action="show" id="${sistemaOperacionalInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${sistemaOperacionalInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

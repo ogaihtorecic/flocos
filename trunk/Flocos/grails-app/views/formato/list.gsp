@@ -39,8 +39,8 @@
                             <td>${fieldValue(bean: formatoInstance, field: "dadosDominios")}</td>
                             
                             <td>
-								<g:link action="show" id="${formatoInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${formatoInstance.id}">[E]</g:link>
+								<g:link action="show" id="${formatoInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${formatoInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>

@@ -37,7 +37,7 @@
                         </tr>
                     
                     	<tr class="prop">
-                            <td valign="top" class="name"><g:message code="moaf.dadosTecnicos.label" default="Dados Técnicos" /></td>
+                            <td valign="top" class="name"><g:message code="moaf.dadosTecnicos.label" default="Dados Tecnicos" /></td>
                             
                             <td valign="top" class="value"><g:link controller="dadosTecnicos" action="show" id="${moafInstance?.dadosTecnicos?.id}">${moafInstance?.dadosTecnicos?.encodeAsHTML()}</g:link></td>
                             
@@ -51,7 +51,7 @@
                         </tr>
                     
                     	<tr class="prop">
-                            <td valign="top" class="name"><g:message code="moaf.dadosDominios.label" default="Dados de Domínios" /></td>
+                            <td valign="top" class="name"><g:message code="moaf.dadosDominios.label" default="Dados do Dominios" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">
                                 <ul>

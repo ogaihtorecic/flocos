@@ -52,8 +52,8 @@
                             <td>${fieldValue(bean: usuarioInstance, field: "responsavel")}</td>
                             
                             <td>
-								<g:link action="show" id="${usuarioInstance.id}">[V]</g:link>
-								<g:link action="edit" id="${usuarioInstance.id}">[E]</g:link>
+								<g:link action="show" id="${usuarioInstance.id}"><img src="../images/ver.png"></g:link>
+								<g:link action="edit" id="${usuarioInstance.id}"><img src="../images/editar.png"></g:link>
 							</td>
                         
                         </tr>
