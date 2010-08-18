@@ -123,10 +123,10 @@ class MoafController {
 				redirect(controller: "dadosCriacao", action: "create", params: ['moaf.id': moafInstance.id])
 			} else if(moafInstance.dadosTecnicos == null) {
 				redirect(controller: "dadosTecnicos", action: "create", params: ['moaf.id': moafInstance.id])
-			} else if(moafInstance.dadosEducacionais == null) {
-				redirect(controller: "dadosEducacionais", action: "create", params: ['moaf.id': moafInstance.id])
 			} else if(moafInstance.dadosDominios == null || moafInstance.dadosDominios.size() == 0) {
 				redirect(controller: "dadosDominios", action: "create", params: ['moaf.id': moafInstance.id])
+			} else if(moafInstance.dadosEducacionais == null) {
+				redirect(controller: "dadosEducacionais", action: "create", params: ['moaf.id': moafInstance.id])
 			} else if(moafInstance.dadosAcessibilidade == null) {
 				redirect(controller: "dadosAcessibilidade", action: "create", params: ['moaf.id': moafInstance.id])
 			} else {

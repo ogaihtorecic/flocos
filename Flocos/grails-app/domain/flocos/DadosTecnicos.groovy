@@ -1,11 +1,13 @@
 package flocos
 
+import java.util.List;
+
 class DadosTecnicos {
 
 	Integer tamanho
 	Integer duracao
 	Usuario usuario
-	
+
 	static hasMany = [locais:Local, sistemasOperacionais:SistemaOperacional, browsers:Browser, resolucoes:Resolucao, plugins:Plugin, hardwares:Hardware, middlewares:Middleware, plataformas:Plataforma, tipoMidias:TipoMidia, parametros:Parametro, funcoes:Funcao]
 	
 	String tipoAplicacao
