@@ -4,7 +4,7 @@ class DadosEducacionaisController {
 
 	static navigation = [
 		group:'Principal', 
-		order:4, 
+		order:5, 
 		title:'Dados Educacionais', 
 		isVisible: { session.usuario != null }
 	]
@@ -79,7 +79,7 @@ class DadosEducacionaisController {
 			
 	            flash.message = "${message(code: 'default.created.message', args: [message(code: 'dadosEducacionais.label', default: 'DadosEducacionais'), dadosEducacionaisInstance.id])}"
 	            if("".equals(params.backUri)) {
-	            	redirect(controller: "dadosDominios", action: "create", params: ['moaf.id': moaf.id])
+					redirect(controller: "dadosAcessibilidade", action: "create", params: ['moaf.id': moaf.id])
 	            } else {
 	            	redirect(uri: params.backUri)
 	            }
@@ -184,7 +184,7 @@ class DadosEducacionaisController {
 				moaf.save(flush:true)
 				
 				flash.message = "Ontologia gerada com sucesso"
-				redirect(controller: "dadosDominios", action: "create", params: ['moaf.id': moaf.id])
+				redirect(controller: "dadosAcessibilidade", action: "create", params: ['moaf.id': moaf.id])
 			} else {
 				flash.message = "Erro ao gerar ontologia"
 				render(view: "create", model: [dadosEducacionaisInstance: dadosEducacionaisInstance])

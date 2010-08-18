@@ -4,7 +4,7 @@ class DadosDominiosController {
 
 	static navigation = [
 		group:'Principal', 
-		order:5, 
+		order:4, 
 		title:'Dados de Domínios', 
 		isVisible: { session.usuario != null }
 	]
@@ -64,9 +64,9 @@ class DadosDominiosController {
 		def filePath = servletContext.getRealPath("/") + "/uploads/${file.originalFilename}"
 		if(file && !file.empty) {
 			def local = new flocos.Local(local:"http://${request.serverName}:8080/Flocos/uploads/${file.originalFilename}")
-			local.dadosDominios = dadosDominiosInstance
 			dadosDominiosInstance.locais = [local]
 			dadosDominiosInstance.nomeArquivo = file.originalFilename
+			local.dadosDominios = dadosDominiosInstance
 		}
 		
         if (dadosDominiosInstance.save(flush: true)) {
@@ -92,7 +92,7 @@ class DadosDominiosController {
 			
             if("".equals(params.backUri)) {
 				if(moaf) {
-					redirect(controller: "dadosAcessibilidade", action: "create", params: ['moaf.id': moaf.id])
+					redirect(controller: "dadosEducacionais", action: "create", params: ['moaf.id': moaf.id])
 				} else {
 					redirect(action: "list")
 				}

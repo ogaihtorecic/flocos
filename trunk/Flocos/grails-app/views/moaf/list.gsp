@@ -26,10 +26,10 @@
                         	
                         	<th><g:message code="moaf.dadosTecnicos.label" default="Dados Tecnicos" /></th>
                         
+                            <th><g:message code="moaf.dadosDominios.label" default="Dados do Dominio" /></th>
+                            
                             <th><g:message code="moaf.dadosEducacionais.label" default="Dados Educacionais" /></th>
 
-							<th><g:message code="moaf.dadosDominios.label" default="Dados do Dominio" /></th>
-                   	    
                             <th><g:message code="moaf.dadosAcessibilidade.label" default="Dados de Acessibilidade" /></th>
                    	    
                    	    	<th><g:message code="default.actions.label" default="Actions" /></th>
@@ -46,10 +46,10 @@
                         	
                         	<td><g:link controller="dadosTecnicos" action="show" id="${moafInstance.dadosTecnicos?.id}">${fieldValue(bean: moafInstance, field: "dadosTecnicos")}</g:link></td>
                         
+                            <td>${fieldValue(bean: moafInstance, field: "dadosDominios")}</td>
+                            
                             <td><g:link controller="dadosEducacionais" action="show" id="${moafInstance.dadosEducacionais?.id}">${fieldValue(bean: moafInstance, field: "dadosEducacionais")}</g:link></td>
                             
-                            <td>${fieldValue(bean: moafInstance, field: "dadosDominios")}</td>
-                        
                             <td><g:link controller="dadosAcessibilidade" action="show" id="${moafInstance.dadosAcessibilidade?.id}">${fieldValue(bean: moafInstance, field: "dadosAcessibilidade")}</g:link></td>
                         
                         	<td>
@@ -60,9 +60,9 @@
                         		<g:if test="${(!moafInstance.dadosGerais || 
                         						!moafInstance.dadosCriacao ||
                         						!moafInstance.dadosTecnicos ||
-                        						!moafInstance.dadosEducacionais ||
-                        						!moafInstance.dadosDominios ||
+												!moafInstance.dadosDominios ||
 												moafInstance.dadosDominios.size() == 0 ||
+                        						!moafInstance.dadosEducacionais ||
                         						!moafInstance.dadosAcessibilidade) &&
                         						session.usuario.id.equals(moafInstance.usuario.id)}">
                         			<g:link action="continuarCadastro" id="${moafInstance.id}"><img src="../images/cont.png"></g:link>

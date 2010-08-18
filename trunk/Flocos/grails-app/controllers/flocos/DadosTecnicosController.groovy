@@ -5,7 +5,7 @@ class DadosTecnicosController {
 	static navigation = [
 		group:'Principal', 
 		order:3, 
-		title:'Dados TÃ©cnicos', 
+		title:'Dados Técnicos', 
 		isVisible: { session.usuario != null }
 	]
 
@@ -56,12 +56,19 @@ class DadosTecnicosController {
         if (dadosTecnicosInstance.save(flush: true)) {
             
 			def moaf = Moaf.get(params.moaf.id)
+			
+			if(moaf.dadosGerais && moaf.dadosGerais.localArquivo && !"".equals(moaf.dadosGerais.localArquivo)) {
+				Local l = new Local(local: moaf.dadosGerais.localArquivo)
+				dadosTecnicosInstance.locais = [l]
+				l.dadosTecnicos = dadosTecnicosInstance; 
+			}
+			
 			moaf.dadosTecnicos = dadosTecnicosInstance
 			moaf.save(flush:true)
 			
 			flash.message = "${message(code: 'default.created.message', args: [message(code: 'dadosTecnicos.label', default: 'DadosTecnicos'), dadosTecnicosInstance.id])}"
             if("".equals(params.backUri)) {
-            	redirect(controller: "dadosEducacionais", action: "create", params: ['moaf.id': moaf.id])
+            	redirect(controller: "dadosDominios", action: "create", params: ['moaf.id': moaf.id])
             } else {
             	redirect(uri: params.backUri)
             }
