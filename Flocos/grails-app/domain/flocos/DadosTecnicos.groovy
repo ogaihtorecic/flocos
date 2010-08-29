@@ -1,7 +1,5 @@
 package flocos
 
-import java.util.List;
-
 class DadosTecnicos {
 
 	Integer tamanho
