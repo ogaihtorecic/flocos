@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:prop="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/TermDefinition.owl">
+	<owl:Ontology rdf:about="">
+		<owl:imports
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl" />
+	</owl:Ontology>
+	<owl:Class rdf:ID="TermDefinition">
+		<rdfs:comment>
+			A term definition relates a term to a set of classes that
+			together denote the term.
+		</rdfs:comment>
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+	</owl:Class>
+	<owl:Class rdf:ID="Term">
+		<rdfs:subClassOf
+			rdf:resource="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#EcoOntThing" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A term can have one or more definition. All synonymous terms
+			must refer to the same definition.
+		</rdfs:comment>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					0
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#synonymousTerm" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="denotes">
+		<rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+		<rdfs:domain rdf:resource="#TermDefinition" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="definition">
+		<rdfs:domain rdf:resource="#Term" />
+		<rdfs:range rdf:resource="#TermDefinition" />
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="synonymousTerm">
+		<rdfs:range rdf:resource="#Term" />
+		<rdfs:domain rdf:resource="#Term" />
+	</owl:ObjectProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

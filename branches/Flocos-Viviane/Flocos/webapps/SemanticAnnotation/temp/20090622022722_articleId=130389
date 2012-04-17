@@ -1,0 +1,886 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/masterLayout.jsp -->
+<head>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/yahooui/utilities/utilities.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/edmui/edmunds/edmunds.js"></script>
+        
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/edmui/usertrack/usertrack.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/pagescripts.js"></script>
+    <script language="javascript" src="http://www.edmunds.com/day/scripts/hpscripts.js"></script>
+      
+    <link rel="stylesheet" type="text/css" media="screen" href="http://www.edmunds.com/day/scripts/edmui/lightbox/lightbox-media.css"/>
+    <script language="JavaScript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/identity/identity.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://www.edmunds.com/day/scripts/edmui/lightbox/lightbox-media.js"></script>
+
+
+    <script type="text/javascript" language="javascript" src="/insideline/do/scripts/Global"></script>
+    
+        
+        
+            
+        
+    
+
+    
+        
+        
+            
+        
+    
+
+    
+        
+        
+            
+        
+    
+
+    
+
+    
+        
+        
+            <title>2008 Pebble Beach Preview: Porsche No. 1 Makes North American Concours Debut</title>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="-1"/>
+            <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+            <meta http-equiv="keywords" content="Inside Line: 2008 Pebble Beach Preview: Porsche No. 1 Makes North American Concours Debut, News Page"/>
+            <meta http-equiv="description" content="Inside Line: The first Porsche sports car gets a starring role at the upcoming 2008 Pebble Beach Concours d&#039;Elegance."/>
+
+            <meta name="document-rating" content="Safe for Kids"/>
+            <meta name="PICS-Label"
+                  content='(pics-1.1 "http://www.icra.org/ratingsv02.html" | gen true for "http://www.edmunds.com" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" | gen true for "http://www.edmunds.com" r (n 0 s 0 v 0 | 0))'/>
+            <link rel="stylesheet" type="text/css" media="all" href="/il/styles/inside.css"/>
+        
+    
+
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://rss.edmunds.com/IL/rss/automotivenews.xml">
+    
+
+    
+        <link rel="alternate" type="application/atom+xml" title="ATOM" href="http://rss.edmunds.com/IL/atom/automotivenews.xml">
+    
+        
+
+
+<script language="javascript" src="/day/scripts/miniilpagescripts.js"></script>    
+    
+</head>
+
+<body>
+<!-- Login lightbox related stuff -->
+
+
+<a rel="shadowbox;width=490;height=225" class="option" id="reset-password-link" href="http://www.edmunds.com/era/secure/lb/resetPassword.jsp?email=" style="display:none"></a>
+<a rel="shadowbox;width=490;height=595" class="option" id="reset-password-link-error" href="http://www.edmunds.com/era/lb/resetPasswordLinkErr.jsp" style="display:none"></a>
+<a rel="shadowbox;width=490;height=400" class="option" id="account-activation" href="http://www.edmunds.com/era/lb/accountActivation.jsp?msg=" style="display:none"></a>
+<script language="javascript">
+YAHOO.util.Event.addListener(window, 'load', function() {
+	YAHOO.Edmunds.LightBoxMedia.init();
+	if (document.getElementById('gl-registration') != null && document.getElementById('gl-registration') != undefined){
+		document.getElementById('gl-registration').style.display = 'block';
+	}
+	if (document.getElementById('regHeader') != null && document.getElementById('regHeader') != undefined){
+		document.getElementById('regHeader').style.display = 'block';
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'reset-password') {
+		YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('reset-password-link'));
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'reset-password-link-error') {
+	    YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('reset-password-link-error'));
+	}
+	if (YAHOO.Edmunds.Util.getQueryString('actionPerform') == 'account-activation') {
+	    YAHOO.Edmunds.LightBoxMedia.open(document.getElementById('account-activation'));
+	}
+});
+
+// The js function takes three parameters.
+// fromUrl : Current url
+// toUrl : After login, where the user intends to go
+// app : application name, e.g. insideline, autoobserver, carspace, default is edmunds
+// The look and feel of the light box changes depending upon the app
+function isLoggedIn(toUrl, app) {
+    if(user.isLoggedIn() || user.isAutoLoggedIn()){
+        if (toUrl != null && toUrl != undefined && toUrl != ''){
+            window.location = toUrl;
+        } else {
+            window.location.reload();
+        }		
+     } else {
+        var newLink=document.createElement('a');
+         newLink.href= 'http://www.edmunds.com/era/secure/lb/login.jsp?fromUrl=' + window.location.href;
+         if (toUrl != null && toUrl != undefined && toUrl != ''){
+            newLink.href= newLink.href + '&toUrl=' + toUrl;
+         }
+         if (app != null && app != undefined && app != ''){
+            newLink.href= newLink.href + '&app=' + app;
+         } 
+		newLink.className='option';
+		newLink.rel='shadowbox;width=490;height=307';
+		YAHOO.Edmunds.LightBoxMedia.open(newLink);	    
+		return;
+     }	 		    
+}
+ 
+function switchLightbox(href,rel,value){
+     	  	var newLink=document.createElement('a');
+	 			newLink.href= href + value;
+	 			newLink.className='option';
+	 			newLink.rel=rel;
+	            YAHOO.Edmunds.LightBoxMedia.switchOverlay();
+				YAHOO.Edmunds.LightBoxMedia.open(newLink);
+				return;
+	             
+}
+
+var x = function() { return YAHOO.Edmunds.LightBoxMedia.close;}();
+YAHOO.Edmunds.LightBoxMedia.close = function() {
+    new x();
+	var loc = window.location.href;	
+	if (loc.indexOf('email=') > 0){
+		var pos = loc.indexOf('email=');
+		loc = loc.substring(0,pos);		
+		window.location = loc;
+	} else if (loc.indexOf('?actionPerform=') > 0){
+		var pos = loc.indexOf('?actionPerform=');
+		loc = loc.substring(0,pos);		
+		window.location = loc;
+	}
+}
+
+function closeLightbox(){
+         	YAHOO.Edmunds.LightBoxMedia.close();
+}
+
+YAHOO.util.Event.addListener('lightbox-close', 'click', function(e) {
+             var e = e || window.event;
+             YAHOO.util.Event.preventDefault(e);
+             YAHOO.Edmunds.LightBox.hide();
+})
+
+         
+</script>
+
+
+<script language="javascript">var synpartner = 'edmunds';</script>
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/header.jsp -->
+
+
+
+
+
+
+<script type="text/javascript" language="javascript" src="/day/scripts/yahooui/utilities/utilities.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/edmui/edmunds/edmunds.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/edmui/flash/flash.js"></script>
+<script type="text/javascript" language="javascript" src="/day/scripts/pagescripts.js"></script>
+
+ 
+
+
+
+
+    
+        
+    
+    
+    
+
+
+
+<div class="hat" id="h-homepage">
+	<p>2008 Pebble Beach Preview: Porsche No. 1 Makes North American Concours Debut</p>
+</div>
+<div id="leaderboard">
+
+
+   
+    
+            
+              
+                
+                    
+                
+                
+              
+              
+              
+              
+              
+              
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+    
+    
+    
+       <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=728x90;ord=1245652040834?" width="728" height="90" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">
+  <A target="_blank" HREF="http://ad.doubleclick.net/jump/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=728x90;ord=1245652040834?">
+  <IMG SRC="http://ad.doubleclick.net/ad/news.il.dart/;dcopt=ist;sect=headlines;page=news;rsu=news;ptile=1;zip=;st=;cty=;dma=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=728x90;ord=1245652040834?" width="728" height="90" border="0"></A></IFRAME>
+    
+
+    
+
+</div>
+
+    <div class="asticker" id="ast-lp">
+    
+        
+            
+            
+            
+            
+            
+        <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=130389|;;sz=770x30;ord=1245652040835?" width="770" height="30" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">  <A target="_blank" href="http://ad.doubleclick.net/jump/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=130389|;;sz=770x30;ord=1245652040835?">  <IMG SRC="http://ad.doubleclick.net/ad/edmunds.dart/;make=;zip=;st=;cty=;u=|||www.edmunds.com/insideline/do/News/articleId=130389|;;sz=770x30;ord=1245652040835?" width="770" height="30" border="0"></A></IFRAME>
+    
+    </div>
+
+
+<div id="mast">
+    <div class="sitelogo">
+        <p><a href="/insideline/" title="Inside Line" target="_top">Inside Line</a></p>
+        <p id="il_edmundslogo"><a href="http://www.edmunds.com" title="Go to Edmunds.com" target="_top">Edmunds.com</a></p>
+    </div>
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/header-makemodel.jsp -->
+
+
+
+
+
+<!--Start Search -->
+<div class="jumpto">
+    <form name="globalfastsearch" method="get" action="/insideline/dc/Search" onsubmit="s_objectID='edmunds.il..searchbox..1.*'; setTID('edmunds.il..searchbox..1.*');">
+    Search:
+    <input name="q" type="text" size="20" value=""/>
+    <input type="hidden" name="rP" value="1" />
+    <input name="Go" type="submit" value="Go">
+    </form>
+</div>
+<!-- End Search -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/header-makemodel.jsp -->
+    
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/timestamp.jsp -->
+
+
+
+
+
+
+
+<p class="mast-date">
+
+Sunday, June 21, 2009
+</p>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/timestamp.jsp -->
+
+    
+    
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/omniture.jsp -->
+    <!-- Cool Omniture -->
+    
+
+
+
+    
+    
+        
+        
+     <script language="JavaScript">
+
+        var edwyr="";
+        var edwmk="";
+        var edwmdl="";
+        var edwstlid="";
+
+    </script>
+
+    <script language="JavaScript" src="/day/scripts/edw.js"></script>
+        
+    
+        <script type="text/javascript" src="/day/scripts/omniture/omniture.js"></script>
+        <noscript>
+            <a href="http://www.omniture.com" title="Web Analytics"><img src="http://edmunds.112.2O7.net/b/ss/edmunds/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" /></a>
+        </noscript><!-- /DO NOT REMOVE/-->
+    
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/omniture.jsp -->
+
+    
+    <br clear="all" />
+
+    <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/nav.jsp -->
+
+
+
+
+
+							
+
+
+	
+    
+
+
+	
+		
+			
+		
+		
+	
+
+<div id="nav">
+	<ul id="tabs">
+	
+		
+		
+			<li id="ilhome"><a href="/insideline" onClick=" s_objectID='edmunds.il.newsarticle.nav..1.*'; setTID('edmunds.il.newsarticle.nav..1.*');"  title="Inside Line Home"  target="_top" >Home</a></li>
+		
+	
+	
+		
+			<li id="news"><a href="/insideline/do/NewsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..2.*'; setTID('edmunds.il.newsarticle.nav..2.*');"  title="News"  target="_top"  class="selected" >News</a></li>
+		
+		
+	
+	
+		
+		
+			<li id="columns"><a href="/insideline/do/ColumnsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..3.*'; setTID('edmunds.il.newsarticle.nav..3.*');"  title="Columns"  target="_top" >Columns</a></li>
+		
+	
+	
+		
+		
+			<li id="drives"><a href="/insideline/do/DrivesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..4.*'; setTID('edmunds.il.newsarticle.nav..4.*');"  title="Road Tests"  target="_top" >Road Tests</a></li>
+		
+	
+	
+		
+		
+			<li id="futurevehicles"><a href="/insideline/do/FutureVehiclesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..5.*'; setTID('edmunds.il.newsarticle.nav..5.*');"  title="Future Vehicles"  target="_top" >Future Vehicles</a></li>
+		
+	
+	
+		
+		
+			<li id="features"><a href="/insideline/do/FeaturesLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..6.*'; setTID('edmunds.il.newsarticle.nav..6.*');"  title="Feature Articles"  target="_top" >Feature Articles</a></li>
+		
+	
+	
+		
+		
+			<li id="autoshows"><a href="/insideline/autoshows/index.html" onClick=" s_objectID='edmunds.il.newsarticle.nav..7.*'; setTID('edmunds.il.newsarticle.nav..7.*');"  title="Auto Shows"  target="_top" >Auto Shows</a></li>
+		
+	
+	
+		
+		
+			<li id="photos-video"><a href="/insideline/do/MultimediaLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..8.*'; setTID('edmunds.il.newsarticle.nav..8.*');"  title="Photos &amp; Video"  target="_top" >Photos &amp; Video</a></li>
+		
+	
+	
+		
+		
+			<li id="forums"><a href="/insideline/do/ForumsLanding" onClick=" s_objectID='edmunds.il.newsarticle.nav..9.*'; setTID('edmunds.il.newsarticle.nav..9.*');"  title="Forums"  target="_top" >Forums</a></li>
+		
+	
+ 	
+ 		
+ 		
+ 			<li id="edmundsnav"><a href="http://www.edmunds.com" onClick=" s_objectID='edmunds.il.newsarticle.nav..10.*'; setTID('edmunds.il.newsarticle.nav..10.*');"  title="Edmunds.com"  target="_top" >Edmunds.com</a></li>
+ 		
+ 		
+	</ul>
+</div><!-- end nav //-->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/nav.jsp -->
+</div><!-- end masthead-->
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/header.jsp -->
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/news/articlewithbb.jsp -->
+
+
+
+<!--startclickprintinclude-->
+<!--clickprintexcludeimages-->
+<!-- Page Title -->
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/indexpagetitle.jsp -->
+
+
+
+
+<div class="pagetitle" id="pt-news">
+	<div class="arttype" id="aty-news"><!--startclickprintexclude--><a href='/insideline/do/NewsLanding' title="News"><!--endclickprintexclude-->News<!--startclickprintexclude--></a><!--endclickprintexclude--></div>
+</div>
+
+<div class="subtitle1" id="subtitle-news">&nbsp;</div>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/indexpagetitle.jsp -->
+<!-- end Page Title -->
+
+<div class="contain" id="bg-newsart-boxad">
+<!--startclickprintexclude-->
+	<!-- Left Navigation -->
+	<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/leftnav.jsp -->
+
+	
+
+
+
+
+
+	
+<!-- Start Nav -->
+<div class="subnav" id="sn-news">
+    <p class="powered-gas" id="gas-leftnav">Powered by Global Auto Systems</p>
+	<br  clear="all" />
+	
+	<h3 id="sn-news-today">Today's Headlines</h3>
+	<ol>
+		
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130450" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..1.*'; setTID('edmunds.il.newsarticle.leftnav..1.*');" >					
+ 					Redesigned Honda City for India
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130449" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..2.*'; setTID('edmunds.il.newsarticle.leftnav..2.*');" >					
+ 					Ford Rolls Out Blind-Spot Mirror on 2009 Edge
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130448" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..3.*'; setTID('edmunds.il.newsarticle.leftnav..3.*');" >					
+ 					Chevy's Olympics Ads Feature Traverse, Malibu Hybrid
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130447" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..4.*'; setTID('edmunds.il.newsarticle.leftnav..4.*');" >					
+ 					2008 Paris Auto Show Preview: Aston Martin One-77
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130446" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..5.*'; setTID('edmunds.il.newsarticle.leftnav..5.*');" >					
+ 					2010 Hyundai Genesis Coupe Gets Some Performance Cred - Courtesy of Brembo
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130392" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..6.*'; setTID('edmunds.il.newsarticle.leftnav..6.*');" >					
+ 					Chery Hybrids for the Beijing Olympic Games
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130391" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..7.*'; setTID('edmunds.il.newsarticle.leftnav..7.*');" >					
+ 					Chrysler and Nissan Reportedly Exploring Momentous Midsize Car Deal
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130390" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..8.*'; setTID('edmunds.il.newsarticle.leftnav..8.*');" >					
+ 					2008 Paris Auto Show Preview: Suzuki To Introduce Next-Generation Alto
+ 				</a></li>
+ 			
+				<li>
+				
+				
+				
+				<a href="/insideline/do/News/articleId=130388" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..9.*'; setTID('edmunds.il.newsarticle.leftnav..9.*');" >					
+ 					Unveiled: 2009 Honda Ridgeline
+ 				</a></li>
+ 			
+	</ol>
+	
+		
+	<h3 id="sn-news-moreinfo">More Info</h3>
+	<ul>
+		<li>
+		
+		<a href="/insideline/do/NewsIndex/month=8/year=2008" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..10.*'; setTID('edmunds.il.newsarticle.leftnav..10.*');" >
+		More News</a></li>
+
+		<li id="addmyyahoo">
+		
+		
+		<a href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Frss.edmunds.com%2FIL%2Frss%2Fautomotivenews.xml" onClick=" s_objectID='edmunds.il.newsarticle.leftnav..11.*'; setTID('edmunds.il.newsarticle.leftnav..11.*');" >
+			<img border="0" align="absmiddle" src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/addtomyyahoo.gif">
+		</a>
+		</li>
+
+	</ul>
+		
+</div>
+<!-- End Nav -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/leftnav.jsp -->
+
+	<!-- end Left Navigation -->
+<!--endclickprintexclude-->
+	<div class="centercolumn" id="cc-news-boxad">
+<!--startclickprintexclude-->
+        <!-- Ad -->
+        <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/bbad.jsp -->
+
+<div class="eb-boxad">
+<p>
+            
+            
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+        <p class="adLabel"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/advertisement.gif" width="83" height="8" border="0" alt="Advertisement" vspace="2" />
+        <IFRAME name="adframe" SRC="http://ad.doubleclick.net/adi/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=300x250;ord=1245652040876?" width="300" height="250" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">  <A target="_blank" HREF="http://ad.doubleclick.net/jump/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=300x250;ord=1245652040876?">  <IMG SRC="http://ad.doubleclick.net/ad/news.il.dart/;sect=headlines;page=news;rsu=news;ptile=2;zip=;st=;cty=;u=sect_headlines:page_news|||1245652040829|www.edmunds.com/insideline/do/News/articleId=130389|;sz=300x250;ord=1245652040876?" width="300" height="250" border="0"></A></IFRAME></p>
+    
+    
+    
+    
+</p>
+</div>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/bbad.jsp -->
+
+        <!-- end Ad -->
+        <!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/sidebarphotoswithbb.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+		
+			
+				
+			
+		
+			
+				
+			
+		
+	
+
+
+
+
+
+
+<!-- start video side section -->
+
+
+<!-- end video side section -->
+
+
+
+
+
+	<div class="eb-photo" id="header">
+		<h3>Photos</h3>
+		
+		<p class="sidebar-slideshow"><a href="#1" onClick="popupArticlePhoto('130389',  '60763');">Slideshow</a></p>
+    </div>
+    
+		
+        	
+			<div class="eb-photo"  >
+			<div class="eb-photo-img">
+			<a href="#2" onClick="popupArticlePhoto('130389',  '60763');" >
+			<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/il/news/2008/0807/porsche.no1.2.160.jpg" width="160" height="101" border="0" alt="Porsche No. 1" /></a><br />
+			
+			<a href="#3" onClick="popupArticlePhoto('130389',  '60763');">(Enlarge photo)</a>
+			</div>
+			<div class="eb-photo-txt">
+			Hoping someone is using lots of bubble wrap: Porsche No. 1 will be on hand at Pebble Beach this year. It had been scheduled for the Monterey Historics a decade ago but was damaged in transit and couldn't appear.
+			
+				
+					
+						(Photo courtesy of Porsche Cars North America, Inc.)
+					
+					
+				
+			
+			</div>
+			</div>
+		
+	
+		
+        	
+			<div class="eb-photo" id="last" >
+			<div class="eb-photo-img">
+			<a href="#4" onClick="popupArticlePhoto('130389',  '60764');" >
+			<img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/il/news/2008/0807/porsche.no1.160.jpg" width="160" height="101" border="0" alt="Porsche No. 1 - Front" /></a><br />
+			
+			<a href="#5" onClick="popupArticlePhoto('130389',  '60764');">(Enlarge photo)</a>
+			</div>
+			<div class="eb-photo-txt">
+			The eye-popping classic makes a nostalgic 40 hp.
+			
+				
+					
+						(Photo courtesy of Porsche Cars North America, Inc.)
+					
+					
+				
+			
+			</div>
+			</div>
+		
+	
+
+
+
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/sidebarphotoswithbb.jsp -->
+
+<!--endclickprintexclude-->
+		<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/news/primarycontent.jsp -->
+
+
+
+
+
+
+
+
+<div class="legacy">
+	<h2>2008 Pebble Beach Preview: Porsche No. 1 Makes North American Concours Debut</h2>
+	<p class="dateposted">Date posted: 2008-08-07 14:37:00.0 </p>
+
+<!--startclickprintexclude-->
+
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/components/storytools.jsp -->
+
+
+<!-- start Clickability -->
+
+<div id="ilClickTracking">STORY TOOLS
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+	<td width="80"><A HREF="http://digg.com/submit" target="_blank" title="Digg this story" class="storyTool" onclick="window.open('http://digg.com/submit?phase=2&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'&bodytext=Inside+Line%3A+The+first+Porsche+sports+car+gets+a+starring+role+at+the+upcoming+2008+Pebble+Beach+Concours+d%27Elegance.&topic=motorsport','digg');return false;"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/clickability/digg-icon.gif" width="20" height="15" border="0" alt="Digg this story"
+align="absmiddle" />Digg this!</a></td>
+</tr>
+<tr>
+
+	<td><A HREF="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?v=4&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'delicious','toolbar=no,width=700,height=400');return false;"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/il/media/clickability/delicious-icon.gif" width="20" height="14" border="0" alt="del.icio.us"
+align="absmiddle" />del.icio.us</a></td>
+</tr>
+</table>
+</div>
+<!-- end Clickability -->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/storytools.jsp -->
+
+<!--endclickprintexclude-->
+
+	<p><strong>ATLANTA &mdash; The Porsche No. 1, revered by aficionados as the first <i>real</i> Porsche, will take center stage at the 2008 Pebble Beach Concours d'Elegance, Porsche said. The two-seater open roadster features a mid-mounted, Volkswagen air-cooled flat-4 engine that produces a modest 40 horsepower at best.</strong><br /><br />
+
+Porsche had originally tried to get the car to California in 1998 for an appearance at the Monterey Historic Automobile Races, but the car was damaged in transit. The one-of-a-kind Porsche was created by Ferdinand "Ferry" Porsche "after he searched and was unable to find the car of his dreams," according to the company.<br /><br />
+
+The roadster weighs in at 1,290 pounds and has a top speed of between 84 and 87 mph. Most of the mechanicals are said to be derived from the Volkswagen Beetle, which was created by Ferry's father, Ferdinand. Interior details on the No. 1 include a bench seat to accommodate a third passenger, a dash with only a tachometer &mdash; a speedometer was added later &mdash; and a locking glovebox. The luggage compartment and fuel tank were located under the front hood.<br /><br />
+
+Porsche said the No. 1 passed "through the hands of several owners." It was reacquired by the company and is set for display in the new museum next to the Porsche factory in Stuttgart-Zuffenhausen.<br /><br />
+
+<strong>What this means to you:</strong> You get a chance for an up-close-and-personal look at one of the rarest Porsches of all time. &mdash; <i>Anita Lienert, Correspondent</i></p>
+</div><!-- end legacy -->
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/components/news/primarycontent.jsp -->
+
+<!--startclickprintexclude-->
+		<!-- Footer content -->
+    	<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/footer.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+<br clear="all" /><br clear="all" />
+<div id="footer">
+    <p>
+    <a href="/insideline" onClick=" s_objectID='edmunds.il.newsarticle.footer..1.*'; setTID('edmunds.il.newsarticle.footer..1.*');"  title="Home" >Home</a> |
+    <a href="/insideline/do/NewsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..2.*'; setTID('edmunds.il.newsarticle.footer..2.*');"  title="News" >News</a> |
+    <a href="/insideline/do/ColumnsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..3.*'; setTID('edmunds.il.newsarticle.footer..3.*');"  title="Columns" >Columns</a> |
+    <a href="/insideline/do/DrivesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..4.*'; setTID('edmunds.il.newsarticle.footer..4.*');"  title="Road Tests" >Road Tests</a>
+    <br />
+    <a href="/insideline/do/FutureVehiclesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..5.*'; setTID('edmunds.il.newsarticle.footer..5.*');"  title="Future Vehicles" >Future Vehicles</a> |
+    <a href="/insideline/do/FeaturesLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..6.*'; setTID('edmunds.il.newsarticle.footer..6.*');"  title="Feature Articles" >Feature Articles</a> |
+    <a href="/insideline/autoshows/index.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..7.*'; setTID('edmunds.il.newsarticle.footer..7.*');"  title="Auto Shows" >Auto Shows</a>
+    <br />
+    <a href="/insideline/do/MultimediaLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..8.*'; setTID('edmunds.il.newsarticle.footer..8.*');"  title="Photos &amp; Video" >Photos &amp; Video</a> |
+    <a href="/insideline/do/ForumsLanding" onClick=" s_objectID='edmunds.il.newsarticle.footer..9.*'; setTID('edmunds.il.newsarticle.footer..9.*');"  title="Forums" >Forums</a> |
+    <a href="/insideline/do/MakeIndex" onClick=" s_objectID='edmunds.il.newsarticle.footer..10.*'; setTID('edmunds.il.newsarticle.footer..10.*');" >Browse All Models</a>
+    <br />
+    <a href="http://www.edmunds.com/insideline/do/About/articleId=109577">Directory</a> | 
+    <a href="http://help.insideline.com" onClick=" s_objectID='edmunds.il.newsarticle.footer..11.*'; setTID('edmunds.il.newsarticle.footer..11.*');"  title="Help" >Help</a> |
+	<a href="http://help.insideline.com/cgi-bin/edmunds.cfg/php/enduser/ask.php" onClick=" s_objectID='edmunds.il.newsarticle.footer..12.*'; setTID('edmunds.il.newsarticle.footer..12.*');"  title="Contact US" >Contact Us</a> |
+	<a href="http://www.edmunds.com/help/about">About</a>
+    </p>
+    <p>Edmunds is hiring! <b><a href="/help/about/jobs/index.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..13.*'; setTID('edmunds.il.newsarticle.footer..13.*');" >Employment Opportunities</a></b></p>
+    <p>&copy; 1995-2009 Edmunds Inc.<br /><a href="/help/about/privacy.html" onClick=" s_objectID='edmunds.il.newsarticle.footer..14.*'; setTID('edmunds.il.newsarticle.footer..14.*');"  title="Privacy Statement" >Privacy Statement</a>&nbsp;|&nbsp;<a href="/help/about/visitoragreement.html" title="Visitor Agreement">Visitor Agreement</a></p>
+    <br /><br />
+    <p><a onClick="popupWhatisRss('/insideline/components/whatisRss.jsp');" href="#"><img src="http://a332.g.akamai.net/f/332/936/12h/www.edmunds.com/media/feedicon-xml.gif" align="absmiddle" border="0" /></a></p>
+</div>
+
+<script language="javascript">
+    function popupWhatisRss(whatIsRssUrl) {
+        window.open(whatIsRssUrl,'','scrollbars=yes,resizable=no,width=710,height=615');
+        return false;
+    }
+</script>
+
+<script src="http://js.revsci.net/gateway/gw.js?csid=B05501"></script>
+<script>
+//3rd party pixel call
+
+var Make = 'null';
+var Model = 'null';
+var Zip = '';
+var PageCode = 'newsarticle';
+var Category = '';
+var UseIn = 'null';
+
+
+DM_addEncToLoc("Make", (Make));
+DM_addEncToLoc("Model", (Model));
+DM_addEncToLoc("Category", (Category));
+DM_addEncToLoc("Zip", (Zip));
+DM_addEncToLoc("UseIn", (UseIn));
+DM_tag();
+
+</script>
+
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/footer.jsp -->
+
+    	<!-- end footer content -->
+	</div><!-- end center column -->
+	<br clear="all" />
+<!--endclickprintexclude-->
+</div><!-- end contain -->
+<!--endclickprintinclude-->
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/news/articlewithbb.jsp -->
+<!-- (JSP_START) /InsideLine/InsideLineWeb/WebRoot/layout/nonEndemicAdPanel.jsp -->
+
+
+<script language="javascript" type="text/javascript">
+function resize1024PanelIFrame(width, height) {
+	var panelIframe = document.getElementById("tentwentyfour_panel");
+    if (panelIframe != null) {
+      	panelIframe.width = width;
+      	panelIframe.height = height;
+    }
+}
+</script>
+<div class="adpanel">
+<iframe id="tentwentyfour_panel" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" src="/insideline/1024panel.html"></iframe>
+</div>
+<!-- end ad panel -->
+
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/nonEndemicAdPanel.jsp -->
+
+<div class="quigo" id="q-il">
+    <center>
+        <div class="quigo-content">
+            
+                
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+    
+    
+    
+       
+    
+
+        </div>
+    </center>
+</div>
+<!-- ns the insider -->
+</body>
+<!-- (JSP_END) /InsideLine/InsideLineWeb/WebRoot/layout/masterLayout.jsp -->
+</html>

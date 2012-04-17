@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#vince">
+    <rdf:type rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music">
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Physical"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Music"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#RadiatingSound"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Process"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Motion"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Radiating"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUO 1.55: July 14, 2003
+The &amp;%subclass of &amp;%RadiatingSound where the
+sound is intended to be melodic and is produced deliberately.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.polowinski.de/ontologies/Sumo-OWL-Fixed-Version-2003.owl#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,14 @@
+<SWAFComponent>
+	<name>Nome do componente</name>
+	<jarFile>Nome do arquivo .jar existente no mesmo local deste arquivo</jarFile>
+	<!-- A dataLoader tag must be defined for a data extraction component -->
+	<dataLoader>
+		<description>Definir aqui o CED</description>
+		<className>Nome da classe que implementa a interface do framework IDataLoader</className>
+	</dataLoader>
+	<!-- A semanticMatcher tag must be defined for a semantic matcher component -->
+	<semanticMatcher>
+		<description>Definir aqui o CMS</description>
+		<className>Nome da classe que implementa a interface do framework ISemanticMatcher</className>
+	</semanticMatcher>
+</SWAFComponent>

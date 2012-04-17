@@ -1,0 +1,9 @@
+SourceFile=http://www.nytimes.com/2008/11/24/sports/football/24rhodensot.html?ref=sports
+OutputFile=20090629130138_24rhodensot_20090629130217515.owl
+TotalOfTermsExtracted=12
+TotalOfTermsMapped=1
+TotalOfTermsMappedBasedOnOntology=0
+TotalOfTermsMappedBasedOnDirectory=1
+TotalOfTermsAnnotated=5
+ExtractedTerms=[(william)][(vacation)][(hamptons)][(shadows)][(football)][(young)][(pro)][(rhoden)][(nytimes)][(stardom)][(rentals)][(vince)]
+MappedTerms=[vince]

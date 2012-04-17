@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl#"
+	xml:base="C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SemanticAnnotation/ontologies/Properties.owl">
+	<owl:Ontology rdf:about="" />
+	<owl:Class rdf:ID="Whole">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:allValuesFrom>
+					<owl:Class rdf:about="#Part" />
+				</owl:allValuesFrom>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasPart" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#Composite" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A whole is made up of one or more parts
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="CompositePart">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcoOntThing" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A part of zero or more composites
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Part">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#partOf" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf rdf:resource="#CompositePart" />
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A part of some Whole
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="NamedThing">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty>
+					<owl:DatatypeProperty rdf:about="#hasName" />
+				</owl:onProperty>
+				<owl:cardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:cardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcoOntThing" />
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Something with one and only one name
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="Composite">
+		<rdfs:subClassOf>
+			<owl:Class rdf:about="#EcoOntThing" />
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:minCardinality
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#int">
+					1
+				</owl:minCardinality>
+				<owl:onProperty>
+					<owl:ObjectProperty rdf:about="#hasPart" />
+				</owl:onProperty>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			A composite has one or more CompositeParts
+		</rdfs:comment>
+	</owl:Class>
+	<owl:Class rdf:ID="EcoOntThing">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Something that might have one or more names
+		</rdfs:comment>
+	</owl:Class>
+	<owl:ObjectProperty rdf:ID="hasPart">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Whole-part relationships where something can be contained by
+			more than one thing.
+		</rdfs:comment>
+		<rdfs:domain rdf:resource="#Composite" />
+		<rdfs:range rdf:resource="#CompositePart" />
+		<owl:inverseOf>
+			<owl:ObjectProperty rdf:about="#partOf" />
+		</owl:inverseOf>
+	</owl:ObjectProperty>
+	<owl:ObjectProperty rdf:ID="partOf">
+		<rdfs:comment
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+			Whole-part relationship where something can be 'containedBy'
+			more than one thing.
+		</rdfs:comment>
+		<rdfs:domain rdf:resource="#CompositePart" />
+		<rdfs:range rdf:resource="#Composite" />
+		<owl:inverseOf rdf:resource="#hasPart" />
+	</owl:ObjectProperty>
+	<owl:DatatypeProperty rdf:ID="hasName">
+		<rdfs:domain rdf:resource="#EcoOntThing" />
+		<rdfs:range
+			rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+	</owl:DatatypeProperty>
+</rdf:RDF>
+<!-- Created with Protege (with OWL Plugin 1.2 beta, Build 139)  http://protege.stanford.edu -->

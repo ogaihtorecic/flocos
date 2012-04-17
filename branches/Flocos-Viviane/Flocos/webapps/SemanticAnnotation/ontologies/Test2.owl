@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#" > 
+  <rdf:Description rdf:about="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#Ally">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#Dog">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#Dog"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#FaithfulFriend"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#deputy_dawg">
+    <rdf:type rdf:resource="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#FaithfulFriend"/>
+    <rdf:type rdf:resource="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#Dog"/>
+    <j.0:name>Deputy</j.0:name>
+    <rdf:type rdf:resource="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#Ally"/>
+  </rdf:Description>
+</rdf:RDF>

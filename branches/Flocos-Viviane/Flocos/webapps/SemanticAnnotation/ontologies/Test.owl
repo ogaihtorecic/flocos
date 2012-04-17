@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+
+	xmlns:prop="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Properties.owl#"
+	xmlns="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl#"
+	xml:base="C:/GM/mestradoUfam/PROJETO/desenv/code/web/ontologies/Test.owl">
+
+	<owl:Class rdf:ID="Ally" />
+
+	<owl:Class rdf:ID="Dog">
+	  <rdfs:subClassOf>
+		 <owl:Class rdf:ID="FaithfulFriend" />
+	  </rdfs:subClassOf>
+	</owl:Class>
+
+	<Dog rdf:ID="deputy_dawg">
+	  <name>Deputy</name>
+	  <rdf:type rdf:resource="#Ally" />
+	  <rdf:type rdf:resource="#Dog" />
+	</Dog>	
+
+	<owl:ObjectProperty rdf:ID="race">
+		<owl:domain rdf:resource="#Dog"/>
+		<owl:range rdf:resource="#academicStaffMember"/>
+		<rdfs:subPropertyOf rdf:resource="#involves"/>
+	</owl:ObjectProperty>
+
+	<owl:ObjectProperty rdf:ID="isTaughtBy">
+		<owl:domain rdf:resource="#course"/>
+		<owl:range rdf:resource="#academicStaffMember"/>
+		<rdfs:subPropertyOf rdf:resource="#involves"/>
+	</owl:ObjectProperty>
+
+	<owl:ObjectProperty rdf:ID="teaches">
+		<rdfs:range rdf:resource="#course"/>
+		<rdfs:domain rdf:resource="#academicStaffMember"/>
+		<owl:inverseOf rdf:resource="#isTaughtBy"/>
+	</owl:ObjectProperty>
+
+	<Dog rdf:ID="gilberto_martins">
+	  <name>gilberto_martins</name>
+	  <rdf:type rdf:resource="#Dog" />
+	</Dog>	
+
+</rdf:RDF>
