@@ -29,19 +29,19 @@ class DadosEducacionaisController {
 
 		def moaf = Moaf.get(params.moaf.id)
 		if(!moaf) {
-			flash.message = "O Moaf passado como parâmetro não existe"
+			flash.message = "O Moaf passado como parÃ¢metro nÃ£o existe"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
 		
 		if(moaf.dadosEducacionais != null) {
-			flash.message = "Moaf passado como parâmetro já possui Dados Educacionais"
+			flash.message = "Moaf passado como parï¿½metro jï¿½ possui Dados Educacionais"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
 		
 		if(!session.usuario.id.equals(moaf.usuario.id)) {
-			flash.message = "Você não pode editar esse Moaf"
+			flash.message = "Vocï¿½ nï¿½o pode editar esse Moaf"
 			redirect(controller: "moaf", action: "list")
 			return
 		}

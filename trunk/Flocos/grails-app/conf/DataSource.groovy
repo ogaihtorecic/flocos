@@ -12,10 +12,17 @@ hibernate {
 // environment specific settings
 environments {
 	development {
-		dataSource {
+		/*dataSource {
 			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
 			url = "jdbc:hsqldb:mem:devDB"
-		}
+		}*/
+                dataSource {
+        		dbCreate = "update"
+        		url = "jdbc:postgresql:flocos"
+        		driverClassName = "org.postgresql.Driver"
+		        username = "flocosUser"
+		        password = "123456"
+    		}
 	}
 	test {
 		dataSource {

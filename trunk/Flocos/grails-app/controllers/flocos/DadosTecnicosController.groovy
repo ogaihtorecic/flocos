@@ -5,7 +5,7 @@ class DadosTecnicosController {
 	static navigation = [
 		group:'Principal', 
 		order:3, 
-		title:'Dados Técnicos', 
+		title:'Dados TÃ©cnicos', 
 		isVisible: { session.usuario != null }
 	]
 
@@ -22,26 +22,26 @@ class DadosTecnicosController {
 
     def create = {
 		if(!params.moaf) {
-			flash.message = "Dados Técnicos devem estar associados a um Moaf"
+			flash.message = "Dados Tï¿½cnicos devem estar associados a um Moaf"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
 
 		def moaf = Moaf.get(params.moaf.id)
 		if(!moaf) {
-			flash.message = "O Moaf passado como parâmetro não existe"
+			flash.message = "O Moaf passado como parï¿½metro nï¿½o existe"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
 		
 		if(moaf.dadosTecnicos != null) {
-			flash.message = "Moaf passado como parâmetro já possui Dados Técnicos"
+			flash.message = "Moaf passado como parï¿½metro jï¿½ possui Dados Tï¿½cnicos"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
 		
 		if(!session.usuario.id.equals(moaf.usuario.id)) {
-			flash.message = "Você não pode editar esse Moaf"
+			flash.message = "Vocï¿½ nï¿½o pode editar esse Moaf"
 			redirect(controller: "moaf", action: "list")
 			return
 		}
