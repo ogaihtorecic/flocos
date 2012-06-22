@@ -4,7 +4,18 @@ class IdiomaController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
-    def index = {
+    def index = {        
+        /*def input = servletContext.getResourceAsStream("listLanguages.csv")
+        input = input.text            
+        def lista = input.split("\n")
+
+        lista.each
+        {
+            def idioma = new Idioma(idioma: it)
+            idioma.save()
+        }*/
+        
+        
         redirect(action: "list", params: params)
     }
 

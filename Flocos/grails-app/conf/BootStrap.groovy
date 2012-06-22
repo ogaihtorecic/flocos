@@ -5,6 +5,17 @@ class BootStrap {
      def init = { servletContext ->
      	def r = new flocos.Responsavel(nome:"Admin")
      	r.save()
+        
+        def input = servletContext.getResourceAsStream("listLanguages.csv")
+        input = input.text            
+        def lista = input.split("\n")
+
+        lista.each
+        {
+            def idioma = new flocos.Idioma(idioma: it)
+            idioma.save()
+        }
+        
      	new flocos.Usuario(login:"admin", senha:"admin", email:"cicero.thiago@gmail.com", responsavel:r).save()
 		new flocos.Usuario(login:"cicero", senha:"cicero", email:"cicero.thiago@gmail.com", responsavel:r).save()
 		
