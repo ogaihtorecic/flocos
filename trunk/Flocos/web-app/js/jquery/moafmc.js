@@ -52,10 +52,24 @@ $(document).ready(function(){
 		height:500
 	});
         
+        $("#semantic").dialog({
+		autoOpen: false,
+		bgiframe: true,
+		modal: true,
+		width:600,
+		height:500
+	});
+        
         $("#rmAuthor").click(function()
         {
             event.preventDefault();
             $("#authors option:selected").remove()
+        });
+        
+        $("#rmSemantic").click(function()
+        {
+            event.preventDefault();
+            $("#semantics option:selected").remove()
         });
         
         $("form").submit(function() 
@@ -65,12 +79,14 @@ $(document).ready(function(){
             $('#proposedDomain').append('<option value=""></option>');
             $('#levelEducation').append('<option value=""></option>');
             $('#authors').append('<option value=""></option>');
+            $('#semantics').append('<option value=""></option>');
             
             $('#language option').prop('selected',true);
             $('#purpose option').prop('selected',true);
             $('#proposedDomain option').prop('selected',true);
             $('#levelEducation option').prop('selected',true);
             $('#authors option').prop('selected',true);
+            $('#semantics option').prop('selected',true);
         });
         
 });
