@@ -162,7 +162,7 @@ class ModeloVetorialService
         }		
     }
     
-    def updateDocument(Integer moafMcId, String path)
+    def updateDocument(def moafMcId, String path)
     {
         beginWriter();
         
@@ -171,7 +171,7 @@ class ModeloVetorialService
         
         moafmc.dadosEducacionais.purpose.each
         {area ->
-            keywords =+ "\n" + area;
+            keywords += "\n" + area;
         }
         
         Tokenizer tk = new Tokenizer(path);
@@ -179,7 +179,7 @@ class ModeloVetorialService
         
         Document doc = new Document();
         doc.add( new Field("content", keywords, Field.Store.NO, Field.Index.ANALYZED) );
-        doc.add( new Field("id", moafmc.id, Field.Store.YES, Field.Index.NOT_ANALYZED) );
+        doc.add( new Field("id", String.valueOf(moafmc.id), Field.Store.YES, Field.Index.NOT_ANALYZED) );
         
         writer.updateDocument(new Term("id", String.valueOf(moafMcId)), doc);
         

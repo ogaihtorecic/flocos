@@ -86,6 +86,7 @@
                                 <td valign="top" class="name">                                  
                                   <gif test="${moafMc.dadosTecnicos.size > 0}">
                                     <a href="${createLink(controller: 'moafMc', action: 'getArq', id: moafMc.id)}">${moafMc.dadosGerais.fileName}</a>
+                                    <p>${moafMc.dadosTecnicos.size} bytes</p>
                                   </gif>                                  
                                 </td>                                
                             </tr>
@@ -220,6 +221,15 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosEducacionais', 'errors')}">
                                     <input readonly="readonly" type="text" maxlength="255" id="dadosEducacionaisMc.age" name="dadosEducacionaisMc.age" value="${moafMc?.dadosEducacionais?.age}" />
+                                </td>
+                            </tr>
+                            
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="dadosEducacionaisMc.semanticAnnotation">Semantic annotation</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosEducacionais', 'errors')}">
+                                    <g:select style="width: 150px" id="semantics" name="dadosEducacionaisMc.semanticAnnotation" from="${moafMc?.dadosEducacionais?.semanticAnnotation}" value="" multiple="true" size="10" />
                                 </td>
                             </tr>
                             

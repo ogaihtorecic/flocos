@@ -14,6 +14,7 @@
           
           function insere(id, name)
           {
+            event.preventDefault(); 
             var achou = false;
             jQuery('#authors option').each(function(index) 
             {
@@ -25,7 +26,13 @@
             
             if (achou != true)
             {
+              jQuery('#resMessage').addClass('message');
+              jQuery('#resMessage').append('Adicionado!<br />');
               jQuery('#authors').append('<option value=\"' + id + '\">' + name + '</option>');
+            }else
+            {
+              jQuery('#resMessage').removeClass('message');
+              jQuery('#resMessage').html('');
             }
           }
         </g:javascript>
@@ -39,6 +46,7 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+            <div id="resMessage"></div>
             <div class="list">
                 <table>
                     <thead>

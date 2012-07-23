@@ -21,6 +21,14 @@
                 jQuery("#responsavel").dialog("open");
             });
             
+            jQuery("#addSemantic").click(function() 
+            {
+                event.preventDefault();
+                carregando("semantic", "${resource(resource(dir:'images', file: 'ajax-loader.gif'))}")
+                load("semantic", "${createLink(controller:'anotacaoSemanticaMc', action:'list')}", "")
+                jQuery("#semantic").dialog("open");
+            });
+            
             jQuery("#updateDomain").click(function() 
             {
                 event.preventDefault();
@@ -292,6 +300,17 @@
                             
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="dadosEducacionaisMc.semanticAnnotation">Semantic annotation</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosEducacionais', 'errors')}">
+                                    <g:select style="width: 150px" id="semantics" name="dadosEducacionaisMc.semanticAnnotation" from="${moafMc?.dadosEducacionais?.semanticAnnotation}" value="" multiple="true" size="5" />
+                                    <a id="addSemantic" href="#">[+]</a>
+                                    <a id="rmSemantic" href="#">[-]</a>
+                                </td>
+                            </tr>
+                            
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="dadosEducacionaisMc.complement">Complement</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosEducacionais', 'errors')}">
@@ -316,5 +335,6 @@
             </g:form>
         </div>
         <div id="responsavel"></div>
+        <div id="semantic"></div>
     </body>
 </html>
