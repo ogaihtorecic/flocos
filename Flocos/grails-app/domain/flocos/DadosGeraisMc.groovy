@@ -17,7 +17,7 @@ class DadosGeraisMc
     {
         title(blank:false)
         initialConcept(blank:false)
-        description(blank:false)
+        description(blank:true)
         arquivo(nullable: true)
         fileName(nullable: true, blank: true)
     }

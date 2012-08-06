@@ -229,7 +229,9 @@
                                     <label for="dadosEducacionaisMc.semanticAnnotation">Semantic annotation</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosEducacionais', 'errors')}">
-                                    <g:select style="width: 150px" id="semantics" name="dadosEducacionaisMc.semanticAnnotation" from="${moafMc?.dadosEducacionais?.semanticAnnotation}" value="" multiple="true" size="10" />
+                                  <g:each in="${moafMc?.dadosEducacionais?.semanticAnnotation}" var="sa">
+                                    <p>${sa.localAnotacao}</p>
+                                  </g:each>
                                 </td>
                             </tr>
                             
