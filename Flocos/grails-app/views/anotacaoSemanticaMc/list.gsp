@@ -16,8 +16,7 @@
           });
           
           function insere(id, name)
-          {
-            event.preventDefault();            
+          {          
             var achou = false;
             jQuery('#semantics option').each(function(index) 
             {
@@ -71,7 +70,7 @@
                         
                             <td>${fieldValue(bean: anotacaoSemanticaMcInstance, field: "tipoAnotacao")}</td>
                         
-                            <td><a href="#" onclick="insere(${anotacaoSemanticaMcInstance.id}, '${anotacaoSemanticaMcInstance.localAnotacao}')">[+]</a></td>
+                            <td><a href="#" onclick="insere(${anotacaoSemanticaMcInstance.id}, '${anotacaoSemanticaMcInstance.localAnotacao}'); return false;">[+]</a></td>
                         
                         </tr>
                     </g:each>

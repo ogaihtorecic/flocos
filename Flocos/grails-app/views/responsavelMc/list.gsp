@@ -14,7 +14,6 @@
           
           function insere(id, name)
           {
-            event.preventDefault(); 
             var achou = false;
             jQuery('#authors option').each(function(index) 
             {
@@ -33,7 +32,7 @@
             {
               jQuery('#resMessage').removeClass('message');
               jQuery('#resMessage').html('');
-            }
+            }            
           }
         </g:javascript>
     </head>
@@ -67,7 +66,7 @@
                         
                             <td>${fieldValue(bean: responsavelMcInstance, field: "email")}</td>
                             
-                            <td><a href="#" onclick="insere(${responsavelMcInstance.id}, '${responsavelMcInstance.author}')">[+]</a></td>
+                            <td><a href="#" onclick="insere(${responsavelMcInstance.id}, '${responsavelMcInstance.author}');return false;">[+]</a></td>
                         
                         </tr>
                     </g:each>

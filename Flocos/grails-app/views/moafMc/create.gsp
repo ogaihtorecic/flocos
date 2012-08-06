@@ -13,23 +13,23 @@
         <title><g:message code="default.create.label" args="[entityName]" /></title>
         <g:javascript>
           jQuery(document).ready(function(){
-            jQuery("#addAuthor").click(function() 
+            jQuery("#addAuthor").click(function(event) 
             {
                 event.preventDefault();
-                carregando("responsavel", "${resource(resource(dir:'images', file: 'ajax-loader.gif'))}")
+                carregando("responsavel", "${resource(dir:'images', file: 'ajax-loader.gif')}")
                 load("responsavel", "${createLink(controller:'responsavelMc', action:'list')}", "")
                 jQuery("#responsavel").dialog("open");
             });
             
-            jQuery("#addSemantic").click(function() 
+            jQuery("#addSemantic").click(function(event) 
             {
                 event.preventDefault();
-                carregando("semantic", "${resource(resource(dir:'images', file: 'ajax-loader.gif'))}")
+                carregando("semantic", "${resource(dir:'images', file: 'ajax-loader.gif')}")
                 load("semantic", "${createLink(controller:'anotacaoSemanticaMc', action:'list')}", "")
                 jQuery("#semantic").dialog("open");
             });
             
-            jQuery("#updateDomain").click(function() 
+            jQuery("#updateDomain").click(function(event) 
             {
                 event.preventDefault();
                 jQuery("#proposedDomain option").remove();

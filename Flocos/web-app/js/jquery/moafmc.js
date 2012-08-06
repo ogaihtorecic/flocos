@@ -60,13 +60,13 @@ $(document).ready(function(){
 		height:500
 	});
         
-        $("#rmAuthor").click(function()
+        $("#rmAuthor").click(function(event)
         {
             event.preventDefault();
             $("#authors option:selected").remove()
         });
         
-        $("#rmSemantic").click(function()
+        $("#rmSemantic").click(function(event)
         {
             event.preventDefault();
             $("#semantics option:selected").remove()
