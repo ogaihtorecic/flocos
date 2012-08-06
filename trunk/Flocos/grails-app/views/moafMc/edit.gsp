@@ -168,7 +168,7 @@
                                     <label for="dadosCriacaoMc.responsaveis">Author</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: moafMc, field: 'dadosCriacao', 'errors')}">
-                                    <g:select style="width: 150px" id="authors" name="dadosCriacaoMc.responsaveis" from="${moafMc?.dadosCriacao?.responsaveis}" value="" multiple="true" size="5" />
+                                    <g:select style="width: 150px" id="authors" name="dadosCriacaoMc.responsaveis" from="${moafMc?.dadosCriacao?.responsaveis}" optionKey="id" value="" multiple="true" size="5" />
                                     <a id="addAuthor" href="#">[+]</a>
                                     <a id="rmAuthor" href="#">[-]</a>
                                 </td>

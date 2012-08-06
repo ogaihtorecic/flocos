@@ -9,7 +9,7 @@ class DadosTecnicosMc
     
     static constraints = 
     {
-        location(blank:false)
+        location(blank:true)
     	size(nullable:true)
         software(nullable:true)
         mediaResource(nullable: true)

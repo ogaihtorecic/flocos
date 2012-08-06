@@ -90,6 +90,25 @@ class MoafMcController {
                 moafMcInstance.dadosEducacionais.save(flush: true) && 
                 moafMcInstance.save(flush: true)) 
             {
+                boolean possuiArquivo = false
+                def dominios = moafMcInstance.dadosEducacionais.proposedDomain
+                
+                for (dominio in dominios)
+                {
+                    if(dominio.nomeArquivo && !"".equals(dominio.nomeArquivo)) 
+                    {
+                            possuiArquivo = true
+                    }
+                }
+
+                if(moafMcInstance.dadosEducacionais.proposedDomain &&
+                        possuiArquivo &&
+                        moafMcInstance.dadosGerais.initialConcept &&
+                        !"".equals(moafMcInstance.dadosGerais.initialConcept)) 
+                {
+                    boolean gerouOntologia = Utils.gerarOntologiaMc(moafMcInstance, servletContext.getRealPath("/"), request.serverName)
+                }
+                
                 modeloVetorialService.index(moafMcInstance.id as int, servletContext.getRealPath("stop.txt"))
                 flash.message = "${message(code: 'default.created.message', args: [message(code: 'moafMc.label', default: 'MoafMc'), moafMcInstance.id])}"
                 redirect(action: "show", id: moafMcInstance.id)
