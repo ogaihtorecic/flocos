@@ -1,0 +1,2 @@
+**FLOCOS** (Functional Learning Object Collaborative System) é um sistema colaborativo à construção de OAF (Objetos de Aprendizagem Funcionais)  descritos através do metadado MOAF (Metadado para Objetos de Aprendizagem Funcionais), sobre o qual os usuários interagem gerando novos objetos, ou mantendo os já existentes. Nesta nova versão, o FLOCOS apresenta a integração com o Semantic Web Annotation Framework, de modo a gerar uma anotação semântica da experiência de uso docente no uso de um OAF.
+
